@@ -1,0 +1,44 @@
+name: Crawl catalog
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - sources.yml
+      - crawler/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python crawler/crawl.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # generated_at changes every run, so compare the apps only.
+          if git diff --quiet -I '"generated_at"' -- docs/catalog.json; then
+            echo "catalog unchanged"
+            exit 0
+          fi
+          git add docs/catalog.json
+          git commit -m "chore(catalog): update app catalog"
+          git push
