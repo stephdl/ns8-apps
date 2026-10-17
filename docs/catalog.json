@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T09:18:53+00:00",
+ "generated_at": "2026-10-17T09:45:09+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -43,7 +43,7 @@
    "alt_url": "https://raw.githubusercontent.com/stephdl/ns8-stephdl/repomd/ns8/updates/",
    "kind": "community",
    "repo": "stephdl/ns8-stephdl",
-   "app_count": 10
+   "app_count": 9
   },
   {
    "id": "mrmarkuz",
@@ -2093,6 +2093,10 @@
      ],
      "versions": [
       {
+       "tag": "1.2.0",
+       "testing": false
+      },
+      {
        "tag": "1.1.5",
        "testing": false
       },
@@ -2147,19 +2151,15 @@
       {
        "tag": "1.0.0-dev.2",
        "testing": true
-      },
-      {
-       "tag": "1.0.0-dev.1",
-       "testing": true
       }
      ],
-     "stable": "1.1.5",
+     "stable": "1.2.0",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "linuxserver/ddclient:v4.0.0-ls191"
+       "linuxserver/ddclient:v4.0.0-ls235"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -2183,7 +2183,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-09-16T16:25:04Z"
+     "released_at": "2026-10-17T07:50:47Z"
     }
    ]
   },
@@ -5511,127 +5511,6 @@
       "license": true
      },
      "released_at": "2026-09-18T21:37:34Z"
-    },
-    {
-     "module_id": "lamp",
-     "forges": [
-      "stephdl"
-     ],
-     "kind": "community",
-     "developer": "stephdl",
-     "name": "Lamp",
-     "description": {
-      "en": "LAMP provides a comprehensive and open-source platform for developing, deploying, and managing dynamic PHP web applications and websites"
-     },
-     "about": null,
-     "authors": [
-      "Stephane de Labrusse"
-     ],
-     "categories": [],
-     "code_url": "https://github.com/stephdl/ns8-lamp",
-     "docs": {
-      "documentation_url": "https://github.com/stephdl/ns8-lamp",
-      "bug_url": "https://github.com/stephdl/dev"
-     },
-     "logo": "https://forge.de-labrusse.fr/ns8/updates/lamp/logo.png",
-     "screenshots": [
-      "https://forge.de-labrusse.fr/ns8/updates/lamp/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/lamp/screenshots/screen1.png"
-     ],
-     "versions": [
-      {
-       "tag": "1.2.3",
-       "testing": false
-      },
-      {
-       "tag": "1.2.2",
-       "testing": false
-      },
-      {
-       "tag": "1.2.1",
-       "testing": false
-      },
-      {
-       "tag": "1.2.0",
-       "testing": false
-      },
-      {
-       "tag": "1.1.2",
-       "testing": false
-      },
-      {
-       "tag": "1.1.1",
-       "testing": false
-      },
-      {
-       "tag": "1.1.0",
-       "testing": false
-      },
-      {
-       "tag": "1.0.15",
-       "testing": false
-      },
-      {
-       "tag": "1.0.15-dev.1",
-       "testing": true
-      },
-      {
-       "tag": "1.0.14",
-       "testing": false
-      },
-      {
-       "tag": "1.0.13",
-       "testing": false
-      },
-      {
-       "tag": "1.0.12",
-       "testing": false
-      },
-      {
-       "tag": "1.0.11",
-       "testing": false
-      },
-      {
-       "tag": "1.0.10",
-       "testing": false
-      },
-      {
-       "tag": "1.0.9",
-       "testing": false
-      }
-     ],
-     "stable": "1.2.3",
-     "testing": null,
-     "min_core": "3.12.4-0",
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "stephdl/lamp-server-php8.3:1.2.3"
-      ],
-      "authorizations": [
-       "traefik@node:routeadm",
-       "cluster:accountconsumer"
-      ],
-      "tcp_ports": 1,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/stephdl/lamp",
-     "stars": 0,
-     "pushed_at": "2026-10-13T14:03:38Z",
-     "archived": false,
-     "checks": {
-      "topic": false,
-      "categories": false,
-      "logo": true,
-      "screenshots": true,
-      "description": true,
-      "translations": false,
-      "docs": true,
-      "min_core": true,
-      "license": true
-     },
-     "released_at": "2026-01-16T14:28:29Z"
     }
    ]
   },
