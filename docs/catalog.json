@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T09:10:25+00:00",
+ "generated_at": "2026-10-17T09:18:53+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -7,7 +7,7 @@
    "url": "https://distfeed.nethserver.org/ns8/updates/",
    "kind": "official",
    "repo": null,
-   "app_count": 22
+   "app_count": 17
   },
   {
    "id": "nethforge",
@@ -1831,87 +1831,6 @@
       "license": true
      },
      "released_at": "2026-02-14T15:00:11Z"
-    }
-   ]
-  },
-  {
-   "id": "core",
-   "categories": [
-    "core"
-   ],
-   "official": true,
-   "stars": 52,
-   "variants": [
-    {
-     "module_id": "core",
-     "forges": [
-      "nethserver"
-     ],
-     "kind": "official",
-     "developer": "NethServer",
-     "name": "Core",
-     "description": {
-      "en": "NethServer 8 core"
-     },
-     "about": "Multi-node application platform for hybrid cloud to run your apps and data anywhere",
-     "authors": [
-      "NethServer team"
-     ],
-     "categories": [
-      "core"
-     ],
-     "code_url": "https://github.com/NethServer/ns8-core",
-     "docs": {
-      "documentation_url": "https://docs.nethserver.org/projects/ns8/en/latest/",
-      "bug_url": "https://github.com/NethServer/dev"
-     },
-     "logo": null,
-     "screenshots": [],
-     "versions": [
-      {
-       "tag": "3.23.1",
-       "testing": false
-      },
-      {
-       "tag": "2.9.6",
-       "testing": false
-      }
-     ],
-     "stable": "3.23.1",
-     "testing": null,
-     "min_core": null,
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "nethserver/redis:3.23.1",
-       "nethserver/rsync:3.23.1",
-       "nethserver/restic:3.23.1",
-       "nethserver/rclone:3.23.1",
-       "grafana/alloy:v1.11.3",
-       "nethserver/support:3.23.1",
-       "prometheus/node-exporter:v1.10.2"
-      ],
-      "authorizations": [],
-      "tcp_ports": 0,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/nethserver/core",
-     "stars": 52,
-     "pushed_at": "2026-10-16T16:09:01Z",
-     "archived": false,
-     "checks": {
-      "topic": false,
-      "categories": true,
-      "logo": false,
-      "screenshots": false,
-      "description": false,
-      "translations": false,
-      "docs": true,
-      "min_core": false,
-      "license": true
-     },
-     "released_at": "2026-10-15T11:41:27Z"
     }
    ]
   },
@@ -5717,79 +5636,6 @@
    ]
   },
   {
-   "id": "ldapproxy",
-   "categories": [
-    "core"
-   ],
-   "official": true,
-   "stars": 0,
-   "variants": [
-    {
-     "module_id": "ldapproxy",
-     "forges": [
-      "nethserver"
-     ],
-     "kind": "official",
-     "developer": "NethServer",
-     "name": "Ldapproxy",
-     "description": {
-      "en": "NethServer 8 core"
-     },
-     "about": "The Ldapproxy module is a communication broker between an account provider LDAP backend (like Samba DC, OpenLDAP, or an external LDAP service) and a consumer module that wants to authenticate its users against the LDAP service (e.g. Nextcloud). It is a L4 proxy for LDAP services built on Nginx.",
-     "authors": [
-      "NethServer team"
-     ],
-     "categories": [
-      "core"
-     ],
-     "code_url": "https://github.com/NethServer/ns8-ldapproxy",
-     "docs": {
-      "documentation_url": "https://nethserver.github.io/ns8-core",
-      "bug_url": "https://github.com/NethServer/dev"
-     },
-     "logo": null,
-     "screenshots": [],
-     "versions": [
-      {
-       "tag": "1.4.0",
-       "testing": false
-      }
-     ],
-     "stable": "1.4.0",
-     "testing": null,
-     "min_core": "3.2.2",
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "nginx:1.31.6-alpine"
-      ],
-      "authorizations": [
-       "node:portsadm"
-      ],
-      "tcp_ports": 1024,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/nethserver/ldapproxy",
-     "stars": 0,
-     "pushed_at": "2026-10-13T11:06:26Z",
-     "archived": false,
-     "checks": {
-      "topic": true,
-      "categories": true,
-      "logo": false,
-      "screenshots": false,
-      "description": false,
-      "translations": false,
-      "docs": true,
-      "min_core": true,
-      "license": true
-     },
-     "released_at": "2026-10-06T10:05:26Z"
-    }
-   ]
-  },
-  {
    "id": "lemonldapng",
    "categories": [
     "security"
@@ -6013,82 +5859,6 @@
       "license": true
      },
      "released_at": "2026-02-22T04:46:55Z"
-    }
-   ]
-  },
-  {
-   "id": "loki",
-   "categories": [
-    "core"
-   ],
-   "official": true,
-   "stars": 0,
-   "variants": [
-    {
-     "module_id": "loki",
-     "forges": [
-      "nethserver"
-     ],
-     "kind": "official",
-     "developer": "NethServer",
-     "name": "Loki",
-     "description": {
-      "en": "NethServer 8 core"
-     },
-     "about": "Start and configure a instance of Loki, a log aggregation system. The module use the Loki official docker image",
-     "authors": [
-      "NethServer team"
-     ],
-     "categories": [
-      "core"
-     ],
-     "code_url": "https://github.com/NethServer/ns8-loki",
-     "docs": {
-      "documentation_url": "https://docs.nethserver.org/projects/ns8/en/latest/log_server.html",
-      "bug_url": "https://github.com/NethServer/dev"
-     },
-     "logo": null,
-     "screenshots": [],
-     "versions": [
-      {
-       "tag": "1.5.3-dev.1",
-       "testing": true
-      },
-      {
-       "tag": "1.5.2",
-       "testing": false
-      }
-     ],
-     "stable": "1.5.2",
-     "testing": "1.5.3-dev.1",
-     "min_core": "3.2.0-0",
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "traefik:v3.7.14",
-       "grafana/loki:3.7.8"
-      ],
-      "authorizations": [],
-      "tcp_ports": 1,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/nethserver/loki",
-     "stars": 0,
-     "pushed_at": "2026-10-16T14:40:22Z",
-     "archived": false,
-     "checks": {
-      "topic": true,
-      "categories": true,
-      "logo": false,
-      "screenshots": false,
-      "description": false,
-      "translations": false,
-      "docs": true,
-      "min_core": true,
-      "license": true
-     },
-     "released_at": "2026-10-15T09:17:33Z"
     }
    ]
   },
@@ -6801,85 +6571,6 @@
       "license": true
      },
      "released_at": "2026-03-17T13:36:59Z"
-    }
-   ]
-  },
-  {
-   "id": "metrics",
-   "categories": [
-    "core"
-   ],
-   "official": true,
-   "stars": 0,
-   "variants": [
-    {
-     "module_id": "metrics",
-     "forges": [
-      "nethserver"
-     ],
-     "kind": "official",
-     "developer": "NethServer",
-     "name": "Metrics",
-     "description": {
-      "en": "NethServer 8 core"
-     },
-     "about": "This module implements the metrics engine for NethServer 8. The module is rootless and runs as a non-privileged user.",
-     "authors": [
-      "NethServer team"
-     ],
-     "categories": [
-      "core"
-     ],
-     "code_url": "https://github.com/NethServer/ns8-metrics",
-     "docs": {
-      "documentation_url": "https://docs.nethserver.org/projects/ns8/en/latest/metrics.html",
-      "bug_url": "https://github.com/NethServer/dev"
-     },
-     "logo": null,
-     "screenshots": [],
-     "versions": [
-      {
-       "tag": "1.6.1-dev.1",
-       "testing": true
-      },
-      {
-       "tag": "1.6.0",
-       "testing": false
-      }
-     ],
-     "stable": "1.6.0",
-     "testing": "1.6.1-dev.1",
-     "min_core": null,
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "prom/prometheus:v3.13.4",
-       "prom/alertmanager:v0.34.1",
-       "nethserver/metrics-grafana:1.6.0"
-      ],
-      "authorizations": [
-       "traefik@any:routeadm"
-      ],
-      "tcp_ports": 0,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/nethserver/metrics",
-     "stars": 0,
-     "pushed_at": "2026-10-16T15:34:45Z",
-     "archived": false,
-     "checks": {
-      "topic": false,
-      "categories": true,
-      "logo": false,
-      "screenshots": false,
-      "description": false,
-      "translations": false,
-      "docs": true,
-      "min_core": false,
-      "license": true
-     },
-     "released_at": "2026-10-15T09:12:24Z"
     }
    ]
   },
@@ -10883,77 +10574,6 @@
       "license": false
      },
      "released_at": null
-    }
-   ]
-  },
-  {
-   "id": "traefik",
-   "categories": [
-    "core"
-   ],
-   "official": true,
-   "stars": 0,
-   "variants": [
-    {
-     "module_id": "traefik",
-     "forges": [
-      "nethserver"
-     ],
-     "kind": "official",
-     "developer": "NethServer",
-     "name": "Traefik",
-     "description": {
-      "en": "NethServer 8 core"
-     },
-     "about": "This module implements a proxy for web applications using Traefik.",
-     "authors": [
-      "NethServer team"
-     ],
-     "categories": [
-      "core"
-     ],
-     "code_url": "https://github.com/NethServer/ns8-traefik",
-     "docs": {
-      "documentation_url": "https://docs.nethserver.org/projects/ns8/en/latest/proxy.html",
-      "bug_url": "https://github.com/NethServer/dev"
-     },
-     "logo": null,
-     "screenshots": [],
-     "versions": [
-      {
-       "tag": "4.2.5",
-       "testing": false
-      }
-     ],
-     "stable": "4.2.5",
-     "testing": null,
-     "min_core": "3.17.0-0",
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "traefik:v3.7.14"
-      ],
-      "authorizations": [],
-      "tcp_ports": 0,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/nethserver/traefik",
-     "stars": 0,
-     "pushed_at": "2026-10-16T14:38:27Z",
-     "archived": false,
-     "checks": {
-      "topic": true,
-      "categories": true,
-      "logo": false,
-      "screenshots": false,
-      "description": false,
-      "translations": false,
-      "docs": true,
-      "min_core": true,
-      "license": true
-     },
-     "released_at": "2026-10-16T14:38:08Z"
     }
    ]
   },
