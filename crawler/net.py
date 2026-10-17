@@ -31,7 +31,7 @@ class Http:
         # Repo probing runs in parallel threads; match the pool to them.
         adapter = requests.adapters.HTTPAdapter(pool_connections=4, pool_maxsize=32)
         self.session.mount("https://", adapter)
-        self.session.headers["User-Agent"] = "ns8-app-index"
+        self.session.headers["User-Agent"] = "ns8-apps"
         self.gh_token = _github_token()
         self.calls = 0
 

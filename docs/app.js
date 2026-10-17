@@ -305,7 +305,7 @@ function link(q) {
 
 function renderFooter() {
   const date = new Date(state.catalog.generated_at).toLocaleString(state.lang);
-  $("#footer").innerHTML = `${esc(t("footer")(date))} <a href="https://github.com/stephdl/ns8-app-index">GitHub</a>`;
+  $("#footer").innerHTML = `${esc(t("footer")(date))} <a href="https://github.com/stephdl/ns8-apps">GitHub</a>`;
 }
 
 function render() {
@@ -448,7 +448,7 @@ function code(text) {
 
 function qualityBlock(v) {
   if (!v.checks) return "";
-  const guide = "https://github.com/stephdl/ns8-app-index#get-your-app-listed";
+  const guide = "https://github.com/stephdl/ns8-apps#get-your-app-listed";
   return `<div class="install"><h4>${t("quality")} · ${score(v)}/${Object.keys(v.checks).length}
     <a href="${guide}" target="_blank" rel="noopener">${t("howTo")}</a></h4></div>`;
 }
