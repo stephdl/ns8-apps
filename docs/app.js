@@ -294,7 +294,6 @@ function render() {
 function card(app) {
   const v = bestVariant(app);
   const others = app.variants.length > 1 ? `<span class="badge variants">${t("variants")(app.variants.length)}</span>` : "";
-  const version = v.stable || v.testing;
   return `<a class="card" href="#/app/${encodeURIComponent(app.id)}">
     <div class="card-head">${logo(v)}<div><h3>${esc(v.name)}</h3>
       <div class="by">${esc(app.variants.map((x) => x.developer).join(", "))}</div></div></div>
@@ -302,7 +301,8 @@ function card(app) {
     <div class="card-foot">
       ${app.official ? `<span class="badge official">${t("officialBadge")}</span>` : ""}${others}
       ${app.variants.every((x) => x.archived) ? `<span class="badge archived">${t("archived")}</span>` : ""}
-      ${version ? `<span class="version">${esc(version)}</span>` : ""}
+      ${v.stable ? `<span class="version">${esc(v.stable)}</span>`
+        : v.testing ? `<span class="badge testing">${esc(v.testing)}</span>` : ""}
       <span class="spacer"></span>
       <span class="stars">★ ${app.stars}</span>
     </div></a>`;
@@ -438,8 +438,8 @@ function renderApp(id) {
       docs.documentation_url && `<a href="${esc(docs.documentation_url)}" target="_blank" rel="noopener">${t("docs")}</a>`,
       docs.bug_url && `<a href="${esc(docs.bug_url)}" target="_blank" rel="noopener">${t("bugs")}</a>`,
     ].filter(Boolean).join("");
-    const history = v.versions.length
-      ? [v.versions[0]].map((x) => `<span class="version ${x.testing ? "testing" : ""}">${esc(x.tag)}</span>`).join("")
+    const history = v.stable
+      ? `<span class="version">${esc(v.stable)}</span>`
       : `<span class="badge">${t("noVersion")}</span>`;
     const shots = v.screenshots.length
       ? `<div class="shots">${v.screenshots.map((s) => `<a href="${esc(s)}" target="_blank" rel="noopener"><img src="${esc(s)}" alt="" loading="lazy"></a>`).join("")}</div>` : "";
