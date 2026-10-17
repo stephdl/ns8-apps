@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T09:07:44+00:00",
+ "generated_at": "2026-10-17T09:10:25+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -7102,7 +7102,7 @@
      },
      "source": "ghcr.io/nethserver/n8n",
      "stars": 0,
-     "pushed_at": "2026-10-14T08:22:29Z",
+     "pushed_at": "2026-10-17T08:24:23Z",
      "archived": false,
      "checks": {
       "topic": false,
