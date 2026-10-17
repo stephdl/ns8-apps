@@ -81,7 +81,8 @@ Check these points, in order:
 2. If the repository is a fork of `NethServer/ns8-nethforge`, at least one app in it has a `docs.code_url` owned by the same GitHub account as the fork. A fork whose apps all point to other accounts is treated as a copy of NethForge.
 3. If the repository is not a fork, it is public, has `ns8` in its name or the `ns8` topic, and serves `repodata.json` on its default branch or on a `repomd` branch.
 4. The repository is not hosted under the `NethServer` or `nethesis` organizations, whose apps already come from the official repository.
-5. Wait for the next nightly crawl, or ask for a manual run.
+5. The module id is not in `exclude_apps`. System modules installed with the core (`core`, `traefik`, `loki`, `metrics`, `ldapproxy`) are not listed as apps.
+6. Wait for the next nightly crawl, or ask for a manual run.
 
 If none of this helps, open an issue in this repository with the URL of your software repository.
 
@@ -99,6 +100,8 @@ forges:
     github: owner/ns8-repo
 exclude_repos:
   - owner/ns8-not-a-repository
+exclude_apps:
+  - core      # system modules installed with the core are not apps
 aliases:
   uptime-kuma: kuma
 ```

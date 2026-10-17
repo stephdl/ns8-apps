@@ -35,11 +35,10 @@ def add_forge(catalog, forges, forge, repodata, kind):
     if not isinstance(repodata, list):
         log.warning("forge %s: no usable repodata.json", forge["id"])
         return
+    repodata = [a for a in repodata if a.get("id") and a["id"] not in catalog.excluded]
     forge["app_count"] = len(repodata)
     forges.append(forge)
     for app in repodata:
-        if not app.get("id"):
-            continue
         catalog.add(app["id"], make_variant(app, app_id=app["id"], forge=forge, kind=kind,
                                             versions=forge_versions(app), asset_base=forge["url"]))
     log.info("forge %s: %d apps", forge["id"], len(repodata))
@@ -160,6 +159,7 @@ def main():
     http = Http(use_cache=args.cache)
     gh = GitHub(http)
     catalog = Catalog(cfg.get("aliases"))
+    catalog.excluded = set(cfg.get("exclude_apps") or [])
     forges = []
 
     excluded = {r.lower() for r in cfg.get("exclude_repos") or []}

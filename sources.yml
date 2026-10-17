@@ -30,6 +30,14 @@ exclude_orgs:
 # GitHub repos that discovery must ignore, as owner/name.
 exclude_repos: []
 
+# Module ids that are not apps: system modules installed with the core.
+exclude_apps:
+  - core
+  - ldapproxy
+  - loki
+  - metrics
+  - traefik
+
 # Group apps published under different ids, as alias: canonical id.
 aliases:
   uptime-kuma: kuma
