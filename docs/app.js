@@ -5,9 +5,9 @@ const UI = {
     search: "Search apps, developers, categories…",
     tagline: "Every NethServer 8 app you can install from a software repository, official and community, in one place.",
     apps: "apps", developers: "developers", repositories: "repositories", updated: "updated",
-    byCategory: "Browse by category", byRepo: "Browse by repository", byDev: "Browse by developer",
+    byCategory: "Browse by category", byRepo: "Browse by repository",
     recent: "Recently updated", popular: "Most starred", seeAll: "See all",
-    all: "All apps", category: "Category", repository: "Repository", developer: "Developer",
+    all: "All apps", category: "Category", repository: "Repository",
     filters: "Filters", official: "Official only", showTesting: "Show testing versions", clear: "Clear filters",
     sort: { stars: "Most stars", name: "Name", updated: "Last update" , quality: "Best quality" },
     noResult: "No app matches these filters.", back: "← All apps",
@@ -33,9 +33,9 @@ const UI = {
     search: "Chercher une app, un développeur, une catégorie…",
     tagline: "Toutes les applications NethServer 8 installables depuis un dépôt logiciel, officielles et communautaires, au même endroit.",
     apps: "apps", developers: "développeurs", repositories: "dépôts", updated: "mis à jour",
-    byCategory: "Parcourir par catégorie", byRepo: "Parcourir par dépôt", byDev: "Parcourir par développeur",
+    byCategory: "Parcourir par catégorie", byRepo: "Parcourir par dépôt",
     recent: "Mises à jour récentes", popular: "Les plus étoilées", seeAll: "Tout voir",
-    all: "Toutes les apps", category: "Catégorie", repository: "Dépôt", developer: "Développeur",
+    all: "Toutes les apps", category: "Catégorie", repository: "Dépôt",
     filters: "Filtres", official: "Officielles seulement", showTesting: "Afficher les versions testing", clear: "Effacer les filtres",
     sort: { stars: "Plus d'étoiles", name: "Nom", updated: "Dernière mise à jour" , quality: "Meilleure qualité" },
     noResult: "Aucune app ne correspond à ces filtres.", back: "← Toutes les apps",
@@ -61,9 +61,9 @@ const UI = {
     search: "Cerca app, sviluppatori, categorie…",
     tagline: "Tutte le applicazioni NethServer 8 installabili da un repository software, ufficiali e della community, in un unico posto.",
     apps: "app", developers: "sviluppatori", repositories: "repository", updated: "aggiornato",
-    byCategory: "Sfoglia per categoria", byRepo: "Sfoglia per repository", byDev: "Sfoglia per sviluppatore",
+    byCategory: "Sfoglia per categoria", byRepo: "Sfoglia per repository",
     recent: "Aggiornate di recente", popular: "Le più stellate", seeAll: "Vedi tutte",
-    all: "Tutte le app", category: "Categoria", repository: "Repository", developer: "Sviluppatore",
+    all: "Tutte le app", category: "Categoria", repository: "Repository",
     filters: "Filtri", official: "Solo ufficiali", showTesting: "Mostra versioni testing", clear: "Azzera filtri",
     sort: { stars: "Più stelle", name: "Nome", updated: "Ultimo aggiornamento" , quality: "Qualità migliore" },
     noResult: "Nessuna app corrisponde a questi filtri.", back: "← Tutte le app",
@@ -89,9 +89,9 @@ const UI = {
     search: "Apps, Entwickler, Kategorien suchen…",
     tagline: "Alle NethServer-8-Anwendungen, die sich aus einem Software-Repository installieren lassen, offiziell und aus der Community, an einem Ort.",
     apps: "Apps", developers: "Entwickler", repositories: "Repositorys", updated: "aktualisiert",
-    byCategory: "Nach Kategorie stöbern", byRepo: "Nach Repository stöbern", byDev: "Nach Entwickler stöbern",
+    byCategory: "Nach Kategorie stöbern", byRepo: "Nach Repository stöbern",
     recent: "Kürzlich aktualisiert", popular: "Meiste Sterne", seeAll: "Alle anzeigen",
-    all: "Alle Apps", category: "Kategorie", repository: "Repository", developer: "Entwickler",
+    all: "Alle Apps", category: "Kategorie", repository: "Repository",
     filters: "Filter", official: "Nur offizielle", showTesting: "Testing-Versionen anzeigen", clear: "Filter zurücksetzen",
     sort: { stars: "Meiste Sterne", name: "Name", updated: "Letzte Aktualisierung" , quality: "Beste Qualität" },
     noResult: "Keine App passt zu diesen Filtern.", back: "← Alle Apps",
@@ -117,9 +117,9 @@ const UI = {
     search: "Buscar apps, desarrolladores, categorías…",
     tagline: "Todas las aplicaciones de NethServer 8 instalables desde un repositorio de software, oficiales y de la comunidad, en un solo lugar.",
     apps: "apps", developers: "desarrolladores", repositories: "repositorios", updated: "actualizado",
-    byCategory: "Explorar por categoría", byRepo: "Explorar por repositorio", byDev: "Explorar por desarrollador",
+    byCategory: "Explorar por categoría", byRepo: "Explorar por repositorio",
     recent: "Actualizadas recientemente", popular: "Más estrellas", seeAll: "Ver todas",
-    all: "Todas las apps", category: "Categoría", repository: "Repositorio", developer: "Desarrollador",
+    all: "Todas las apps", category: "Categoría", repository: "Repositorio",
     filters: "Filtros", official: "Solo oficiales", showTesting: "Mostrar versiones testing", clear: "Borrar filtros",
     sort: { stars: "Más estrellas", name: "Nombre", updated: "Última actualización" , quality: "Mejor calidad" },
     noResult: "Ninguna app coincide con estos filtros.", back: "← Todas las apps",
@@ -274,7 +274,6 @@ function filterApps(q) {
     words.every((w) => searchText(app).includes(w)) &&
     (!q.cat || app.categories.includes(q.cat)) &&
     (!q.repo || app.variants.some((v) => repoOf(v) === q.repo)) &&
-    (!q.dev || app.variants.some((v) => v.developer === q.dev)) &&
     (!q.official || app.official) &&
     (q.testing || app.variants.some((v) => v.stable) || !app.variants.some((v) => v.testing))
   );
@@ -376,10 +375,6 @@ function renderHome() {
     <section class="section">
       <div class="section-head"><h2>${t("popular")}</h2><a href="${link({ sort: "stars" })}">${t("seeAll")}</a></div>
       <div class="grid">${sortApps(apps, "stars").slice(0, 6).map(card).join("")}</div>
-    </section>
-    <section class="section">
-      <div class="section-head"><h2>${t("byDev")}</h2></div>
-      ${tiles(devs, (d) => link({ dev: d }), (d) => d)}
     </section>`;
 }
 
@@ -396,7 +391,7 @@ function renderBrowse(q) {
   // Facet counts follow the other active filters, so each choice shows what it would return.
   const without = (key) => filterApps({ ...q, [key]: "" });
   const chips = [
-    q.q && `“${esc(q.q)}”`, q.cat && catName(q.cat), q.repo && repoLabel(q.repo), q.dev,
+    q.q && `“${esc(q.q)}”`, q.cat && catName(q.cat), q.repo && repoLabel(q.repo),
   ].filter(Boolean);
 
   const wide = matchMedia("(min-width: 901px)").matches;
@@ -404,7 +399,6 @@ function renderBrowse(q) {
     <details class="filters-box" ${wide || q.open ? "open" : ""}><summary>${t("filters")}</summary><aside class="filters">
       ${facet(t("category"), count(without("cat"), (a) => a.categories), "cat", q, catName)}
       ${facet(t("repository"), count(without("repo"), (a) => new Set(a.variants.map(repoOf))), "repo", q, repoLabel)}
-      ${facet(t("developer"), count(without("dev"), (a) => new Set(a.variants.map((v) => v.developer))), "dev", q, (d) => d)}
       <div>
         <label><input type="checkbox" id="f-official" ${q.official ? "checked" : ""}> ${t("official")}</label>
         <label><input type="checkbox" id="f-testing" ${q.testing ? "checked" : ""}> ${t("showTesting")}</label>
