@@ -73,6 +73,14 @@ class GitHub:
                 return url
         return f"{RAW}/{full_name}/{ref}/ns8/updates/"
 
+    def release_date(self, full_name, tag):
+        """When the tag was released, from the GitHub release or else the tagged commit."""
+        rel = self.http.get(f"{API}/repos/{full_name}/releases/tags/{tag}")
+        if rel and rel.get("published_at"):
+            return rel["published_at"]
+        commit = self.http.get(f"{API}/repos/{full_name}/commits/{tag}")
+        return ((commit or {}).get("commit") or {}).get("committer", {}).get("date")
+
     def find_candidates(self, exclude_orgs):
         """Repos that may be software repositories. Callers check for repodata.json to be sure."""
         excludes = " ".join(f"-org:{o}" for o in exclude_orgs)
