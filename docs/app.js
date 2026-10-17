@@ -23,6 +23,7 @@ const UI = {
     stepTesting: "Tick “Enable testing”: this app has no stable release yet.",
     stepInstall: (n) => `Back in the Software Center, search ${n} and click Install.`,
     quality: "Quality", howTo: "How to improve", checks: {"repository": "Published in a software repository", "topic": "GitHub topic “ns8”", "categories": "Standard categories", "logo": "Logo", "screenshots": "Screenshots", "description": "Description of 60+ characters", "translations": "Translated description", "docs": "Documentation and bug links", "min_core": "Minimum core label", "license": "License file"},
+    techUi: {"tech": "Technical details", "rootless": "Runs rootless", "rootfull": "Runs as root", "images": "Container images", "permissions": "Permissions", "noPermissions": "none", "ports": "Ports reserved", "volumes": "Volumes", "tcp": "TCP", "udp": "UDP", "roles": {"routeadm": "publish web routes in Traefik", "fulladm": "full control of Traefik", "fwadm": "open ports in the node firewall", "portsadm": "reserve extra ports on the node", "accountconsumer": "read users and groups from an account provider", "mailadm": "manage the mail server", "selfadm": "manage its own instance"}, "scope": {"node": "on its node", "any": "on any node", "cluster": "in the cluster"}},
     copy: "Copy", copied: "Copied", minCore: "Needs core", sortLabel: "Sort", archived: "archived",
     footer: (d) => `Data crawled from GitHub on ${d}. Stars are the stars of each app's source repository.`,
   },
@@ -48,6 +49,7 @@ const UI = {
     stepTesting: "Cocher « Activer testing » : cette app n'a pas encore de version stable.",
     stepInstall: (n) => `De retour dans le Software Center, chercher ${n} et cliquer sur Installer.`,
     quality: "Qualité", howTo: "Comment améliorer", checks: {"repository": "Publiée dans un dépôt logiciel", "topic": "Topic GitHub « ns8 »", "categories": "Catégories standard", "logo": "Logo", "screenshots": "Captures d'écran", "description": "Description de 60 caractères ou plus", "translations": "Description traduite", "docs": "Liens documentation et bugs", "min_core": "Label core minimum", "license": "Fichier de licence"},
+    techUi: {"tech": "Détails techniques", "rootless": "Tourne sans root", "rootfull": "Tourne en root", "images": "Images de conteneur", "permissions": "Droits", "noPermissions": "aucun", "ports": "Ports réservés", "volumes": "Volumes", "tcp": "TCP", "udp": "UDP", "roles": {"routeadm": "publier des routes web dans Traefik", "fulladm": "contrôle complet de Traefik", "fwadm": "ouvrir des ports dans le pare-feu du nœud", "portsadm": "réserver des ports supplémentaires sur le nœud", "accountconsumer": "lire les utilisateurs et groupes d'un fournisseur de comptes", "mailadm": "gérer le serveur mail", "selfadm": "gérer sa propre instance"}, "scope": {"node": "sur son nœud", "any": "sur n'importe quel nœud", "cluster": "dans le cluster"}},
     copy: "Copier", copied: "Copié", minCore: "Core requis", sortLabel: "Trier", archived: "archivé",
     footer: (d) => `Données collectées sur GitHub le ${d}. Les étoiles sont celles du dépôt de code de chaque app.`,
   },
@@ -73,6 +75,7 @@ const UI = {
     stepTesting: "Spunta “Abilita testing”: questa app non ha ancora una versione stabile.",
     stepInstall: (n) => `Torna al Software Center, cerca ${n} e clicca Installa.`,
     quality: "Qualità", howTo: "Come migliorare", checks: {"repository": "Pubblicata in un repository software", "topic": "Topic GitHub “ns8”", "categories": "Categorie standard", "logo": "Logo", "screenshots": "Screenshot", "description": "Descrizione di almeno 60 caratteri", "translations": "Descrizione tradotta", "docs": "Link a documentazione e bug", "min_core": "Label core minimo", "license": "File di licenza"},
+    techUi: {"tech": "Dettagli tecnici", "rootless": "Gira senza root", "rootfull": "Gira come root", "images": "Immagini container", "permissions": "Permessi", "noPermissions": "nessuno", "ports": "Porte riservate", "volumes": "Volumi", "tcp": "TCP", "udp": "UDP", "roles": {"routeadm": "pubblicare route web in Traefik", "fulladm": "controllo completo di Traefik", "fwadm": "aprire porte nel firewall del nodo", "portsadm": "riservare porte aggiuntive sul nodo", "accountconsumer": "leggere utenti e gruppi da un provider di account", "mailadm": "gestire il server mail", "selfadm": "gestire la propria istanza"}, "scope": {"node": "sul suo nodo", "any": "su qualsiasi nodo", "cluster": "nel cluster"}},
     copy: "Copia", copied: "Copiato", minCore: "Core richiesto", sortLabel: "Ordina",
     footer: (d) => `Dati raccolti da GitHub il ${d}. Le stelle sono quelle del repository sorgente di ogni app.`,
   },
@@ -98,6 +101,7 @@ const UI = {
     stepTesting: "„Testing aktivieren“ ankreuzen: diese App hat noch kein stabiles Release.",
     stepInstall: (n) => `Zurück im Software Center nach ${n} suchen und auf Installieren klicken.`,
     quality: "Qualität", howTo: "So verbessern", checks: {"repository": "In einem Software-Repository veröffentlicht", "topic": "GitHub-Topic „ns8“", "categories": "Standardkategorien", "logo": "Logo", "screenshots": "Screenshots", "description": "Beschreibung mit 60+ Zeichen", "translations": "Übersetzte Beschreibung", "docs": "Links zu Doku und Fehlermeldung", "min_core": "Label für Mindest-Core", "license": "Lizenzdatei"},
+    techUi: {"tech": "Technische Details", "rootless": "Läuft ohne root", "rootfull": "Läuft als root", "images": "Container-Images", "permissions": "Berechtigungen", "noPermissions": "keine", "ports": "Reservierte Ports", "volumes": "Volumes", "tcp": "TCP", "udp": "UDP", "roles": {"routeadm": "Web-Routen in Traefik veröffentlichen", "fulladm": "volle Kontrolle über Traefik", "fwadm": "Ports in der Firewall des Knotens öffnen", "portsadm": "zusätzliche Ports auf dem Knoten reservieren", "accountconsumer": "Benutzer und Gruppen eines Kontoanbieters lesen", "mailadm": "den Mailserver verwalten", "selfadm": "die eigene Instanz verwalten"}, "scope": {"node": "auf seinem Knoten", "any": "auf jedem Knoten", "cluster": "im Cluster"}},
     copy: "Kopieren", copied: "Kopiert", minCore: "Benötigt Core", sortLabel: "Sortieren",
     footer: (d) => `Daten am ${d} von GitHub gesammelt. Die Sterne sind die des Quell-Repositorys jeder App.`,
   },
@@ -123,6 +127,7 @@ const UI = {
     stepTesting: "Marca “Activar testing”: esta app aún no tiene versión estable.",
     stepInstall: (n) => `De vuelta en el Software Center, busca ${n} y haz clic en Instalar.`,
     quality: "Calidad", howTo: "Cómo mejorar", checks: {"repository": "Publicada en un repositorio de software", "topic": "Topic de GitHub “ns8”", "categories": "Categorías estándar", "logo": "Logo", "screenshots": "Capturas de pantalla", "description": "Descripción de 60+ caracteres", "translations": "Descripción traducida", "docs": "Enlaces a documentación y errores", "min_core": "Label de core mínimo", "license": "Archivo de licencia"},
+    techUi: {"tech": "Detalles técnicos", "rootless": "Se ejecuta sin root", "rootfull": "Se ejecuta como root", "images": "Imágenes de contenedor", "permissions": "Permisos", "noPermissions": "ninguno", "ports": "Puertos reservados", "volumes": "Volúmenes", "tcp": "TCP", "udp": "UDP", "roles": {"routeadm": "publicar rutas web en Traefik", "fulladm": "control total de Traefik", "fwadm": "abrir puertos en el cortafuegos del nodo", "portsadm": "reservar puertos adicionales en el nodo", "accountconsumer": "leer usuarios y grupos de un proveedor de cuentas", "mailadm": "gestionar el servidor de correo", "selfadm": "gestionar su propia instancia"}, "scope": {"node": "en su nodo", "any": "en cualquier nodo", "cluster": "en el clúster"}},
     copy: "Copiar", copied: "Copiado", minCore: "Requiere core", sortLabel: "Ordenar",
     footer: (d) => `Datos recopilados de GitHub el ${d}. Las estrellas son las del repositorio de código de cada app.`,
   },
@@ -424,6 +429,33 @@ function qualityBlock(v) {
     <a href="${guide}" target="_blank" rel="noopener">${t("howTo")}</a></h4></div>`;
 }
 
+function permission(auth) {
+  // Labels look like "traefik@node:routeadm" or "cluster:accountconsumer".
+  const ui = t("techUi");
+  const [target, role] = auth.split(":");
+  const [module, scope] = target.includes("@") ? target.split("@") : ["", target];
+  const what = ui.roles[role];
+  if (!what) return `<code>${esc(auth)}</code>`;
+  const where = module ? ` ${ui.scope[scope] || ""}` : "";
+  return `${esc(what)}${esc(where)} <code>${esc(auth)}</code>`;
+}
+
+function techBlock(v) {
+  const x = v.tech;
+  if (!x) return "";
+  const ui = t("techUi");
+  const ports = [x.tcp_ports && `${x.tcp_ports} ${ui.tcp}`, x.udp_ports && `${x.udp_ports} ${ui.udp}`].filter(Boolean).join(", ");
+  const rows = [
+    [ui.permissions, x.authorizations.length ? `<ul class="perm">${x.authorizations.map((a) => `<li>${permission(a)}</li>`).join("")}</ul>` : ui.noPermissions],
+    [ui.images, x.images.map((i) => `<code>${esc(i)}</code>`).join(" ")],
+    ports && [ui.ports, ports],
+    x.volumes.length && [ui.volumes, x.volumes.map((i) => `<code>${esc(i)}</code>`).join(" ")],
+  ].filter(Boolean);
+  return `<details class="tech"><summary>${ui.tech}
+      <span class="badge ${x.rootfull ? "rootfull" : ""}">${x.rootfull ? ui.rootfull : ui.rootless}</span></summary>
+    <dl>${rows.map(([k, val]) => `<dt>${k}</dt><dd>${val}</dd>`).join("")}</dl></details>`;
+}
+
 function renderApp(id) {
   const app = state.catalog.apps.find((a) => a.id === id);
   if (!app) {
@@ -460,6 +492,7 @@ function renderApp(id) {
         <div class="links">${links}${v.min_core ? `<span>${t("minCore")} ≥ ${esc(v.min_core)}</span>` : ""}</div>
         <div><div class="install"><h4>${t("history")}</h4></div><div class="history">${history}</div></div>
         <div class="install"><h4>${t("install")}</h4>${installBlock(v)}</div>
+        ${techBlock(v)}
         ${qualityBlock(v)}
         ${shots}
       </div></details>`;

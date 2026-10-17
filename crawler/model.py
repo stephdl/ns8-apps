@@ -99,6 +99,27 @@ def readme_excerpt(text):
     return None
 
 
+def tech_details(labels):
+    """What the module asks from the node, read from its image labels."""
+    def words(key):
+        return (labels.get(key) or "").split()
+
+    def short_image(ref):
+        ref = ref.split("@sha256:")[0]
+        return re.sub(r"^(docker\.io|ghcr\.io|quay\.io)/(library/)?", "", ref)
+
+    if not labels:
+        return None
+    return {
+        "rootfull": labels.get("org.nethserver.rootfull") == "1",
+        "images": [short_image(i) for i in words("org.nethserver.images")],
+        "authorizations": words("org.nethserver.authorizations"),
+        "tcp_ports": int(labels.get("org.nethserver.tcp-ports-demand") or 0),
+        "udp_ports": int(labels.get("org.nethserver.udp-ports-demand") or 0),
+        "volumes": words("org.nethserver.volumes"),
+    }
+
+
 def make_variant(meta, *, app_id, forge, kind, versions, asset_base=None, code_url=None):
     docs = meta.get("docs") or {}
     # The discovered repo is more reliable than a metadata link left from the template.
@@ -146,6 +167,7 @@ def make_variant(meta, *, app_id, forge, kind, versions, asset_base=None, code_u
         "stable": stable,
         "testing": testing,
         "min_core": labels.get("org.nethserver.min-core"),
+        "tech": tech_details(labels),
         "source": meta.get("source"),
         "stars": None,
         "pushed_at": None,
@@ -183,7 +205,7 @@ class Catalog:
             into["kind"] = other["kind"]
         # Keep the newest published version among the places it is published.
         if other["stable"] and (not into["stable"] or version_key(other["stable"]) > version_key(into["stable"])):
-            for k in ("versions", "stable", "testing", "min_core"):
+            for k in ("versions", "stable", "testing", "min_core", "tech"):
                 into[k] = other[k]
         for k in ("logo", "source"):
             into[k] = into[k] or other[k]
