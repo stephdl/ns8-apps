@@ -1,0 +1,35 @@
+# Software repositories read by crawler/crawl.py.
+# Only apps published in a software repository are listed. Forks of
+# ns8-nethforge and GitHub repos serving ns8/updates/repodata.json are found
+# automatically. List here only what discovery cannot find.
+
+# Repositories that NS8 ships with.
+official:
+  - id: nethserver
+    name: NethServer (default)
+    url: https://distfeed.nethserver.org/ns8/updates/
+
+# The community forge every other forge is forked from.
+nethforge: NethServer/ns8-nethforge
+
+# Repositories discovery cannot find, for instance served from GitLab Pages
+# or a private web server. "url" is where ns8/updates/repodata.json lives,
+# the same URL users add in the Software Center.
+forges: []
+#  - id: someone
+#    url: https://example.org/ns8/updates/
+#  - id: other
+#    github: owner/ns8-repo
+
+# Organizations skipped by discovery. Their apps already come from the
+# official repository.
+exclude_orgs:
+  - NethServer
+  - nethesis
+
+# GitHub repos that discovery must ignore, as owner/name.
+exclude_repos: []
+
+# Group apps published under different ids, as alias: canonical id.
+aliases:
+  uptime-kuma: kuma
