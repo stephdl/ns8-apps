@@ -48,14 +48,26 @@ class GitHub:
     def forge_repodata(self, full_name, ref="repomd"):
         return self.raw(full_name, ref, "ns8/updates/repodata.json")
 
-    def find_forge_ref(self, full_name):
-        """Branch serving ns8/updates/repodata.json, or None when the repo is not a forge."""
+    def find_forge(self, full_name, upstream_cname=None):
+        """Where the repo serves its repodata.json, as {url, alt_url, data}, or None when it is not a forge."""
         repo = self.repo(full_name)
         if not repo:
             return None
         for ref in dict.fromkeys([repo["default_branch"], "repomd"]):
-            if isinstance(self.forge_repodata(full_name, ref), list):
-                return ref
+            data = self.forge_repodata(full_name, ref)
+            if isinstance(data, list):
+                url, alt_url = self.forge_public_url(full_name, ref, upstream_cname)
+                return {"url": url, "alt_url": alt_url, "data": data}
+        # Some forges deploy repodata.json with a Pages workflow, so it is in no branch.
+        if not repo.get("has_pages"):
+            return None
+        owner, name = full_name.split("/")
+        bases = [repo.get("homepage") or "", f"https://{owner.lower()}.github.io/{name}/"]
+        for base in dict.fromkeys(b.rstrip("/") + "/" for b in bases if b.startswith("http")):
+            for url in (base, f"{base}ns8/updates/"):
+                data = self.http.get(f"{url}repodata.json")
+                if isinstance(data, list):
+                    return {"url": url, "alt_url": None, "data": data}
         return None
 
     def forge_public_url(self, full_name, ref="repomd", upstream_cname=None):

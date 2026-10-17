@@ -79,11 +79,12 @@ def crawl_forges(cfg, gh, http, catalog, forges, candidates):
     # Forges started from scratch instead of forking nethforge.
     known = {f["repo"] for f in forges}
     with ThreadPoolExecutor(PROBE_WORKERS) as pool:
-        refs = dict(zip(candidates, pool.map(gh.find_forge_ref, candidates)))
-    found = [(n, ref, gh.forge_repodata(n, ref)) for n, ref in refs.items()
-             if ref and n not in known and not (gh.repo(n) or {}).get("fork")]
+        probes = dict(zip(candidates, pool.map(lambda n: gh.find_forge(n, upstream_cname), candidates)))
+    found = [(n, p) for n, p in probes.items()
+             if p and n not in known and not (gh.repo(n) or {}).get("fork")]
     # Biggest first, so a stale copy left in another repo adds nothing new and is skipped.
-    for full_name, ref, data in sorted(found, key=lambda f: -len(f[2])):
+    for full_name, probe in sorted(found, key=lambda f: -len(f[1]["data"])):
+        data = probe["data"]
         owner = full_name.split("/")[0]
         if owner.lower() not in {code_owner(a) for a in data}:
             continue
@@ -92,8 +93,7 @@ def crawl_forges(cfg, gh, http, catalog, forges, candidates):
             log.info("forge %s: every app already listed, skipped", full_name)
             continue
         forge_id = owner if owner not in {f["id"] for f in forges} else full_name
-        url, alt_url = gh.forge_public_url(full_name, ref, upstream_cname)
-        forge = {"id": forge_id, "name": full_name, "url": url, "alt_url": alt_url,
+        forge = {"id": forge_id, "name": full_name, "url": probe["url"], "alt_url": probe["alt_url"],
                  "kind": "community", "repo": full_name}
         add_forge(catalog, forges, forge, data, "community")
 

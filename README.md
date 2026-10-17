@@ -13,7 +13,7 @@ The index lists what an administrator can install from the NS8 Software Center, 
 1. **Publish the app in a software repository.** A software repository serves `ns8/updates/repodata.json`, built by [ns8-repomd](https://github.com/NethServer/ns8-repomd) from one folder per app. The usual way is to fork [ns8-nethforge](https://github.com/NethServer/ns8-nethforge), add your app folder, and let its workflow publish the `repomd` branch.
 2. **Make the repository findable.** One of these is enough:
    - a fork of `NethServer/ns8-nethforge`,
-   - a public GitHub repository with `ns8` in its name or the `ns8` topic, serving `ns8/updates/repodata.json` on its default branch or on a `repomd` branch,
+   - a public GitHub repository with `ns8` in its name or the `ns8` topic, serving `ns8/updates/repodata.json` on its default branch or on a `repomd` branch, or serving `repodata.json` through GitHub Pages (at the root of the site or under `ns8/updates/`),
    - an entry in `sources.yml`, for a repository hosted anywhere else (GitLab Pages, your own web server). Open a pull request.
 3. **Publish at least one of your own apps.** A fork that only republishes NethForge apps is skipped.
 
@@ -79,7 +79,7 @@ Check these points, in order:
 
 1. The software repository serves `ns8/updates/repodata.json` and your app is in it.
 2. If the repository is a fork of `NethServer/ns8-nethforge`, at least one app in it has a `docs.code_url` owned by the same GitHub account as the fork. A fork whose apps all point to other accounts is treated as a copy of NethForge.
-3. If the repository is not a fork, it is public, has `ns8` in its name or the `ns8` topic, and serves `repodata.json` on its default branch or on a `repomd` branch.
+3. If the repository is not a fork, it is public, has `ns8` in its name or the `ns8` topic, and serves `repodata.json` on its default branch, on a `repomd` branch, or on its GitHub Pages site. For a Pages site the crawler tries the repository homepage and `https://<owner>.github.io/<repo>/`, at the root and under `ns8/updates/`.
 4. The repository is not hosted under the `NethServer` or `nethesis` organizations, whose apps already come from the official repository.
 5. The module id is not in `exclude_apps`. System modules installed with the core (`core`, `traefik`, `loki`, `metrics`, `ldapproxy`) are not listed as apps.
 6. Wait for the next nightly crawl, or ask for a manual run.
