@@ -2,7 +2,7 @@
 
 A catalog of every NethServer 8 application published in a software repository, official and community, rebuilt every night.
 
-You can search apps, browse them by category, repository or developer, and compare the variants when several developers publish the same software. Each app page shows its stable version, how to install it from the Software Center, and a quality score.
+You can search apps by name, description or developer, browse them by category or repository, and compare the variants when several developers publish the same software. Each app page shows its stable version, how to install it from the Software Center, and a quality score.
 
 ## Get your app listed
 
