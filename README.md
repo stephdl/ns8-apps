@@ -1,4 +1,6 @@
-# NS8 App Index
+# NS8 Apps
+
+**Site: [stephdl.github.io/ns8-apps](https://stephdl.github.io/ns8-apps/)**
 
 A catalog of every NethServer 8 application published in a software repository, official and community, rebuilt every night.
 
