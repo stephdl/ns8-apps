@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T10:41:06+00:00",
+ "generated_at": "2026-10-17T10:54:49+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -952,7 +952,7 @@
      },
      "source": "ghcr.io/danb35/automx",
      "stars": 0,
-     "pushed_at": "2026-10-17T10:24:57Z",
+     "pushed_at": "2026-10-17T10:48:44Z",
      "archived": false,
      "checks": {
       "topic": true,
