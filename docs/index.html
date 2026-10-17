@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NS8 App Index</title>
+  <meta name="description" content="Every NethServer 8 app you can install from a software repository, official and community, in one searchable catalog.">
+  <link rel="icon" type="image/png" href="ns8-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <img class="brand-mark" src="ns8-logo.png" alt="">
+      <span>NS8 App Index</span>
+    </a>
+    <form class="search" id="search-form" role="search">
+      <input id="search" type="search" autocomplete="off" spellcheck="false">
+    </form>
+    <select id="lang" aria-label="Language">
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="it">IT</option>
+      <option value="de">DE</option>
+      <option value="es">ES</option>
+    </select>
+  </header>
+  <main id="view" aria-live="polite"></main>
+  <footer class="footer" id="footer"></footer>
+  <script src="app.js"></script>
+</body>
+</html>
