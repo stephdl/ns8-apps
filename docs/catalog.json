@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T10:54:49+00:00",
+ "generated_at": "2026-10-17T11:31:45+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -927,17 +927,17 @@
      ],
      "versions": [
       {
-       "tag": "0.2.1",
+       "tag": "0.2.2",
        "testing": false
       }
      ],
-     "stable": "0.2.1",
+     "stable": "0.2.2",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "danb35/automx-app:0.2.1"
+       "danb35/automx-app:0.2.2"
       ],
       "authorizations": [
        "traefik@node:routeadm,certadm",
@@ -965,7 +965,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-09-30T10:19:58Z"
+     "released_at": "2026-10-17T10:48:26Z"
     }
    ]
   },
@@ -7704,6 +7704,10 @@
      "screenshots": [],
      "versions": [
       {
+       "tag": "1.7.12-testing.1",
+       "testing": true
+      },
+      {
        "tag": "1.7.11",
        "testing": false
       },
@@ -7717,7 +7721,7 @@
       }
      ],
      "stable": "1.7.11",
-     "testing": null,
+     "testing": "1.7.12-testing.1",
      "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
@@ -12514,7 +12518,7 @@
     "system_administration"
    ],
    "official": false,
-   "stars": 0,
+   "stars": 1,
    "variants": [
     {
      "module_id": "windeploy",
@@ -12562,7 +12566,7 @@
       "volumes": []
      },
      "source": "ghcr.io/tebbiworld/windeploy",
-     "stars": 0,
+     "stars": 1,
      "pushed_at": "2026-10-16T20:16:18Z",
      "archived": false,
      "checks": {
