@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T09:45:09+00:00",
+ "generated_at": "2026-10-17T09:52:39+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -80,6 +80,42 @@
    "kind": "community",
    "repo": "tebbiworld/ns8-repo",
    "app_count": 21
+  },
+  {
+   "id": "Platypuschan",
+   "name": "Platypuschan/ns8-modules",
+   "url": "https://platypuschan.github.io/ns8-modules/ns8/updates/",
+   "alt_url": null,
+   "kind": "community",
+   "repo": "Platypuschan/ns8-modules",
+   "app_count": 8
+  },
+  {
+   "id": "danb35",
+   "name": "danb35/ns8-repomd",
+   "url": "https://danb35.github.io/ns8-repomd/",
+   "alt_url": null,
+   "kind": "community",
+   "repo": "danb35/ns8-repomd",
+   "app_count": 2
+  },
+  {
+   "id": "antonwantstosleep",
+   "name": "antonwantstosleep/ns8-repo",
+   "url": "https://antonwantstosleep.github.io/ns8-repo/",
+   "alt_url": null,
+   "kind": "community",
+   "repo": "antonwantstosleep/ns8-repo",
+   "app_count": 1
+  },
+  {
+   "id": "francio87",
+   "name": "francio87/ns8-repomd",
+   "url": "https://francio87.github.io/ns8-repomd/",
+   "alt_url": null,
+   "kind": "community",
+   "repo": "francio87/ns8-repomd",
+   "app_count": 1
   }
  ],
  "apps": [
@@ -370,6 +406,84 @@
       "min_core": false,
       "license": true
      }
+    }
+   ]
+  },
+  {
+   "id": "adguard-home",
+   "categories": [
+    "security",
+    "system_administration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "adguard-home",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "Adguard-home",
+     "description": {
+      "en": "Network-wide DNS server that blocks ads and trackers, with DNS-over-HTTPS.",
+      "de": "Netzwerkweiter DNS-Server, der Werbung und Tracker blockiert, mit DNS-over-HTTPS."
+     },
+     "about": null,
+     "authors": [
+      "Platypuschan"
+     ],
+     "categories": [
+      "security",
+      "system_administration"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-adguard-home",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-adguard-home#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-adguard-home/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-adguard-home/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/adguard-home/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.1.1",
+       "testing": false
+      }
+     ],
+     "stable": "0.1.1",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "adguard/adguardhome:v0.107.79"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/platypuschan/adguard-home",
+     "stars": 0,
+     "pushed_at": "2026-10-11T16:18:18Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": null
     }
    ]
   },
@@ -767,6 +881,87 @@
    ]
   },
   {
+   "id": "automx",
+   "categories": [
+    "mail"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "automx",
+     "forges": [
+      "danb35"
+     ],
+     "kind": "community",
+     "developer": "danb35",
+     "name": "Automx",
+     "description": {
+      "en": "Email client autoconfiguration for NethServer 8 mail domains"
+     },
+     "about": null,
+     "authors": [
+      "Dan Brown"
+     ],
+     "categories": [
+      "mail"
+     ],
+     "code_url": "https://github.com/danb35/ns8-automx",
+     "docs": {
+      "documentation_url": "https://github.com/danb35/ns8-automx",
+      "bug_url": "https://github.com/danb35/ns8-automx/issues"
+     },
+     "logo": "https://danb35.github.io/ns8-repomd/automx/logo.png",
+     "screenshots": [
+      "https://danb35.github.io/ns8-repomd/automx/screenshots/1-status.png",
+      "https://danb35.github.io/ns8-repomd/automx/screenshots/2-domains.png",
+      "https://danb35.github.io/ns8-repomd/automx/screenshots/3-settings.png"
+     ],
+     "versions": [
+      {
+       "tag": "0.2.1",
+       "testing": false
+      }
+     ],
+     "stable": "0.2.1",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "danb35/automx-app:0.2.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm,certadm",
+       "node:reader",
+       "cluster:accountconsumer",
+       "dnshelper@cluster:dnswriter",
+       "mail@any:mailadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/danb35/automx",
+     "stars": 0,
+     "pushed_at": "2026-09-30T10:20:14Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": false,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": false,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-09-30T10:19:58Z"
+    }
+   ]
+  },
+  {
    "id": "bigbluebutton",
    "categories": [
     "collaboration"
@@ -980,6 +1175,89 @@
       "license": true
      },
      "released_at": "2026-02-28T12:30:42Z"
+    }
+   ]
+  },
+  {
+   "id": "borgbackupserver",
+   "categories": [
+    "storage"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "borgbackupserver",
+     "forges": [
+      "francio87"
+     ],
+     "kind": "community",
+     "developer": "francio87",
+     "name": "Borg Backup Server",
+     "description": {
+      "en": "Manage BorgBackup clients, repositories, schedules, and restores."
+     },
+     "about": null,
+     "authors": [
+      "Davide Franceschelli"
+     ],
+     "categories": [
+      "storage"
+     ],
+     "code_url": "https://github.com/francio87/ns8-borgbackupserver",
+     "docs": {
+      "documentation_url": "https://github.com/francio87/ns8-borgbackupserver#readme",
+      "bug_url": "https://github.com/francio87/ns8-borgbackupserver/issues"
+     },
+     "logo": "https://francio87.github.io/ns8-repomd/borgbackupserver/logo.png",
+     "screenshots": [
+      "https://francio87.github.io/ns8-repomd/borgbackupserver/screenshots/bbs-gui.png",
+      "https://francio87.github.io/ns8-repomd/borgbackupserver/screenshots/bbs-architecture.png"
+     ],
+     "versions": [
+      {
+       "tag": "0.3.0-testing.2",
+       "testing": true
+      },
+      {
+       "tag": "0.2.2",
+       "testing": false
+      }
+     ],
+     "stable": "0.2.2",
+     "testing": "0.3.0-testing.2",
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "marcpope/borgbackupserver:v2.98.8"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "bbs-data"
+      ]
+     },
+     "source": "ghcr.io/francio87/borgbackupserver",
+     "stars": 0,
+     "pushed_at": "2026-10-17T04:25:24Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": false,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-10-10T12:57:41Z"
     }
    ]
   },
@@ -2265,6 +2543,79 @@
    ]
   },
   {
+   "id": "dnshelper",
+   "categories": [
+    "system_administration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "dnshelper",
+     "forges": [
+      "danb35"
+     ],
+     "kind": "community",
+     "developer": "danb35",
+     "name": "Dnshelper",
+     "description": {
+      "en": "Manage DNS records through DNS provider APIs, for other modules"
+     },
+     "about": null,
+     "authors": [
+      "Dan Brown"
+     ],
+     "categories": [
+      "system_administration"
+     ],
+     "code_url": "https://github.com/danb35/ns8-dnshelper",
+     "docs": {
+      "documentation_url": "https://github.com/danb35/ns8-dnshelper/blob/master/docs/USER-GUIDE.md",
+      "bug_url": "https://github.com/danb35/ns8-dnshelper/issues"
+     },
+     "logo": "https://danb35.github.io/ns8-repomd/dnshelper/logo.png",
+     "screenshots": [
+      "https://danb35.github.io/ns8-repomd/dnshelper/screenshots/1-zones.png",
+      "https://danb35.github.io/ns8-repomd/dnshelper/screenshots/2-records.png",
+      "https://danb35.github.io/ns8-repomd/dnshelper/screenshots/3-access-rules.png"
+     ],
+     "versions": [
+      {
+       "tag": "0.4.1",
+       "testing": false
+      }
+     ],
+     "stable": "0.4.1",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [],
+      "authorizations": [],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/danb35/dnshelper",
+     "stars": 0,
+     "pushed_at": "2026-09-30T11:45:45Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": false,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-09-28T10:18:33Z"
+    }
+   ]
+  },
+  {
    "id": "dnsmasq",
    "categories": [
     "system_administration"
@@ -3270,6 +3621,81 @@
    ]
   },
   {
+   "id": "fail2ban-reworked",
+   "categories": [
+    "security"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "fail2ban-reworked",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "Fail2ban Reworked",
+     "description": {
+      "en": "Permanent bans, shared whitelist, and coordinator synchronization for NS8.",
+      "de": "Dauerhafte IP-Sperren, gemeinsame Whitelist und Koordinator-Synchronisierung für NS8."
+     },
+     "about": null,
+     "authors": [
+      "Platypuschan"
+     ],
+     "categories": [
+      "security"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/fail2ban-reworked/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.3.2",
+       "testing": false
+      }
+     ],
+     "stable": "0.3.2",
+     "testing": null,
+     "min_core": "3.2.2",
+     "tech": {
+      "rootfull": true,
+      "images": [
+       "platypuschan/fail2ban-engine:1.1.1-b26c94868847"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/platypuschan/fail2ban-reworked",
+     "stars": 0,
+     "pushed_at": "2026-10-04T15:20:58Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": null
+    }
+   ]
+  },
+  {
    "id": "fetchmail",
    "categories": [
     "collaboration"
@@ -3729,6 +4155,84 @@
       "license": true
      },
      "released_at": "2025-08-25T05:58:41Z"
+    }
+   ]
+  },
+  {
+   "id": "gitea-reworked",
+   "categories": [
+    "development"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "gitea-reworked",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "Gitea Reworked",
+     "description": {
+      "en": "Self-hosted Git service for NS8 with AD integration and recovery administrator controls.",
+      "de": "Selbst gehosteter Git-Dienst für NS8 mit AD-Anbindung und Recovery-Administrator."
+     },
+     "about": null,
+     "authors": [
+      "Platypuschan"
+     ],
+     "categories": [
+      "development"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-gitea-reworked",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-gitea-reworked#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-gitea-reworked/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-gitea-reworked/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/gitea-reworked/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.4.2",
+       "testing": false
+      }
+     ],
+     "stable": "0.4.2",
+     "testing": null,
+     "min_core": "3.2.2",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.19-alpine3.23",
+       "docker.gitea.com/gitea:28.0.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm,portsadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/platypuschan/gitea-reworked",
+     "stars": 0,
+     "pushed_at": "2026-10-04T17:11:15Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": null
     }
    ]
   },
@@ -6149,6 +6653,81 @@
    ]
   },
   {
+   "id": "maubot",
+   "categories": [
+    "collaboration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "maubot",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "Maubot",
+     "description": {
+      "en": "Plugin-based Matrix bot system with a web management UI.",
+      "de": "Plugin-basiertes Matrix-Bot-System mit Web-Verwaltungsoberfläche."
+     },
+     "about": "NethServer 8 module for maubot, a plugin-based Matrix bot system with a web management UI.",
+     "authors": [
+      "Platypuschan"
+     ],
+     "categories": [
+      "collaboration"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-maubot",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-maubot#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-maubot/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-maubot/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/maubot/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.1.1",
+       "testing": false
+      }
+     ],
+     "stable": "0.1.1",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "platypuschan/maubot-runtime:924dbecbbfd1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/platypuschan/maubot",
+     "stars": 0,
+     "pushed_at": "2026-10-10T19:54:37Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": false,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": null
+    }
+   ]
+  },
+  {
    "id": "mautic",
    "categories": [
     "office"
@@ -6690,6 +7269,73 @@
     {
      "module_id": "n8n",
      "forges": [
+      "antonwantstosleep"
+     ],
+     "kind": "community",
+     "developer": "antonwantstosleep",
+     "name": "N8n",
+     "description": {
+      "en": "n8n is a flexible AI workflow automation for technical teams."
+     },
+     "about": null,
+     "authors": [
+      "Martin Bhuong",
+      "Markus Neuberger",
+      "Anton Vakhrameev"
+     ],
+     "categories": [
+      "development"
+     ],
+     "code_url": "https://github.com/antonwantstosleep/ns8-n8n",
+     "docs": {
+      "documentation_url": "https://docs.n8n.io/",
+      "bug_url": "https://github.com/antonwantstosleep/ns8-n8n/issues"
+     },
+     "logo": "https://antonwantstosleep.github.io/ns8-repo/n8n/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.1.2",
+       "testing": false
+      }
+     ],
+     "stable": "0.1.2",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16.15",
+       "n8nio/n8n:2.42.3",
+       "n8nio/runners:2.42.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/antonwantstosleep/n8n",
+     "stars": 0,
+     "pushed_at": "2026-10-05T11:42:43Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": false,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-05T11:42:21Z"
+    },
+    {
+     "module_id": "n8n",
+     "forges": [
       "geniusdynamics"
      ],
      "kind": "community",
@@ -7176,7 +7822,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-16T15:41:23Z",
+     "pushed_at": "2026-10-17T09:51:04Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7530,6 +8176,157 @@
       "license": true
      },
      "released_at": "2025-08-13T09:13:05Z"
+    }
+   ]
+  },
+  {
+   "id": "ntfy-reworked",
+   "categories": [
+    "communication"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "ntfy-reworked",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "ntfy Reworked",
+     "description": {
+      "en": "Self-hosted push notifications for NS8 with customizable server configuration.",
+      "de": "Selbst gehostete Push-Benachrichtigungen für NS8 mit anpassbarer Serverkonfiguration."
+     },
+     "about": null,
+     "authors": [
+      "Platypuschan"
+     ],
+     "categories": [
+      "communication"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-ntfy-reworked",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-ntfy-reworked#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/ntfy-reworked/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.3.4",
+       "testing": false
+      }
+     ],
+     "stable": "0.3.4",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "binwiederhier/ntfy:v2.28.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/platypuschan/ntfy-reworked",
+     "stars": 0,
+     "pushed_at": "2026-10-04T15:47:31Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": null
+    }
+   ]
+  },
+  {
+   "id": "obsidian-livesync",
+   "categories": [
+    "collaboration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "obsidian-livesync",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "Obsidian LiveSync",
+     "description": {
+      "en": "CouchDB server for the Self-hosted LiveSync plugin of Obsidian.",
+      "de": "CouchDB-Server für das Obsidian-Plugin Self-hosted LiveSync."
+     },
+     "about": null,
+     "authors": [
+      "Platypuschan"
+     ],
+     "categories": [
+      "collaboration"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-obsidian-livesync",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-obsidian-livesync#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/obsidian-livesync/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.3.0",
+       "testing": false
+      }
+     ],
+     "stable": "0.3.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "couchdb:3.5.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/platypuschan/obsidian-livesync",
+     "stars": 0,
+     "pushed_at": "2026-10-05T00:03:45Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": null
     }
    ]
   },
@@ -8064,6 +8861,82 @@
       "license": true
      },
      "released_at": "2026-09-30T22:03:45Z"
+    }
+   ]
+  },
+  {
+   "id": "organizr-reworked",
+   "categories": [
+    "collaboration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "organizr-reworked",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "Organizr Reworked",
+     "description": {
+      "en": "Unified dashboard for self-hosted services and bookmarks on NS8.",
+      "de": "Gemeinsames Dashboard für selbst gehostete Dienste und Lesezeichen auf NS8."
+     },
+     "about": null,
+     "authors": [
+      "Platypuschan"
+     ],
+     "categories": [
+      "collaboration"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-organizr-reworked",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-organizr-reworked#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-organizr-reworked/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-organizr-reworked/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/organizr-reworked/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.3.2",
+       "testing": false
+      }
+     ],
+     "stable": "0.3.2",
+     "testing": null,
+     "min_core": "3.2.2",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "platypuschan/organizr-runtime:7f433ddef3ce"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/platypuschan/organizr-reworked",
+     "stars": 0,
+     "pushed_at": "2026-10-04T15:47:37Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": null
     }
    ]
   },
@@ -9995,6 +10868,90 @@
       "license": true
      },
      "released_at": "2026-10-15T08:03:50Z"
+    }
+   ]
+  },
+  {
+   "id": "samba-reworked",
+   "categories": [
+    "collaboration",
+    "storage"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "samba-reworked",
+     "forges": [
+      "Platypuschan"
+     ],
+     "kind": "community",
+     "developer": "Platypuschan",
+     "name": "Samba Reworked",
+     "description": {
+      "en": "NS8 Samba with cross-cluster AD domain-controller join and replication alerts.",
+      "de": "NS8 Samba mit clusterübergreifendem AD-Domänenbeitritt und Replikationsmeldungen."
+     },
+     "about": null,
+     "authors": [
+      "NethServer team",
+      "Platypuschan"
+     ],
+     "categories": [
+      "collaboration",
+      "storage"
+     ],
+     "code_url": "https://github.com/Platypuschan/ns8-samba-reworked",
+     "docs": {
+      "documentation_url": "https://github.com/Platypuschan/ns8-samba-reworked#readme",
+      "bug_url": "https://github.com/Platypuschan/ns8-samba-reworked/issues",
+      "relnotes_url": "https://github.com/Platypuschan/ns8-samba-reworked/releases"
+     },
+     "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/samba-reworked/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.6",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.6",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/samba-dc:3.5.0",
+       "timescale/timescaledb:2.29.2-pg17"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "cluster:accountprovider",
+       "traefik@node:fulladm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "shares",
+       "homes"
+      ]
+     },
+     "source": "ghcr.io/platypuschan/samba",
+     "stars": 0,
+     "pushed_at": "2026-10-03T15:32:31Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": null
     }
    ]
   },
