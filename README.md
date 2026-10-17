@@ -2,7 +2,7 @@
 
 **Site: [stephdl.github.io/ns8-apps](https://stephdl.github.io/ns8-apps/)**
 
-A catalog of every NethServer 8 application published in a software repository, official and community, rebuilt every night.
+A catalog of every NethServer 8 application published in a software repository, official and community, rebuilt four times a day.
 
 You can search apps by name, description or developer, browse them by category or repository, and compare the variants when several developers publish the same software. Each app page shows its stable version, how to install it from the Software Center, and a quality score.
 
@@ -44,7 +44,7 @@ Versions come from the image tags that `createrepo.py` writes into `repodata.jso
 
 Each app page shows a score out of 9, with a "How to improve" link to this section. The score is not a judgment of the software. It only measures how complete the listing is, so administrators can choose with confidence. The "Best quality" sort ranks apps by this score.
 
-Every check is computed by the crawler from public data. You fix each one in your own repositories, and the new score appears after the next nightly crawl.
+Every check is computed by the crawler from public data. You fix each one in your own repositories, and the new score appears after the next crawl, within six hours.
 
 | Check | Passes when | How to fix it |
 | --- | --- | --- |
@@ -84,7 +84,7 @@ Check these points, in order:
 3. If the repository is not a fork, it is public, has `ns8` in its name or the `ns8` topic, and serves `repodata.json` on its default branch, on a `repomd` branch, or on its GitHub Pages site. For a Pages site the crawler tries the repository homepage and `https://<owner>.github.io/<repo>/`, at the root and under `ns8/updates/`.
 4. The repository is not hosted under the `NethServer` or `nethesis` organizations, whose apps already come from the official repository.
 5. The module id is not in `exclude_apps`. System modules installed with the core (`core`, `traefik`, `loki`, `metrics`, `ldapproxy`) are not listed as apps.
-6. Wait for the next nightly crawl, or ask for a manual run.
+6. Wait for the next crawl, at most six hours, or ask for a manual run.
 
 If none of this helps, open an issue in this repository with the URL of your software repository.
 
@@ -126,4 +126,4 @@ python -m http.server -d docs
 
 `--cache` stores HTTP answers in `.cache/` so you can rerun quickly. Delete that directory to fetch fresh data.
 
-The GitHub Action in `.github/workflows/crawl.yml` runs the crawler every night, commits `docs/catalog.json` when it changes, and deploys the `docs/` folder to GitHub Pages.
+The GitHub Action in `.github/workflows/crawl.yml` runs the crawler four times a day (00:55, 06:55, 12:55 and 18:55 UTC, half an hour after the forges rebuild their `repodata.json`), commits `docs/catalog.json` when it changes, and deploys the `docs/` folder to GitHub Pages.
