@@ -13,7 +13,7 @@ class GitLab:
         return f"{self.api}/projects/{quote(project, safe='')}"
 
     def project(self, project):
-        data = self.http.get(self._project_url(project))
+        data = self.http.get(self._project_url(project), {"license": "true"})
         if not data:
             return None
         return {
@@ -22,6 +22,8 @@ class GitLab:
             "pushed_at": data.get("last_activity_at"),
             "archived": data.get("archived", False),
             "description": data.get("description"),
+            "topics": data.get("topics") or data.get("tag_list") or [],
+            "license": data.get("license"),
             "default_branch": data.get("default_branch", "main"),
             "owner": project.split("/")[0],
         }
