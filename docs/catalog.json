@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T11:31:45+00:00",
+ "generated_at": "2026-10-17T16:06:01+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -445,16 +445,18 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-adguard-home/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/adguard-home/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/adguard-home/screenshots/settings.png"
+     ],
      "versions": [
       {
-       "tag": "0.1.1",
+       "tag": "0.1.2",
        "testing": false
       }
      ],
-     "stable": "0.1.1",
+     "stable": "0.1.2",
      "testing": null,
-     "min_core": null,
+     "min_core": "3.23.0",
      "tech": {
       "rootfull": false,
       "images": [
@@ -470,17 +472,17 @@
      },
      "source": "ghcr.io/platypuschan/adguard-home",
      "stars": 0,
-     "pushed_at": "2026-10-11T16:18:18Z",
+     "pushed_at": "2026-10-17T11:54:55Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
+      "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
-      "min_core": false,
+      "min_core": true,
       "license": true
      },
      "released_at": null
@@ -3671,7 +3673,9 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-fail2ban-reworked/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/fail2ban-reworked/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/fail2ban-reworked/screenshots/settings.png"
+     ],
      "versions": [
       {
        "tag": "0.3.2",
@@ -3698,10 +3702,10 @@
      "pushed_at": "2026-10-04T15:20:58Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
+      "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
@@ -4209,7 +4213,10 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-gitea-reworked/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/gitea-reworked/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/gitea-reworked/screenshots/settings.png",
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/gitea-reworked/screenshots/status.png"
+     ],
      "versions": [
       {
        "tag": "0.4.2",
@@ -4239,10 +4246,10 @@
      "pushed_at": "2026-10-04T17:11:15Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
+      "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
@@ -6686,10 +6693,10 @@
      "developer": "Platypuschan",
      "name": "Maubot",
      "description": {
-      "en": "Plugin-based Matrix bot system with a web management UI.",
+      "en": "Run plugin-based Matrix bots and manage bot accounts, plugins, and instances through a web interface.",
       "de": "Plugin-basiertes Matrix-Bot-System mit Web-Verwaltungsoberfläche."
      },
-     "about": "NethServer 8 module for maubot, a plugin-based Matrix bot system with a web management UI.",
+     "about": null,
      "authors": [
       "Platypuschan"
      ],
@@ -6703,16 +6710,18 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-maubot/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/maubot/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/maubot/screenshots/settings.png"
+     ],
      "versions": [
       {
-       "tag": "0.1.1",
+       "tag": "0.1.2",
        "testing": false
       }
      ],
-     "stable": "0.1.1",
+     "stable": "0.1.2",
      "testing": null,
-     "min_core": null,
+     "min_core": "3.23.0",
      "tech": {
       "rootfull": false,
       "images": [
@@ -6727,17 +6736,17 @@
      },
      "source": "ghcr.io/platypuschan/maubot",
      "stars": 0,
-     "pushed_at": "2026-10-10T19:54:37Z",
+     "pushed_at": "2026-10-17T11:54:57Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
-      "description": false,
+      "screenshots": true,
+      "description": true,
       "translations": true,
       "docs": true,
-      "min_core": false,
+      "min_core": true,
       "license": true
      },
      "released_at": null
@@ -7843,7 +7852,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-17T09:51:04Z",
+     "pushed_at": "2026-10-17T15:15:24Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8234,16 +8243,18 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-ntfy-reworked/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/ntfy-reworked/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/ntfy-reworked/screenshots/settings.png"
+     ],
      "versions": [
       {
-       "tag": "0.3.4",
+       "tag": "0.3.5",
        "testing": false
       }
      ],
-     "stable": "0.3.4",
+     "stable": "0.3.5",
      "testing": null,
-     "min_core": null,
+     "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
       "images": [
@@ -8258,17 +8269,17 @@
      },
      "source": "ghcr.io/platypuschan/ntfy-reworked",
      "stars": 0,
-     "pushed_at": "2026-10-04T15:47:31Z",
+     "pushed_at": "2026-10-17T11:55:00Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
+      "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
-      "min_core": false,
+      "min_core": true,
       "license": true
      },
      "released_at": null
@@ -8309,16 +8320,18 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-obsidian-livesync/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/obsidian-livesync/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/obsidian-livesync/screenshots/settings.png"
+     ],
      "versions": [
       {
-       "tag": "0.3.0",
+       "tag": "0.3.1",
        "testing": false
       }
      ],
-     "stable": "0.3.0",
+     "stable": "0.3.1",
      "testing": null,
-     "min_core": null,
+     "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
       "images": [
@@ -8334,17 +8347,17 @@
      },
      "source": "ghcr.io/platypuschan/obsidian-livesync",
      "stars": 0,
-     "pushed_at": "2026-10-05T00:03:45Z",
+     "pushed_at": "2026-10-17T11:55:03Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
+      "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
-      "min_core": false,
+      "min_core": true,
       "license": true
      },
      "released_at": null
@@ -8919,7 +8932,10 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-organizr-reworked/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/organizr-reworked/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/organizr-reworked/screenshots/settings.png",
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/organizr-reworked/screenshots/status.png"
+     ],
      "versions": [
       {
        "tag": "0.3.2",
@@ -8947,10 +8963,10 @@
      "pushed_at": "2026-10-04T15:47:37Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
+      "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
@@ -10929,7 +10945,9 @@
       "relnotes_url": "https://github.com/Platypuschan/ns8-samba-reworked/releases"
      },
      "logo": "https://platypuschan.github.io/ns8-modules/ns8/updates/samba-reworked/logo.png",
-     "screenshots": [],
+     "screenshots": [
+      "https://platypuschan.github.io/ns8-modules/ns8/updates/samba-reworked/screenshots/remote-domain.png"
+     ],
      "versions": [
       {
        "tag": "1.1.6",
@@ -10962,10 +10980,10 @@
      "pushed_at": "2026-10-03T15:32:31Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
-      "screenshots": false,
+      "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
