@@ -44,7 +44,14 @@ class Http:
         path = self._cache_path(key)
         if self.use_cache and path.exists():
             body = path.read_text()
-            return None if body == "" else (json.loads(body) if as_json else body)
+            if body == "":
+                return None
+            if not as_json:
+                return body
+            try:
+                return json.loads(body)
+            except ValueError:
+                return None
 
         headers = dict(headers or {})
         if self.gh_token and url.startswith("https://api.github.com/"):
