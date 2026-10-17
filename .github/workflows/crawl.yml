@@ -2,7 +2,8 @@ name: Crawl and publish
 
 on:
   schedule:
-    - cron: "17 3 * * *"
+    # Forges rebuild repodata.json at 00:25, 06:25, 12:25 and 18:25 UTC; crawl half an hour later.
+    - cron: "55 0,6,12,18 * * *"
   workflow_dispatch:
   push:
     branches: [main]
