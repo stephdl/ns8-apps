@@ -43,6 +43,8 @@ jobs:
           fi
           git add docs/catalog.json
           git commit -m "chore(catalog): update app catalog"
+          # main may have moved during the crawl; keep this run's catalog on top of it.
+          git pull --rebase -X theirs origin main
           git push
       - uses: actions/upload-pages-artifact@v3
         with:
