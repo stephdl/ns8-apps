@@ -58,7 +58,8 @@ def crawl_forges(cfg, gh, http, catalog, forges, candidates):
     upstream = cfg["nethforge"]
     upstream_data = gh.forge_repodata(upstream)
     upstream_cname = (gh.raw(upstream, "repomd", "CNAME", as_json=False) or "").strip()
-    forge = {"id": "nethforge", "name": "NethForge", "url": gh.forge_public_url(upstream),
+    url, alt_url = gh.forge_public_url(upstream)
+    forge = {"id": "nethforge", "name": "NethForge", "url": url, "alt_url": alt_url,
              "kind": "nethforge", "repo": upstream}
     add_forge(catalog, forges, forge, upstream_data, "nethforge")
 
@@ -71,7 +72,8 @@ def crawl_forges(cfg, gh, http, catalog, forges, candidates):
         if owner.lower() not in {code_owner(a) for a in data}:
             log.info("fork %s: publishes no repo of its own, skipped", full_name)
             continue
-        forge = {"id": owner, "name": full_name, "url": gh.forge_public_url(full_name, upstream_cname=upstream_cname),
+        url, alt_url = gh.forge_public_url(full_name, upstream_cname=upstream_cname)
+        forge = {"id": owner, "name": full_name, "url": url, "alt_url": alt_url,
                  "kind": "community", "repo": full_name}
         add_forge(catalog, forges, forge, data, "community")
 
@@ -91,14 +93,15 @@ def crawl_forges(cfg, gh, http, catalog, forges, candidates):
             log.info("forge %s: every app already listed, skipped", full_name)
             continue
         forge_id = owner if owner not in {f["id"] for f in forges} else full_name
-        forge = {"id": forge_id, "name": full_name, "url": gh.forge_public_url(full_name, ref, upstream_cname),
+        url, alt_url = gh.forge_public_url(full_name, ref, upstream_cname)
+        forge = {"id": forge_id, "name": full_name, "url": url, "alt_url": alt_url,
                  "kind": "community", "repo": full_name}
         add_forge(catalog, forges, forge, data, "community")
 
     for entry in cfg.get("forges") or []:
         if "github" in entry:
             data = gh.forge_repodata(entry["github"])
-            url = gh.forge_public_url(entry["github"])
+            url, _ = gh.forge_public_url(entry["github"])
         else:
             url = entry["url"].rstrip("/") + "/"
             data = http.get(f"{url}repodata.json")

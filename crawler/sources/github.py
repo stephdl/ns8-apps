@@ -59,19 +59,13 @@ class GitHub:
         return None
 
     def forge_public_url(self, full_name, ref="repomd", upstream_cname=None):
-        """URL users add in the Software Center: custom domain, then GitHub Pages, then raw files."""
-        owner, name = full_name.split("/")
+        """URLs users can add in the Software Center: the developer's domain, then raw files on GitHub."""
         cname = (self.raw(full_name, ref, "CNAME", as_json=False) or "").strip()
-        candidates = []
+        raw = f"{RAW}/{full_name}/{ref}/ns8/updates/"
         # Forks inherit nethforge's CNAME file without owning that domain.
         if cname and cname != upstream_cname:
-            candidates.append(f"https://{cname}/ns8/updates/")
-        if ref == "repomd":
-            candidates.append(f"https://{owner.lower()}.github.io/{name}/ns8/updates/")
-        for url in candidates:
-            if isinstance(self.http.get(f"{url}repodata.json"), list):
-                return url
-        return f"{RAW}/{full_name}/{ref}/ns8/updates/"
+            return f"https://{cname}/ns8/updates/", raw
+        return raw, None
 
     def release_date(self, full_name, tag):
         """When the tag was released, from the GitHub release or else the tagged commit."""
