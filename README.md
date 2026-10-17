@@ -121,4 +121,4 @@ python -m http.server -d docs
 
 `--cache` stores HTTP answers in `.cache/` so you can rerun quickly. Delete that directory to fetch fresh data.
 
-The GitHub Action in `.github/workflows/crawl.yml` runs the crawler every night and commits `docs/catalog.json` when it changes. GitHub Pages serves the `docs/` folder.
+The GitHub Action in `.github/workflows/crawl.yml` runs the crawler every night, commits `docs/catalog.json` when it changes, and deploys the `docs/` folder to GitHub Pages.
