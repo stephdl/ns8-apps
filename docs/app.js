@@ -19,7 +19,7 @@ const UI = {
     stepOfficial: (n) => `Available by default: open the Software Center, search ${n} and click Install.`,
     stepEnableForge: "Open Software Center › Settings › Software repositories and enable NethForge.",
     stepAddRepo: "Open Software Center › Settings › Software repositories and click Add repository.",
-    repoName: "Name:", repoUrl: "URL:",
+    repoName: "Name:", repoUrl: "URL:", package: "Package:",
     stepTesting: "Tick “Enable testing”: this app has no stable release yet.",
     stepInstall: (n) => `Back in the Software Center, search ${n} and click Install.`,
     quality: "Quality", howTo: "How to improve", checks: {"repository": "Published in a software repository", "topic": "GitHub topic “ns8”", "categories": "Standard categories", "logo": "Logo", "screenshots": "Screenshots", "description": "Description of 60+ characters", "translations": "Translated description", "docs": "Documentation and bug links", "min_core": "Minimum core label", "license": "License file"},
@@ -47,7 +47,7 @@ const UI = {
     stepOfficial: (n) => `Disponible par défaut : ouvrir le Software Center, chercher ${n} et cliquer sur Installer.`,
     stepEnableForge: "Ouvrir Software Center › Paramètres › Dépôts logiciels et activer NethForge.",
     stepAddRepo: "Ouvrir Software Center › Paramètres › Dépôts logiciels et cliquer sur Ajouter un dépôt.",
-    repoName: "Nom :", repoUrl: "URL :",
+    repoName: "Nom :", repoUrl: "URL :", package: "Paquet :",
     stepTesting: "Cocher « Activer testing » : cette app n'a pas encore de version stable.",
     stepInstall: (n) => `De retour dans le Software Center, chercher ${n} et cliquer sur Installer.`,
     quality: "Qualité", howTo: "Comment améliorer", checks: {"repository": "Publiée dans un dépôt logiciel", "topic": "Topic GitHub « ns8 »", "categories": "Catégories standard", "logo": "Logo", "screenshots": "Captures d'écran", "description": "Description de 60 caractères ou plus", "translations": "Description traduite", "docs": "Liens documentation et bugs", "min_core": "Label core minimum", "license": "Fichier de licence"},
@@ -75,7 +75,7 @@ const UI = {
     stepOfficial: (n) => `Disponibile di default: apri il Software Center, cerca ${n} e clicca Installa.`,
     stepEnableForge: "Apri Software Center › Impostazioni › Repository software e attiva NethForge.",
     stepAddRepo: "Apri Software Center › Impostazioni › Repository software e clicca Aggiungi repository.",
-    repoName: "Nome:", repoUrl: "URL:",
+    repoName: "Nome:", repoUrl: "URL:", package: "Pacchetto:",
     stepTesting: "Spunta “Abilita testing”: questa app non ha ancora una versione stabile.",
     stepInstall: (n) => `Torna al Software Center, cerca ${n} e clicca Installa.`,
     quality: "Qualità", howTo: "Come migliorare", checks: {"repository": "Pubblicata in un repository software", "topic": "Topic GitHub “ns8”", "categories": "Categorie standard", "logo": "Logo", "screenshots": "Screenshot", "description": "Descrizione di almeno 60 caratteri", "translations": "Descrizione tradotta", "docs": "Link a documentazione e bug", "min_core": "Label core minimo", "license": "File di licenza"},
@@ -103,7 +103,7 @@ const UI = {
     stepOfficial: (n) => `Standardmäßig verfügbar: Software Center öffnen, nach ${n} suchen und auf Installieren klicken.`,
     stepEnableForge: "Software Center › Einstellungen › Software-Repositorys öffnen und NethForge aktivieren.",
     stepAddRepo: "Software Center › Einstellungen › Software-Repositorys öffnen und auf Repository hinzufügen klicken.",
-    repoName: "Name:", repoUrl: "URL:",
+    repoName: "Name:", repoUrl: "URL:", package: "Paket:",
     stepTesting: "„Testing aktivieren“ ankreuzen: diese App hat noch kein stabiles Release.",
     stepInstall: (n) => `Zurück im Software Center nach ${n} suchen und auf Installieren klicken.`,
     quality: "Qualität", howTo: "So verbessern", checks: {"repository": "In einem Software-Repository veröffentlicht", "topic": "GitHub-Topic „ns8“", "categories": "Standardkategorien", "logo": "Logo", "screenshots": "Screenshots", "description": "Beschreibung mit 60+ Zeichen", "translations": "Übersetzte Beschreibung", "docs": "Links zu Doku und Fehlermeldung", "min_core": "Label für Mindest-Core", "license": "Lizenzdatei"},
@@ -131,7 +131,7 @@ const UI = {
     stepOfficial: (n) => `Disponible por defecto: abre el Software Center, busca ${n} y haz clic en Instalar.`,
     stepEnableForge: "Abre Software Center › Ajustes › Repositorios de software y activa NethForge.",
     stepAddRepo: "Abre Software Center › Ajustes › Repositorios de software y haz clic en Añadir repositorio.",
-    repoName: "Nombre:", repoUrl: "URL:",
+    repoName: "Nombre:", repoUrl: "URL:", package: "Paquete:",
     stepTesting: "Marca “Activar testing”: esta app aún no tiene versión estable.",
     stepInstall: (n) => `De vuelta en el Software Center, busca ${n} y haz clic en Instalar.`,
     quality: "Calidad", howTo: "Cómo mejorar", checks: {"repository": "Publicada en un repositorio de software", "topic": "Topic de GitHub “ns8”", "categories": "Categorías estándar", "logo": "Logo", "screenshots": "Capturas de pantalla", "description": "Descripción de 60+ caracteres", "translations": "Descripción traducida", "docs": "Enlaces a documentación y errores", "min_core": "Label de core mínimo", "license": "Archivo de licencia"},
@@ -441,16 +441,18 @@ function renderBrowse(q) {
 function installBlock(v) {
   const steps = (items) => `<ol class="steps">${items.map((i) => `<li>${i}</li>`).join("")}</ol>`;
   const name = `<b>${esc(v.name)}</b>`;
+  // Several apps can share a name, the image tells them apart in the Software Center.
+  const pkg = v.source ? `<p class="alt">${t("package")} <code>${esc(v.source)}</code></p>` : "";
   const forge = state.catalog.forges.find((f) => f.id === v.forges[0]);
-  if (!forge || forge.kind === "official") return steps([t("stepOfficial")(name)]);
-  if (forge.kind === "nethforge") return steps([t("stepEnableForge"), t("stepInstall")(name)]);
+  if (!forge || forge.kind === "official") return steps([t("stepOfficial")(name) + pkg]);
+  if (forge.kind === "nethforge") return steps([t("stepEnableForge"), t("stepInstall")(name) + pkg]);
   const testing = !v.stable && v.testing ? [t("stepTesting")] : [];
   return steps([
     t("stepAddRepo"),
     `${t("repoName")} <code>${esc(forge.id)}</code>`,
     `${t("repoUrl")} ${code(forge.url)}${forge.alt_url ? `<p class="alt">${t("altUrl")}</p>${code(forge.alt_url)}` : ""}`,
     ...testing,
-    t("stepInstall")(name),
+    t("stepInstall")(name) + pkg,
   ]);
 }
 
