@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T09:52:39+00:00",
+ "generated_at": "2026-10-17T10:41:06+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -883,7 +883,8 @@
   {
    "id": "automx",
    "categories": [
-    "mail"
+    "collaboration",
+    "system_administration"
    ],
    "official": false,
    "stars": 0,
@@ -897,18 +898,25 @@
      "developer": "danb35",
      "name": "Automx",
      "description": {
-      "en": "Email client autoconfiguration for NethServer 8 mail domains"
+      "en": "Email client autoconfiguration for NethServer 8 mail, calendars and contacts",
+      "de": "Automatische Konfiguration von E-Mail-Clients für Mail, Kalender und Kontakte von NethServer 8",
+      "es": "Configuración automática de clientes de correo para el correo, los calendarios y los contactos de NethServer 8",
+      "fr": "Configuration automatique des clients de messagerie pour la messagerie, les agendas et les contacts de NethServer 8",
+      "it": "Configurazione automatica dei client di posta per posta, calendari e contatti di NethServer 8",
+      "pt": "Configuração automática de clientes de correio para o correio, os calendários e os contactos do NethServer 8",
+      "pt_BR": "Configuração automática de clientes de e-mail para e-mail, calendários e contatos do NethServer 8"
      },
      "about": null,
      "authors": [
       "Dan Brown"
      ],
      "categories": [
-      "mail"
+      "collaboration",
+      "system_administration"
      ],
      "code_url": "https://github.com/danb35/ns8-automx",
      "docs": {
-      "documentation_url": "https://github.com/danb35/ns8-automx",
+      "documentation_url": "https://github.com/danb35/ns8-automx/blob/master/docs/USER-GUIDE.md",
       "bug_url": "https://github.com/danb35/ns8-automx/issues"
      },
      "logo": "https://danb35.github.io/ns8-repomd/automx/logo.png",
@@ -944,15 +952,15 @@
      },
      "source": "ghcr.io/danb35/automx",
      "stars": 0,
-     "pushed_at": "2026-09-30T10:20:14Z",
+     "pushed_at": "2026-10-17T10:24:57Z",
      "archived": false,
      "checks": {
-      "topic": false,
-      "categories": false,
+      "topic": true,
+      "categories": true,
       "logo": true,
       "screenshots": true,
       "description": true,
-      "translations": false,
+      "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
@@ -1184,7 +1192,7 @@
     "storage"
    ],
    "official": false,
-   "stars": 0,
+   "stars": 1,
    "variants": [
     {
      "module_id": "borgbackupserver",
@@ -1243,7 +1251,7 @@
       ]
      },
      "source": "ghcr.io/francio87/borgbackupserver",
-     "stars": 0,
+     "stars": 1,
      "pushed_at": "2026-10-17T04:25:24Z",
      "archived": false,
      "checks": {
@@ -2545,6 +2553,7 @@
   {
    "id": "dnshelper",
    "categories": [
+    "security",
     "system_administration"
    ],
    "official": false,
@@ -2559,13 +2568,21 @@
      "developer": "danb35",
      "name": "Dnshelper",
      "description": {
-      "en": "Manage DNS records through DNS provider APIs, for other modules"
+      "en": "Manage DNS records through DNS provider APIs, for other modules",
+      "de": "Verwaltet DNS-Einträge über die APIs von DNS-Anbietern, für andere Module",
+      "es": "Gestiona registros DNS a través de las API de los proveedores DNS, para otros módulos",
+      "eu": "DNS erregistroak kudeatzen ditu DNS hornitzaileen APIen bidez, beste moduluentzat",
+      "fr": "Gère les enregistrements DNS via les API des hébergeurs DNS, pour les autres modules",
+      "it": "Gestisce i record DNS tramite le API dei provider DNS, per altri moduli",
+      "pt": "Gere registos DNS através das APIs dos fornecedores de DNS, para outros módulos",
+      "pt_BR": "Gerencia registros DNS por meio das APIs dos provedores de DNS, para outros módulos"
      },
      "about": null,
      "authors": [
       "Dan Brown"
      ],
      "categories": [
+      "security",
       "system_administration"
      ],
      "code_url": "https://github.com/danb35/ns8-dnshelper",
@@ -2581,11 +2598,11 @@
      ],
      "versions": [
       {
-       "tag": "0.4.1",
+       "tag": "0.4.2",
        "testing": false
       }
      ],
-     "stable": "0.4.1",
+     "stable": "0.4.2",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -2598,20 +2615,20 @@
      },
      "source": "ghcr.io/danb35/dnshelper",
      "stars": 0,
-     "pushed_at": "2026-09-30T11:45:45Z",
+     "pushed_at": "2026-10-17T10:32:50Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
       "description": true,
-      "translations": false,
+      "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-09-28T10:18:33Z"
+     "released_at": "2026-10-17T10:32:36Z"
     }
    ]
   },
@@ -7735,7 +7752,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-17T04:28:07Z",
+     "pushed_at": "2026-10-17T10:18:02Z",
      "archived": false,
      "checks": {
       "topic": false,
