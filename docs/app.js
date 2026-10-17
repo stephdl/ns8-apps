@@ -6,7 +6,7 @@ const UI = {
     tagline: "Every NethServer 8 app you can install from a software repository, official and community, in one place.",
     apps: "apps", developers: "developers", repositories: "repositories", updated: "updated",
     byCategory: "Browse by category", byRepo: "Browse by repository",
-    recent: "Recently updated", popular: "Most starred", seeAll: "See all",
+    recent: "Recently updated", popular: "Most starred", seeAll: "See all", allRepos: (n) => `See all ${n} repositories`,
     all: "All apps", category: "Category", repository: "Repository",
     filters: "Filters", official: "Official only", showTesting: "Show testing versions", clear: "Clear filters",
     sort: { stars: "Most stars", name: "Name", updated: "Last update" , quality: "Best quality" },
@@ -34,7 +34,7 @@ const UI = {
     tagline: "Toutes les applications NethServer 8 installables depuis un dépôt logiciel, officielles et communautaires, au même endroit.",
     apps: "apps", developers: "développeurs", repositories: "dépôts", updated: "mis à jour",
     byCategory: "Parcourir par catégorie", byRepo: "Parcourir par dépôt",
-    recent: "Mises à jour récentes", popular: "Les plus étoilées", seeAll: "Tout voir",
+    recent: "Mises à jour récentes", popular: "Les plus étoilées", seeAll: "Tout voir", allRepos: (n) => `Voir les ${n} dépôts`,
     all: "Toutes les apps", category: "Catégorie", repository: "Dépôt",
     filters: "Filtres", official: "Officielles seulement", showTesting: "Afficher les versions testing", clear: "Effacer les filtres",
     sort: { stars: "Plus d'étoiles", name: "Nom", updated: "Dernière mise à jour" , quality: "Meilleure qualité" },
@@ -62,7 +62,7 @@ const UI = {
     tagline: "Tutte le applicazioni NethServer 8 installabili da un repository software, ufficiali e della community, in un unico posto.",
     apps: "app", developers: "sviluppatori", repositories: "repository", updated: "aggiornato",
     byCategory: "Sfoglia per categoria", byRepo: "Sfoglia per repository",
-    recent: "Aggiornate di recente", popular: "Le più stellate", seeAll: "Vedi tutte",
+    recent: "Aggiornate di recente", popular: "Le più stellate", seeAll: "Vedi tutte", allRepos: (n) => `Vedi tutti i ${n} repository`,
     all: "Tutte le app", category: "Categoria", repository: "Repository",
     filters: "Filtri", official: "Solo ufficiali", showTesting: "Mostra versioni testing", clear: "Azzera filtri",
     sort: { stars: "Più stelle", name: "Nome", updated: "Ultimo aggiornamento" , quality: "Qualità migliore" },
@@ -90,7 +90,7 @@ const UI = {
     tagline: "Alle NethServer-8-Anwendungen, die sich aus einem Software-Repository installieren lassen, offiziell und aus der Community, an einem Ort.",
     apps: "Apps", developers: "Entwickler", repositories: "Repositorys", updated: "aktualisiert",
     byCategory: "Nach Kategorie stöbern", byRepo: "Nach Repository stöbern",
-    recent: "Kürzlich aktualisiert", popular: "Meiste Sterne", seeAll: "Alle anzeigen",
+    recent: "Kürzlich aktualisiert", popular: "Meiste Sterne", seeAll: "Alle anzeigen", allRepos: (n) => `Alle ${n} Repositorys anzeigen`,
     all: "Alle Apps", category: "Kategorie", repository: "Repository",
     filters: "Filter", official: "Nur offizielle", showTesting: "Testing-Versionen anzeigen", clear: "Filter zurücksetzen",
     sort: { stars: "Meiste Sterne", name: "Name", updated: "Letzte Aktualisierung" , quality: "Beste Qualität" },
@@ -118,7 +118,7 @@ const UI = {
     tagline: "Todas las aplicaciones de NethServer 8 instalables desde un repositorio de software, oficiales y de la comunidad, en un solo lugar.",
     apps: "apps", developers: "desarrolladores", repositories: "repositorios", updated: "actualizado",
     byCategory: "Explorar por categoría", byRepo: "Explorar por repositorio",
-    recent: "Actualizadas recientemente", popular: "Más estrellas", seeAll: "Ver todas",
+    recent: "Actualizadas recientemente", popular: "Más estrellas", seeAll: "Ver todas", allRepos: (n) => `Ver los ${n} repositorios`,
     all: "Todas las apps", category: "Categoría", repository: "Repositorio",
     filters: "Filtros", official: "Solo oficiales", showTesting: "Mostrar versiones testing", clear: "Borrar filtros",
     sort: { stars: "Más estrellas", name: "Nombre", updated: "Última actualización" , quality: "Mejor calidad" },
@@ -289,7 +289,7 @@ function sortApps(apps, by) {
   return [...apps].sort(cmp);
 }
 
-/* Routing: #/, #/apps?cat=office&repo=stephdl, #/app/<id> */
+/* Routing: #/, #/apps?cat=office&repo=stephdl, #/app/<id>, #/repos */
 
 function parseHash() {
   const [path, query = ""] = location.hash.replace(/^#/, "").split("?");
@@ -313,6 +313,7 @@ function render() {
   $("#search").value = q.q || "";
   if (path.startsWith("/app/")) renderApp(decodeURIComponent(path.slice(5)));
   else if (path === "/apps") renderBrowse(q);
+  else if (path === "/repos") renderRepos();
   else renderHome();
   document.title = path.startsWith("/app/") ? `${$("h1")?.textContent} · NS8 App Index` : "NS8 App Index";
 }
@@ -342,12 +343,29 @@ function tiles(items, hrefFn, labelFn, subFn) {
     <span class="count">${n}</span></a>`).join("")}</div>`;
 }
 
+// Enough to fill two rows on a wide screen, so the home page height does not grow with the number of repositories.
+const HOME_REPOS = 12;
+
+function repoTiles(limit) {
+  const { apps, forges } = state.catalog;
+  const repos = count(apps, (a) => new Set(a.variants.map(repoOf)));
+  const repoSub = (id) => forges.find((f) => f.id === id)?.url.replace(/^https:\/\//, "").replace(/\/ns8\/updates\/$/, "") || "";
+  return { total: repos.length, html: tiles(repos.slice(0, limit), (r) => link({ repo: r }), repoLabel, repoSub) };
+}
+
+function renderRepos() {
+  $("#view").innerHTML = `
+    <section class="section">
+      <div class="section-head"><h2>${t("byRepo")}</h2></div>
+      ${repoTiles().html}
+    </section>`;
+}
+
 function renderHome() {
   const { apps, forges, generated_at } = state.catalog;
   const devs = count(apps, (a) => new Set(a.variants.map((v) => v.developer)));
   const cats = count(apps, (a) => a.categories);
-  const repos = count(apps, (a) => new Set(a.variants.map(repoOf)));
-  const repoSub = (id) => forges.find((f) => f.id === id)?.url.replace(/^https:\/\//, "").replace(/\/ns8\/updates\/$/, "") || "";
+  const repos = repoTiles(HOME_REPOS);
 
   $("#view").innerHTML = `
     <section class="hero">
@@ -365,8 +383,8 @@ function renderHome() {
       ${tiles(cats, (c) => link({ cat: c }), catName)}
     </section>
     <section class="section">
-      <div class="section-head"><h2>${t("byRepo")}</h2></div>
-      ${tiles(repos, (r) => link({ repo: r }), repoLabel, repoSub)}
+      <div class="section-head"><h2>${t("byRepo")}</h2>${repos.total > HOME_REPOS ? `<a href="#/repos">${t("allRepos")(repos.total)}</a>` : ""}</div>
+      ${repos.html}
     </section>
     <section class="section">
       <div class="section-head"><h2>${t("recent")}</h2><a href="${link({ sort: "updated" })}">${t("seeAll")}</a></div>
