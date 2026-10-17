@@ -25,7 +25,8 @@ PROBE_WORKERS = 16
 
 
 def forge_versions(app):
-    versions = [(v["tag"], bool(v.get("testing"))) for v in app.get("versions") or [] if v.get("tag")]
+    # Semver: any pre-release suffix (-testing.1, -dev.2, -rc1) is not a stable release.
+    versions = [(v["tag"], bool(v.get("testing")) or "-" in v["tag"]) for v in app.get("versions") or [] if v.get("tag")]
     # repodata.json does not guarantee any order.
     return sorted(versions, key=lambda v: version_key(v[0]), reverse=True)
 
