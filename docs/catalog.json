@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T08:47:23+00:00",
+ "generated_at": "2026-10-17T09:07:44+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -13,6 +13,7 @@
    "id": "nethforge",
    "name": "NethForge",
    "url": "https://forge.nethserver.org/ns8/updates/",
+   "alt_url": "https://raw.githubusercontent.com/NethServer/ns8-nethforge/repomd/ns8/updates/",
    "kind": "nethforge",
    "repo": "NethServer/ns8-nethforge",
    "app_count": 20
@@ -21,6 +22,7 @@
    "id": "sipi58",
    "name": "sipi58/ns8-nethforge",
    "url": "https://raw.githubusercontent.com/sipi58/ns8-nethforge/repomd/ns8/updates/",
+   "alt_url": null,
    "kind": "community",
    "repo": "sipi58/ns8-nethforge",
    "app_count": 1
@@ -29,6 +31,7 @@
    "id": "dz00te",
    "name": "dz00te/ns8-dz00te",
    "url": "https://forge.dzlab.net/ns8/updates/",
+   "alt_url": "https://raw.githubusercontent.com/dz00te/ns8-dz00te/repomd/ns8/updates/",
    "kind": "community",
    "repo": "dz00te/ns8-dz00te",
    "app_count": 3
@@ -37,6 +40,7 @@
    "id": "stephdl",
    "name": "stephdl/ns8-stephdl",
    "url": "https://forge.de-labrusse.fr/ns8/updates/",
+   "alt_url": "https://raw.githubusercontent.com/stephdl/ns8-stephdl/repomd/ns8/updates/",
    "kind": "community",
    "repo": "stephdl/ns8-stephdl",
    "app_count": 10
@@ -45,6 +49,7 @@
    "id": "mrmarkuz",
    "name": "mrmarkuz/ns8-mrmarkuz",
    "url": "https://repo.mrmarkuz.com/ns8/updates/",
+   "alt_url": "https://raw.githubusercontent.com/mrmarkuz/ns8-mrmarkuz/repomd/ns8/updates/",
    "kind": "community",
    "repo": "mrmarkuz/ns8-mrmarkuz",
    "app_count": 27
@@ -52,7 +57,8 @@
   {
    "id": "geniusdynamics",
    "name": "geniusdynamics/ns8-genforge",
-   "url": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/",
+   "url": "https://forge.genius.ke/ns8/updates/",
+   "alt_url": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/",
    "kind": "community",
    "repo": "geniusdynamics/ns8-genforge",
    "app_count": 49
@@ -61,6 +67,7 @@
    "id": "ksat-design",
    "name": "ksat-design/ns8-ksatdesign",
    "url": "https://forge.ksatdesign.com.au/ns8/updates/",
+   "alt_url": "https://raw.githubusercontent.com/ksat-design/ns8-ksatdesign/repomd/ns8/updates/",
    "kind": "community",
    "repo": "ksat-design/ns8-ksatdesign",
    "app_count": 1
@@ -69,6 +76,7 @@
    "id": "tebbiworld",
    "name": "tebbiworld/ns8-repo",
    "url": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/",
+   "alt_url": null,
    "kind": "community",
    "repo": "tebbiworld/ns8-repo",
    "app_count": 21
@@ -106,9 +114,9 @@
       "documentation_url": "https://docs.2fauth.app/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/2Fauth/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/2Fauth/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/2Fauth/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/2Fauth/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -119,6 +127,18 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "2fauth/2fauth:5.6.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/2fauth",
      "stars": 0,
      "pushed_at": "2026-09-21T08:37:30Z",
@@ -133,7 +153,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-12-31T22:08:26Z"
     }
    ]
   },
@@ -181,6 +202,21 @@
      "stable": "1.1.8",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "stephdl/docker-backuppc:6.0.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "data"
+      ]
+     },
      "source": "ghcr.io/stephdl/backuppc",
      "stars": 0,
      "pushed_at": "2026-10-13T02:40:18Z",
@@ -195,7 +231,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T16:27:03Z"
     }
    ]
   },
@@ -230,10 +267,10 @@
       "documentation_url": "https://help.penpot.app/technical-guide/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/PenPot/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/PenPot/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/PenPot/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/PenPot/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/PenPot/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/PenPot/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -244,6 +281,22 @@
      "stable": null,
      "testing": "0.0.1-alpha.2",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15",
+       "redis:7",
+       "penpotapp/frontend:latest",
+       "penpotapp/backend:latest",
+       "penpotapp/exporter:latest"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/penpot",
      "stars": 0,
      "pushed_at": "2025-12-31T22:17:30Z",
@@ -293,14 +346,15 @@
       "documentation_url": "https://surrealdb.com/docs",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/SurrealDB/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/SurrealDB/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/SurrealDB/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/SurrealDB/screenshots/screen1.png"
      ],
      "versions": [],
      "stable": null,
      "testing": null,
      "min_core": null,
+     "tech": null,
      "source": "ghcr.io/geniusdynamics/surrealdb",
      "stars": 1,
      "pushed_at": "2026-03-09T18:46:20Z",
@@ -350,10 +404,10 @@
       "documentation_url": "https://wiki.nethserver.org/doku.php?id=ns8:affine",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/affine/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/affine/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/affine/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/affine/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/affine/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/affine/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -364,6 +418,21 @@
      "stable": null,
      "testing": "1.0.0-beta.1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "toeverything/affine-graphql:stable-99e70c9",
+       "toeverything/affine-front:stable-99e70c9",
+       "redis:7"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/affine",
      "stars": 0,
      "pushed_at": "2026-03-04T06:26:29Z",
@@ -413,10 +482,10 @@
       "documentation_url": "https://agent-zero.ai/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/agentzeroai/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/agentzeroai/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/agentzeroai/screenshots/prompts.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/agentzeroai/screenshots/settings-page-ui.png"
+      "https://forge.genius.ke/ns8/updates/agentzeroai/screenshots/prompts.png",
+      "https://forge.genius.ke/ns8/updates/agentzeroai/screenshots/settings-page-ui.png"
      ],
      "versions": [
       {
@@ -427,6 +496,18 @@
      "stable": "2.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "agent0ai/agent-zero:v2.13"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/agentzeroai",
      "stars": 0,
      "pushed_at": "2026-10-11T19:45:05Z",
@@ -441,7 +522,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-10-11T19:44:48Z"
     }
    ]
   },
@@ -488,6 +570,20 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "aiidalab/full-stack:2026.1031"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "aiidalab-home"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/aiidalab",
      "stars": 0,
      "pushed_at": "2026-09-30T16:02:11Z",
@@ -502,7 +598,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:37:15Z"
     }
    ]
   },
@@ -549,6 +646,28 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "particify/couchdb",
+       "postgres:13.8-alpine",
+       "particify/rabbitmq-stomp",
+       "particify/arsnova-server-authz:3.13.20260613",
+       "particify/arsnova-server-core:3.13.20260613",
+       "particify/arsnova-server-comments:3.13.20260613",
+       "particify/arsnova-server-websocket:3.13.20260613",
+       "particify/arsnova-server-gateway:3.13.20260613",
+       "particify/arsnova-server-formatting:3.13.20260613",
+       "particify/arsnova-webclient:3.13.20260613",
+       "particify/arsnova-proxy"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/arsnova",
      "stars": 0,
      "pushed_at": "2026-09-30T21:46:48Z",
@@ -563,7 +682,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:37:20Z"
     }
    ]
   },
@@ -598,11 +718,11 @@
       "documentation_url": "https://docs.goauthentik.io/docs/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/authentik/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/authentik/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/authentik/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/authentik/screenshots/screen.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/authentik/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/authentik/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/authentik/screenshots/screen.png",
+      "https://forge.genius.ke/ns8/updates/authentik/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -613,6 +733,20 @@
      "stable": "2.0.3",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16-alpine",
+       "redis:alpine",
+       "goauthentik/server:2025.10.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/goauthentik",
      "stars": 0,
      "pushed_at": "2026-06-20T23:23:15Z",
@@ -627,7 +761,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-14T16:29:25Z"
     }
    ]
   },
@@ -717,6 +852,40 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "alangecker/bbb-docker-web:v3.0.23",
+       "alangecker/bbb-docker-freeswitch:v1.10.12-v3.0.23",
+       "alangecker/bbb-docker-nginx:v3.0.23-v5.4.4-1.29",
+       "alangecker/bbb-docker-etherpad:2.4.2-s8328b77-p88f3f6b",
+       "alangecker/bbb-docker-pads:v1.5.8",
+       "alangecker/bbb-docker-bbb-export-annotations:v3.0.23",
+       "alangecker/bbb-docker-webrtc-sfu:v2.22.0",
+       "alangecker/bbb-docker-webrtc-recorder:v0.14.0",
+       "alangecker/bbb-docker-fsesl-akka:v3.0.23",
+       "alangecker/bbb-docker-apps-akka:v3.0.23",
+       "alangecker/bbb-docker-graphql-server:v3.0.23",
+       "alangecker/bbb-docker-graphql-actions:v3.0.23",
+       "alangecker/bbb-docker-graphql-middleware:v3.0.23",
+       "alangecker/bbb-docker-recordings:v3.0.23",
+       "bigbluebutton/greenlight:v3.9.0.1",
+       "postgres:16.15-alpine",
+       "redis:8.10.2-alpine",
+       "processone/eturnal:1.12.3"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 9216,
+      "volumes": [
+       "bigbluebutton",
+       "postgres-data",
+       "greenlight"
+      ]
+     },
      "source": "ghcr.io/stephdl/bigbluebutton",
      "stars": 0,
      "pushed_at": "2026-10-14T18:18:27Z",
@@ -731,7 +900,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-14T17:37:56Z"
     }
    ]
   },
@@ -766,11 +936,11 @@
       "documentation_url": "https://www.bookstackapp.com/docs/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/bookstack/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/bookstack/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/bookstack/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/bookstack/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/bookstack/screenshots/screen.png"
+      "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen.png"
      ],
      "versions": [
       {
@@ -781,6 +951,19 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.5",
+       "linuxserver/bookstack:25.12.8"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/bookstack",
      "stars": 0,
      "pushed_at": "2026-02-28T12:30:42Z",
@@ -795,7 +978,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-28T12:30:42Z"
     }
    ]
   },
@@ -830,7 +1014,7 @@
       "documentation_url": "https://www.bugsink.com/docs/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/bugsink/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/bugsink/logo.png",
      "screenshots": [],
      "versions": [
       {
@@ -841,6 +1025,19 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mysql:9.4.0",
+       "bugsink/bugsink:1.7.6"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/bugsink",
      "stars": 0,
      "pushed_at": "2026-06-18T10:35:27Z",
@@ -855,7 +1052,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-13T02:22:23Z"
     }
    ]
   },
@@ -904,6 +1102,20 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.10-alpine3.19",
+       "redis:8.2.2",
+       "calcom/cal.com:v6.2.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/calcom",
      "stars": 0,
      "pushed_at": "2026-10-13T17:36:43Z",
@@ -918,7 +1130,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-03-19T09:21:00Z"
     }
    ]
   },
@@ -953,10 +1166,10 @@
       "documentation_url": "https://calibre-ebook.com/help",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/calibre/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/calibre/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/calibre/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/calibre/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/calibre/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/calibre/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -967,6 +1180,18 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "lscr.io/linuxserver/calibre:latest"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/calibre",
      "stars": 0,
      "pushed_at": "2025-08-25T06:03:41Z",
@@ -981,7 +1206,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-25T06:03:21Z"
     }
    ]
   },
@@ -1016,10 +1242,10 @@
       "documentation_url": "https://github.com/janeczku/calibre-web/wiki",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/calibre-Web/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/calibre-Web/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/calibre-Web/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/calibre-Web/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/calibre-Web/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/calibre-Web/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -1030,6 +1256,18 @@
      "stable": null,
      "testing": "1.0.0-beta1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "lscr.io/linuxserver/calibre-web:latest"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/calibre-web",
      "stars": 0,
      "pushed_at": "2026-10-15T03:21:49Z",
@@ -1097,6 +1335,18 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "olivierlambert/calrs:1.17.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/calrs",
      "stars": 0,
      "pushed_at": "2026-10-13T02:43:35Z",
@@ -1111,7 +1361,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T15:30:07Z"
     }
    ]
   },
@@ -1146,11 +1397,11 @@
       "documentation_url": "https://docs.checkcle.com/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/checkcle/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/checkcle/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/checkcle/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/checkcle/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/checkcle/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -1161,6 +1412,18 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "operacle/checkcle:latest"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/checkcle",
      "stars": 0,
      "pushed_at": "2025-10-05T23:26:05Z",
@@ -1175,7 +1438,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-10-05T23:26:30Z"
     }
    ]
   },
@@ -1224,6 +1488,19 @@
      "stable": "1.1.2",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "checkmk/check-mk-raw:2.4.0p35"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@any:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/checkmk",
      "stars": 0,
      "pushed_at": "2026-10-13T01:45:27Z",
@@ -1238,7 +1515,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-08-01T19:47:35Z"
     }
    ]
   },
@@ -1273,10 +1551,10 @@
       "documentation_url": "https://docs.chiefonboarding.com/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/chiefonboarding/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/chiefonboarding/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/chiefonboarding/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/chiefonboarding/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/chiefonboarding/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/chiefonboarding/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -1287,6 +1565,19 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "chiefonboarding/chiefonboarding:v2.2.7"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/chiefonboarding",
      "stars": 0,
      "pushed_at": "2026-06-01T16:18:39Z",
@@ -1301,7 +1592,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-09T11:09:16Z"
     }
    ]
   },
@@ -1348,6 +1640,21 @@
      "stable": "1.3.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "clamav/clamav:1.5.4",
+       "tebbiworld/clamav-web:1.3.1"
+      ],
+      "authorizations": [
+       "node:fwadm,portsadm",
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/clamav",
      "stars": 0,
      "pushed_at": "2026-09-30T15:59:49Z",
@@ -1362,7 +1669,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-25T18:12:50Z"
     }
    ]
   },
@@ -1411,6 +1719,18 @@
      "stable": "1.1.8",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "collabora/code:26.04.3.2.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/collabora",
      "stars": 0,
      "pushed_at": "2026-10-14T13:14:24Z",
@@ -1425,7 +1745,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-07T15:39:21Z"
     }
    ]
   },
@@ -1460,11 +1781,11 @@
       "documentation_url": "https://coolify.io/docs/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/coolify/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/coolify/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/coolify/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/coolify/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/coolify/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -1479,6 +1800,21 @@
      "stable": "1.6.1",
      "testing": "4.0.0-beta.394",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "coollabsio/coolify:4.0.0-beta.463",
+       "postgres:15-alpine",
+       "redis:7-alpine",
+       "coollabsio/coolify-realtime:1.0.10"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 3,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/coolify",
      "stars": 0,
      "pushed_at": "2026-02-14T15:00:30Z",
@@ -1493,7 +1829,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-14T15:00:11Z"
     }
    ]
   },
@@ -1543,6 +1880,22 @@
      "stable": "3.23.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/redis:3.23.1",
+       "nethserver/rsync:3.23.1",
+       "nethserver/restic:3.23.1",
+       "nethserver/rclone:3.23.1",
+       "grafana/alloy:v1.11.3",
+       "nethserver/support:3.23.1",
+       "prometheus/node-exporter:v1.10.2"
+      ],
+      "authorizations": [],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/core",
      "stars": 52,
      "pushed_at": "2026-10-16T16:09:01Z",
@@ -1557,7 +1910,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-10-15T11:41:27Z"
     }
    ]
   },
@@ -1594,7 +1948,7 @@
       "documentation_url": "https://couchdb.apache.org/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/couchdb/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/couchdb/logo.png",
      "screenshots": [],
      "versions": [
       {
@@ -1605,6 +1959,18 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "apache/couchdb:3.5.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/couchdb",
      "stars": 1,
      "pushed_at": "2025-07-21T15:48:38Z",
@@ -1619,7 +1985,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-07-21T15:48:18Z"
     }
    ]
   },
@@ -1668,6 +2035,17 @@
      "stable": "1.4.1",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": true,
+      "images": [
+       "crowdsecurity/crowdsec:v1.8.1-debian",
+       "nethserver/crowdsec-firewall-bouncer:1.4.1"
+      ],
+      "authorizations": [],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/crowdsec",
      "stars": 1,
      "pushed_at": "2026-10-15T08:23:26Z",
@@ -1682,7 +2060,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-14T07:00:32Z"
     }
    ]
   },
@@ -1729,6 +2108,20 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "joedwards32/cs2:4.0.1"
+      ],
+      "authorizations": [
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": [
+       "cs2-data"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/cs2",
      "stars": 0,
      "pushed_at": "2026-10-01T10:39:15Z",
@@ -1743,7 +2136,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:37:28Z"
     }
    ]
   },
@@ -1843,6 +2237,18 @@
      "stable": "1.1.5",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "linuxserver/ddclient:v4.0.0-ls191"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/ddclient",
      "stars": 0,
      "pushed_at": "2026-10-17T07:50:47Z",
@@ -1857,7 +2263,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T16:25:04Z"
     }
    ]
   },
@@ -1903,6 +2310,22 @@
      "stable": "2.0.0",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:17.11-alpine",
+       "dependencytrack/frontend:5.0.5",
+       "dependencytrack/apiserver:5.0.5",
+       "aquasec/trivy:0.74.0",
+       "nginx:1.30.4-alpine"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/dependencytrack",
      "stars": 0,
      "pushed_at": "2026-10-13T14:06:45Z",
@@ -1917,7 +2340,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-01T10:34:13Z"
     }
    ]
   },
@@ -1964,6 +2388,18 @@
      "stable": "1.3.4",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": true,
+      "images": [
+       "nethserver/dnsmasq-server:1.3.4"
+      ],
+      "authorizations": [
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/dnsmasq",
      "stars": 0,
      "pushed_at": "2026-10-13T00:22:04Z",
@@ -1978,7 +2414,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-07-23T16:29:16Z"
     }
    ]
   },
@@ -2013,11 +2450,11 @@
       "documentation_url": "https://docmost.com/docs",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/docmost/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/docmost/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/docmost/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/docmost/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/docmost/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2028,6 +2465,20 @@
      "stable": "1.3.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16-alpine",
+       "docmost/docmost:0.23.2",
+       "redis:7.2-alpine"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/docmost",
      "stars": 0,
      "pushed_at": "2026-05-09T23:31:04Z",
@@ -2042,7 +2493,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-09-29T13:02:59Z"
     }
    ]
   },
@@ -2077,10 +2529,10 @@
       "documentation_url": "https://www.docuseal.co/docs/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/docuseal/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/docuseal/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/docuseal/screenshots/screen.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/docuseal/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/docuseal/screenshots/screen.png",
+      "https://forge.genius.ke/ns8/updates/docuseal/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2091,6 +2543,19 @@
      "stable": "1.3.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "docuseal/docuseal:2.5.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/docuseal",
      "stars": 0,
      "pushed_at": "2026-06-01T07:07:30Z",
@@ -2105,7 +2570,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-06-01T07:07:30Z"
     }
    ]
   },
@@ -2140,12 +2606,12 @@
       "documentation_url": "https://docs.dokploy.com/docs/core",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dokploy/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/dokploy/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dokploy/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dokploy/screenshots/screen4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dokploy/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dokploy/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2156,6 +2622,20 @@
      "stable": "1.4.2",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16",
+       "redis:7",
+       "dokploy/dokploy:v0.27.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/dokploy",
      "stars": 0,
      "pushed_at": "2026-02-20T20:54:09Z",
@@ -2170,7 +2650,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-20T20:53:49Z"
     }
    ]
   },
@@ -2219,6 +2700,19 @@
      "stable": "1.1.8",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "dokuwiki/dokuwiki:2026-07-14b"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/dokuwiki",
      "stars": 0,
      "pushed_at": "2026-10-13T04:23:30Z",
@@ -2233,7 +2727,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T07:45:16Z"
     }
    ]
   },
@@ -2268,10 +2763,10 @@
       "documentation_url": "https://www.dolibarr.org/documentation-home.php",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dolibarr/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/dolibarr/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dolibarr/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/dolibarr/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/dolibarr/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/dolibarr/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2282,6 +2777,19 @@
      "stable": null,
      "testing": "1.0.0-beta1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.5",
+       "tuxgasy/dolibarr:18.0.5"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/dolibarr",
      "stars": 0,
      "pushed_at": "2025-07-15T14:01:27Z",
@@ -2343,6 +2851,21 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "ecodms/ecodms:26.01-02"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "ecodms-data",
+       "ecodms-backup"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/ecodms",
      "stars": 0,
      "pushed_at": "2026-09-30T21:47:28Z",
@@ -2357,7 +2880,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:37:32Z"
     }
    ]
   },
@@ -2407,6 +2931,20 @@
      "stable": "1.1.9",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "ejabberd/ecs:26.07"
+      ],
+      "authorizations": [
+       "traefik@node:certadm",
+       "node:fwadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/ejabberd",
      "stars": 1,
      "pushed_at": "2026-10-13T04:25:22Z",
@@ -2421,7 +2959,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T07:43:49Z"
     }
    ]
   },
@@ -2468,6 +3007,22 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "elabftw/elabimg:6.0.1",
+       "mysql:8.4.10"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "elabftw-uploads",
+       "elabftw-exports"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/elabftw",
      "stars": 0,
      "pushed_at": "2026-09-30T16:01:51Z",
@@ -2482,7 +3037,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:37:36Z"
     }
    ]
   },
@@ -2517,14 +3073,14 @@
       "documentation_url": "https://docs.erpnext.com/",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/erpnext/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/erpnext/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/erpnext/screenshots/screen5.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/erpnext/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/erpnext/screenshots/screen4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/erpnext/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/erpnext/screenshots/screen6.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/erpnext/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen5.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen6.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2535,6 +3091,19 @@
      "stable": "4.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.5",
+       "redis:6.2-alpine"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/erpnext",
      "stars": 7,
      "pushed_at": "2026-06-07T09:06:05Z",
@@ -2549,7 +3118,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-06-07T09:02:11Z"
     }
    ]
   },
@@ -2584,10 +3154,10 @@
       "documentation_url": "https://docs.espocrm.com",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/espocrm/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/espocrm/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/espocrm/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/espocrm/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/espocrm/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/espocrm/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2598,6 +3168,19 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.5",
+       "espocrm/espocrm:9.2-apache"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/espocrm",
      "stars": 0,
      "pushed_at": "2025-10-05T12:17:00Z",
@@ -2612,7 +3195,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-10-05T12:16:39Z"
     }
    ]
   },
@@ -2647,7 +3231,7 @@
       "documentation_url": "https://eturnal.net/doc/",
       "bug_url": "https://github.com/NethServer/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/eturnal/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/eturnal/logo.png",
      "screenshots": [],
      "versions": [
       {
@@ -2658,6 +3242,19 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "processone/eturnal:latest"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/eturnal",
      "stars": 0,
      "pushed_at": "2026-02-07T12:34:38Z",
@@ -2672,7 +3269,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-07T10:37:20Z"
     }
    ]
   },
@@ -2721,6 +3319,18 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "euro-office/documentserver:v9.3.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/euro-office",
      "stars": 0,
      "pushed_at": "2026-10-13T16:39:32Z",
@@ -2735,7 +3345,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-06-27T10:44:47Z"
     }
    ]
   },
@@ -2782,6 +3393,18 @@
      "stable": "1.0.3",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mrmarkuz/fetchmail-binary:1.0.3"
+      ],
+      "authorizations": [
+       "mail@any:mailadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/fetchmail",
      "stars": 0,
      "pushed_at": "2026-07-25T09:07:27Z",
@@ -2796,7 +3419,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-03-17T14:22:58Z"
     }
    ]
   },
@@ -2849,6 +3473,19 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "firebirdsql/firebird:3.0.11"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/sipi58/firebird",
      "stars": 0,
      "pushed_at": "2026-01-25T09:06:54Z",
@@ -2863,7 +3500,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-01-25T09:06:54Z"
     }
    ]
   },
@@ -2898,10 +3536,10 @@
       "documentation_url": "https://docs.firefly-iii.org/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/firefly-iii/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/firefly-iii/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/firefly-iii/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/firefly-iii/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/firefly-iii/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/firefly-iii/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2912,6 +3550,19 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "fireflyiii/core:version-6.3.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/firefly",
      "stars": 0,
      "pushed_at": "2026-03-09T08:35:36Z",
@@ -2926,7 +3577,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-25T05:48:26Z"
     }
    ]
   },
@@ -2961,10 +3613,10 @@
       "documentation_url": "https://formbricks.com/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/formbricks/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/formbricks/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/formbricks/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/formbricks/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/formbricks/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/formbricks/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -2975,6 +3627,20 @@
      "stable": null,
      "testing": "1.0.0-beta.1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "formbricks/formbricks:2.3.1",
+       "redis:7"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/formbricks",
      "stars": 0,
      "pushed_at": "2025-07-17T18:23:19Z",
@@ -3036,6 +3702,20 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "felddy/foundryvtt:14.367.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "foundryvtt-data"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/foundryvtt",
      "stars": 0,
      "pushed_at": "2026-09-30T21:48:07Z",
@@ -3050,7 +3730,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:37:40Z"
     }
    ]
   },
@@ -3085,11 +3766,11 @@
       "documentation_url": "https://docs.gitea.com/",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/gitea/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/gitea/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/gitea/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/gitea/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/gitea/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -3100,6 +3781,19 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "gitea/gitea:1.24"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/gitea",
      "stars": 0,
      "pushed_at": "2025-08-25T05:58:58Z",
@@ -3114,7 +3808,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-25T05:58:41Z"
     }
    ]
   },
@@ -3149,10 +3844,10 @@
       "documentation_url": "https://glpi-project.org/documentation/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/glpi/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/glpi/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/glpi/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/glpi/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/glpi/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/glpi/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -3163,6 +3858,19 @@
      "stable": "2.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.5",
+       "geniusdynamics/glpi:10.0.18"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/glpi",
      "stars": 0,
      "pushed_at": "2025-10-02T14:05:15Z",
@@ -3177,7 +3885,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-07-05T14:36:48Z"
     }
    ]
   },
@@ -3224,6 +3933,18 @@
      "stable": "1.1.3",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/gophish-app:1.1.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/gophish",
      "stars": 0,
      "pushed_at": "2026-09-30T16:04:26Z",
@@ -3238,7 +3959,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:38:17Z"
     }
    ]
   },
@@ -3289,6 +4011,18 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "grafana/grafana:12.4.1"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/grafana",
      "stars": 0,
      "pushed_at": "2026-10-13T11:20:48Z",
@@ -3303,7 +4037,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-03-10T07:54:17Z"
     }
    ]
   },
@@ -3352,6 +4087,21 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "guacamole/guacamole:1.5.5",
+       "guacamole/guacd:1.5.5"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/guacamole",
      "stars": 0,
      "pushed_at": "2026-10-13T00:31:47Z",
@@ -3366,7 +4116,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-11-20T22:10:22Z"
     }
    ]
   },
@@ -3413,6 +4164,22 @@
      "stable": "1.2.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "hashtopolis/backend",
+       "hashtopolis/frontend",
+       "mysql:8.0.46"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "hashtopolis-data"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/hashtopolis",
      "stars": 0,
      "pushed_at": "2026-09-30T16:00:26Z",
@@ -3427,7 +4194,8 @@
       "docs": true,
       "min_core": false,
       "license": false
-     }
+     },
+     "released_at": "2026-09-25T11:19:13Z"
     }
    ]
   },
@@ -3480,6 +4248,19 @@
      "stable": "1.1.1",
      "testing": "1.1.2-dev.1",
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "headscale/headscale:v0.29.3",
+       "gurucomputing/headscale-ui:2026.03.17"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/headscale",
      "stars": 0,
      "pushed_at": "2026-10-15T17:10:03Z",
@@ -3494,7 +4275,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-08-03T18:32:53Z"
     }
    ]
   },
@@ -3543,6 +4325,22 @@
      "stable": "0.9.0",
      "testing": "0.9.1-testing.2",
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/hermes-agent-auth:0.9.0",
+       "nethserver/hermes-agent-hermes:0.9.0",
+       "nethserver/hermes-agent-socket:0.9.0"
+      ],
+      "authorizations": [
+       "cluster:accountconsumer",
+       "traefik@node:routeadm",
+       "node:portsadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/hermes-agent",
      "stars": 3,
      "pushed_at": "2026-10-09T12:50:53Z",
@@ -3557,7 +4355,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-28T08:29:16Z"
     }
    ]
   },
@@ -3592,9 +4391,9 @@
       "documentation_url": "https://homarr.dev/docs",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/homarr/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/homarr/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/homarr/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/homarr/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -3605,6 +4404,18 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "homarr-labs/homarr:v1.34.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/homarr",
      "stars": 0,
      "pushed_at": "2025-08-24T17:02:32Z",
@@ -3619,7 +4430,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-24T17:02:33Z"
     }
    ]
   },
@@ -3671,6 +4483,18 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "gethomepage/homepage:v0.8.12"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/dz00te/homepage",
      "stars": 0,
      "pushed_at": "2026-02-01T17:39:10Z",
@@ -3685,7 +4509,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-01-31T15:00:59Z"
     }
    ]
   },
@@ -3734,6 +4559,19 @@
      "stable": "1.3.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "huginn/huginn:v2026.09.09",
+       "mariadb:11.4.12"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/huginn",
      "stars": 0,
      "pushed_at": "2026-09-30T16:04:47Z",
@@ -3748,7 +4586,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:30:11Z"
     }
    ]
   },
@@ -3795,6 +4634,21 @@
      "stable": "1.4.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/idevice-backup-app:1.4.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:portsadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "idevice-data"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/idevice-backup",
      "stars": 0,
      "pushed_at": "2026-09-30T21:46:20Z",
@@ -3809,7 +4663,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:38:21Z"
     }
    ]
   },
@@ -3857,6 +4712,18 @@
      "stable": "1.3.3",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/imapsync-binary:1.3.3"
+      ],
+      "authorizations": [
+       "mail@any:mailadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/imapsync",
      "stars": 0,
      "pushed_at": "2026-10-13T04:22:39Z",
@@ -3871,7 +4738,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T07:39:34Z"
     }
    ]
   },
@@ -3920,6 +4788,23 @@
      "stable": "1.2.5",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0",
+       "immich-app/immich-server:v3.1.0",
+       "immich-app/immich-machine-learning:v3.1.0",
+       "valkey/valkey:9"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "immich-data"
+      ]
+     },
      "source": "ghcr.io/mrmarkuz/immich",
      "stars": 1,
      "pushed_at": "2026-10-13T01:38:50Z",
@@ -3934,7 +4819,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-07-31T15:34:16Z"
     }
    ]
   },
@@ -3969,9 +4855,9 @@
       "documentation_url": "https://it-tools.tech/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/it-tools/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/it-tools/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/it-tools/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/it-tools/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -3982,6 +4868,18 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "corentinth/it-tools:latest"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/it-tools",
      "stars": 0,
      "pushed_at": "2024-03-09T23:02:21Z",
@@ -3996,7 +4894,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-03-08T13:18:04Z"
     }
    ]
   },
@@ -4045,6 +4944,18 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "jellyfin/jellyfin:10.10.7"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/jellyfin",
      "stars": 0,
      "pushed_at": "2026-07-25T09:59:16Z",
@@ -4059,7 +4970,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-17T10:27:42Z"
     }
    ]
   },
@@ -4108,6 +5020,23 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "jitsi/web:stable-10184",
+       "jitsi/prosody:stable-10184",
+       "jitsi/jicofo:stable-10184",
+       "jitsi/jvb:stable-10184"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/jitsi",
      "stars": 0,
      "pushed_at": "2026-07-25T09:08:46Z",
@@ -4122,7 +5051,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-07-24T19:56:12Z"
     }
    ]
   },
@@ -4157,12 +5087,12 @@
       "documentation_url": "https://joplinapp.org/help/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/joplin/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/joplin/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/joplin/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/joplin/screenshots/screen4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/joplin/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/joplin/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -4173,6 +5103,19 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16",
+       "joplin/server:3.3.13"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/joplin",
      "stars": 1,
      "pushed_at": "2025-09-28T18:39:22Z",
@@ -4187,7 +5130,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-13T03:39:13Z"
     }
    ]
   },
@@ -4236,6 +5180,19 @@
      "stable": "1.0.19",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.18",
+       "kimai/kimai2:apache-2.57.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/kimai",
      "stars": 0,
      "pushed_at": "2026-10-13T00:38:49Z",
@@ -4250,7 +5207,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-07-15T19:05:43Z"
     }
    ]
   },
@@ -4299,6 +5257,19 @@
      "stable": "1.0.3",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.10-alpine3.19",
+       "tombursch/kitchenowl:v0.7.9"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/kitchenowl",
      "stars": 1,
      "pushed_at": "2026-10-13T02:32:37Z",
@@ -4313,7 +5284,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-07-18T21:27:56Z"
     }
    ]
   },
@@ -4361,6 +5333,18 @@
      "stable": "1.1.3",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "louislam/uptime-kuma:2.4.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/uptime-kuma",
      "stars": 0,
      "pushed_at": "2026-10-14T22:56:44Z",
@@ -4375,7 +5359,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-07-19T08:45:13Z"
     },
     {
      "module_id": "kuma",
@@ -4426,6 +5411,19 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "louislam/uptime-kuma:2.5.6",
+       "mariadb:11.4.13"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/kuma",
      "stars": 0,
      "pushed_at": "2026-10-15T07:16:13Z",
@@ -4440,7 +5438,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-15T07:16:13Z"
     }
    ]
   },
@@ -4488,6 +5487,19 @@
      "stable": "1.3.8",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "ldapaccountmanager/lam:9.5.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/lam",
      "stars": 0,
      "pushed_at": "2026-10-13T01:50:13Z",
@@ -4502,7 +5514,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T16:23:12Z"
     }
    ]
   },
@@ -4550,6 +5563,19 @@
      "stable": "1.4.0",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/lamp-server-php8.3:1.4.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/lamp",
      "stars": 0,
      "pushed_at": "2026-10-13T14:03:38Z",
@@ -4564,7 +5590,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-18T21:37:34Z"
     },
     {
      "module_id": "lamp",
@@ -4657,6 +5684,19 @@
      "stable": "1.2.3",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "stephdl/lamp-server-php8.3:1.2.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/lamp",
      "stars": 0,
      "pushed_at": "2026-10-13T14:03:38Z",
@@ -4671,7 +5711,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-01-16T14:28:29Z"
     }
    ]
   },
@@ -4717,6 +5758,18 @@
      "stable": "1.4.0",
      "testing": null,
      "min_core": "3.2.2",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nginx:1.31.6-alpine"
+      ],
+      "authorizations": [
+       "node:portsadm"
+      ],
+      "tcp_ports": 1024,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/ldapproxy",
      "stars": 0,
      "pushed_at": "2026-10-13T11:06:26Z",
@@ -4731,7 +5784,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-06T10:05:26Z"
     }
    ]
   },
@@ -4780,6 +5834,19 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "coudot/lemonldap-ng:2.20.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/ksat-design/lemonldapng",
      "stars": 0,
      "pushed_at": "2025-06-15T00:06:20Z",
@@ -4794,7 +5861,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-05-09T10:29:03Z"
     }
    ]
   },
@@ -4829,9 +5897,9 @@
       "documentation_url": "https://docs.linkwarden.app/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/linkwarden/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/linkwarden/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/linkwarden/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/linkwarden/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -4842,6 +5910,19 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "linkwarden/linkwarden:v2.12.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/linkwarden",
      "stars": 0,
      "pushed_at": "2026-02-05T18:57:26Z",
@@ -4856,7 +5937,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-29T18:38:13Z"
     }
    ]
   },
@@ -4887,11 +5969,11 @@
       "documentation_url": "https://listmonk.app/docs",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/listmonk/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/listmonk/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/listmonk/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/listmonk/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/listmonk/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -4902,6 +5984,19 @@
      "stable": "1.3.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "listmonk/listmonk:v6.0.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/listmonk",
      "stars": 0,
      "pushed_at": "2026-08-02T18:10:31Z",
@@ -4916,7 +6011,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-22T04:46:55Z"
     }
    ]
   },
@@ -4966,6 +6062,17 @@
      "stable": "1.5.2",
      "testing": "1.5.3-dev.1",
      "min_core": "3.2.0-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "traefik:v3.7.14",
+       "grafana/loki:3.7.8"
+      ],
+      "authorizations": [],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/loki",
      "stars": 0,
      "pushed_at": "2026-10-16T14:40:22Z",
@@ -4980,7 +6087,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-15T09:17:33Z"
     }
    ]
   },
@@ -5034,6 +6142,25 @@
      "stable": "1.9.1",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/mail-dovecot:1.9.1",
+       "nethserver/mail-postfix:1.9.1",
+       "nethserver/mail-rspamd:1.9.1",
+       "nethserver/mail-clamav:1.9.1"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:fulladm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": [
+       "dovecot-data"
+      ]
+     },
      "source": "ghcr.io/nethserver/mail",
      "stars": 3,
      "pushed_at": "2026-10-14T09:13:31Z",
@@ -5048,7 +6175,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-02T16:39:00Z"
     }
    ]
   },
@@ -5097,6 +6225,19 @@
      "stable": "1.1.7",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.19",
+       "phpmyadmin/phpmyadmin:5.2.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/mariadb",
      "stars": 0,
      "pushed_at": "2026-10-17T04:24:21Z",
@@ -5111,7 +6252,8 @@
       "docs": true,
       "min_core": true,
       "license": false
-     }
+     },
+     "released_at": "2026-09-03T07:29:12Z"
     }
    ]
   },
@@ -5146,7 +6288,7 @@
       "documentation_url": "https://matomo.org/help/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/matomo/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/matomo/logo.png",
      "screenshots": [],
      "versions": [
       {
@@ -5157,6 +6299,19 @@
      "stable": "2.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "matomo:5.10.1",
+       "mariadb:10.11.6"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/matomo",
      "stars": 0,
      "pushed_at": "2026-06-08T13:14:52Z",
@@ -5171,7 +6326,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-06-08T13:14:52Z"
     }
    ]
   },
@@ -5221,6 +6377,23 @@
      "stable": "0.0.5",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:14.22-alpine",
+       "element-hq/synapse:v1.149.1",
+       "element-hq/element-web:v1.12.12",
+       "cinnyapp/cinny:v4.11.1",
+       "nethesis/matrix2acrobits:0.0.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 5,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/matrix",
      "stars": 3,
      "pushed_at": "2026-10-13T00:21:51Z",
@@ -5235,7 +6408,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-06-15T14:02:07Z"
     }
    ]
   },
@@ -5292,6 +6466,20 @@
      "stable": "2.4.9",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:17.11-alpine",
+       "mattermost/mattermost-team-edition:10.11.24"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 1,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/mattermost",
      "stars": 0,
      "pushed_at": "2026-10-13T04:22:39Z",
@@ -5306,7 +6494,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-08T07:44:53Z"
     }
    ]
   },
@@ -5341,9 +6530,9 @@
       "documentation_url": "https://www.mautic.org/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/mautic/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/mautic/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/mautic/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/mautic/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -5354,6 +6543,19 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.5",
+       "mautic/mautic:6.0.7-apache"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/mautic",
      "stars": 0,
      "pushed_at": "2026-02-22T05:26:43Z",
@@ -5368,7 +6570,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-22T05:26:25Z"
     }
    ]
   },
@@ -5403,10 +6606,10 @@
       "documentation_url": "https://maybe.co//",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/maybe/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/maybe/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/maybe/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/maybe/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/maybe/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/maybe/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -5417,6 +6620,20 @@
      "stable": "1.1.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "maybe-finance/maybe:0.6.0",
+       "redis:7"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/maybe",
      "stars": 0,
      "pushed_at": "2025-08-24T17:12:37Z",
@@ -5431,7 +6648,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-24T17:12:18Z"
     }
    ]
   },
@@ -5479,6 +6697,19 @@
      "stable": "1.1.4",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mongo:7.0.43",
+       "ylianst/meshcentral:1.2.5-mongodb"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
      "pushed_at": "2026-10-14T21:34:52Z",
@@ -5493,7 +6724,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-22T08:52:02Z"
     }
    ]
   },
@@ -5541,6 +6773,18 @@
      "stable": "1.0.12",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "typhonragewind/meshcentral:preloadlibs-1.1.53"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/meshcentral-light",
      "stars": 0,
      "pushed_at": "2026-07-25T12:58:49Z",
@@ -5555,7 +6799,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-03-17T13:36:59Z"
     }
    ]
   },
@@ -5605,6 +6850,20 @@
      "stable": "1.6.0",
      "testing": "1.6.1-dev.1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "prom/prometheus:v3.13.4",
+       "prom/alertmanager:v0.34.1",
+       "nethserver/metrics-grafana:1.6.0"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/metrics",
      "stars": 0,
      "pushed_at": "2026-10-16T15:34:45Z",
@@ -5619,7 +6878,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-10-15T09:12:24Z"
     }
    ]
   },
@@ -5666,6 +6926,20 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "itzg/minecraft-server:2026.9.1-java25"
+      ],
+      "authorizations": [
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": [
+       "minecraft-data"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/minecraft",
      "stars": 0,
      "pushed_at": "2026-09-30T21:48:56Z",
@@ -5680,7 +6954,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:37:56Z"
     }
    ]
   },
@@ -5715,7 +6990,7 @@
       "documentation_url": "https://www.monicahq.com/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/monica/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/monica/logo.png",
      "screenshots": [],
      "versions": [
       {
@@ -5726,6 +7001,22 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "redis:7.2.3-bookworm",
+       "postgres:15.5-alpine3.19",
+       "getmeili/meilisearch:latest",
+       "monica:5.0.0-beta.5-fpm-alpine",
+       "mariadb:10.11.5"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/monica",
      "stars": 0,
      "pushed_at": "2025-12-12T00:14:58Z",
@@ -5740,7 +7031,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-13T08:58:44Z"
     }
    ]
   },
@@ -5794,6 +7086,20 @@
      "stable": "0.0.3",
      "testing": "0.0.4-dev.1",
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16.13",
+       "n8nio/n8n:2.13.4",
+       "n8nio/runners:2.13.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/n8n",
      "stars": 0,
      "pushed_at": "2026-10-14T08:22:29Z",
@@ -5808,7 +7114,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-04-02T09:07:37Z"
     },
     {
      "module_id": "n8n",
@@ -5833,10 +7140,10 @@
       "documentation_url": "https://docs.n8n.io/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/n8n/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/n8n/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/n8n/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/n8n/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/n8n/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/n8n/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -5847,6 +7154,21 @@
      "stable": "2.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "redis:7.2.3-bookworm",
+       "postgres:15.5-bookworm",
+       "n8nio/n8n:2.1.1",
+       "n8nio/runners:2.1.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/n8n",
      "stars": 0,
      "pushed_at": "2025-12-24T02:07:37Z",
@@ -5861,7 +7183,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-12-24T02:07:37Z"
     }
    ]
   },
@@ -5908,6 +7231,21 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "netbootxyz/netbootxyz:0.7.6-nbxyz24"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "netbootxyz-config"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/netbootxyz",
      "stars": 0,
      "pushed_at": "2026-09-30T16:03:56Z",
@@ -5922,7 +7260,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:38:00Z"
     }
    ]
   },
@@ -5971,6 +7310,18 @@
      "stable": "2.2.12",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": true,
+      "images": [
+       "netdata/netdata:v2.11.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/netdata",
      "stars": 0,
      "pushed_at": "2026-10-13T19:47:06Z",
@@ -5985,7 +7336,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T07:53:24Z"
     }
    ]
   },
@@ -6042,6 +7394,28 @@
      "stable": "2.3.0",
      "testing": "2.4.0-dev.2",
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/nethsecurity-vpn:2.3.0",
+       "nethserver/nethsecurity-api:2.3.0",
+       "nethserver/nethsecurity-ui:2.3.0",
+       "nethserver/nethsecurity-proxy:2.3.0",
+       "grafana/promtail:3.6.11",
+       "grafana/loki:2.9.17",
+       "prom/prometheus:v3.15.0",
+       "grafana/grafana:13.2.3",
+       "nethserver/webssh:2.3.0",
+       "timescale/timescaledb:2.23.1-pg16"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm",
+       "node:tunadm,portsadm"
+      ],
+      "tcp_ports": 11,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/nethsecurity-controller",
      "stars": 1,
      "pushed_at": "2026-10-16T14:51:46Z",
@@ -6056,7 +7430,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-12T14:33:20Z"
     }
    ]
   },
@@ -6111,6 +7486,37 @@
      "stable": "1.7.11",
      "testing": null,
      "min_core": "3.22.0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethesis/nethvoice-mariadb:1.7.11",
+       "nethesis/nethvoice-freepbx:1.7.11",
+       "nethesis/nethvoice-cti-server:1.7.11",
+       "nethesis/nethvoice-cti-middleware:1.7.11",
+       "nethesis/nethvoice-cti-ui:1.7.11",
+       "nethesis/nethvoice-tancredi:1.7.11",
+       "nethesis/nethvoice-janus:1.7.11",
+       "nethesis/nethvoice-phonebook:1.7.11",
+       "redis:7.0.10-alpine",
+       "nethesis/nethvoice-reports-ui:1.7.11",
+       "nethesis/nethvoice-reports-api:1.7.11",
+       "nethesis/nethvoice-sftp:1.7.11",
+       "eclipse-mosquitto:2",
+       "nethesis/nethvoice-satellite:1.7.11",
+       "pgvector/pgvector:0.8.1-pg18-trixie"
+      ],
+      "authorizations": [
+       "traefik@any:fulladm",
+       "node:fwadm,portsadm",
+       "nethvoice-proxy@any:routeadm,trunkadm",
+       "cluster:accountconsumer",
+       "openldap@any:domadm",
+       "samba@any:domadm"
+      ],
+      "tcp_ports": 39,
+      "udp_ports": 3000,
+      "volumes": []
+     },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
      "pushed_at": "2026-10-17T04:28:07Z",
@@ -6125,7 +7531,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-16T09:26:53Z"
     }
    ]
   },
@@ -6181,6 +7588,22 @@
      "stable": "1.7.4",
      "testing": "1.7.5-testing.2",
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethesis/nethvoice-proxy-postgres:1.7.4",
+       "nethesis/nethvoice-proxy-kamailio:1.7.4",
+       "nethesis/nethvoice-proxy-redis:1.7.4",
+       "nethesis/nethvoice-proxy-rtpengine:1.7.4"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@any:certadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
      "pushed_at": "2026-10-16T15:41:23Z",
@@ -6195,7 +7618,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-16T13:23:47Z"
     }
    ]
   },
@@ -6266,6 +7690,25 @@
      "stable": "1.7.6",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "redis:7.4.5-alpine",
+       "mariadb:10.6.28",
+       "nginx:1.30.1-alpine",
+       "nethserver/nextcloud-app:1.7.6",
+       "nethserver/nextcloud-notify_push:1.7.6"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "nextcloud-app-data"
+      ]
+     },
      "source": "ghcr.io/nethserver/nextcloud",
      "stars": 0,
      "pushed_at": "2026-10-13T04:21:29Z",
@@ -6280,7 +7723,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-02T16:41:44Z"
     }
    ]
   },
@@ -6315,14 +7759,14 @@
       "documentation_url": "https://docs.nocodb.com/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/nocodb/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/nocodb/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/nocodb/screenshots/screen5.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/nocodb/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/nocodb/screenshots/screen4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/nocodb/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/nocodb/screenshots/screen6.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/nocodb/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen5.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen6.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -6333,6 +7777,19 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "nocodb/nocodb:0.265.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/nocodb",
      "stars": 0,
      "pushed_at": "2025-10-05T23:39:15Z",
@@ -6347,7 +7804,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-10-05T23:38:56Z"
     }
    ]
   },
@@ -6394,6 +7852,18 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": true,
+      "images": [
+       "prometheus/node-exporter:v1.5.0"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/node_exporter",
      "stars": 0,
      "pushed_at": "2025-02-27T13:28:04Z",
@@ -6408,7 +7878,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-02-13T10:16:33Z"
     }
    ]
   },
@@ -6443,10 +7914,10 @@
       "documentation_url": "https://docs.ntfy.sh/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/ntfy/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/ntfy/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/ntfy/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/ntfy/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/ntfy/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/ntfy/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -6461,6 +7932,18 @@
      "stable": "1.0.0",
      "testing": "1.0.1-beta1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "binwiederhier/ntfy:v2.14"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/ntfy",
      "stars": 0,
      "pushed_at": "2025-08-13T09:13:25Z",
@@ -6475,7 +7958,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-13T09:13:05Z"
     }
    ]
   },
@@ -6522,6 +8006,21 @@
      "stable": "1.1.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "odoo:19.0-20260908",
+       "postgres:16.14"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "odoo-data"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/odoo",
      "stars": 0,
      "pushed_at": "2026-09-30T16:01:21Z",
@@ -6536,7 +8035,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:38:04Z"
     }
    ]
   },
@@ -6585,6 +8085,18 @@
      "stable": "1.1.7",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "onlyoffice/documentserver:9.4.0.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/onlyoffice",
      "stars": 0,
      "pushed_at": "2026-10-13T18:42:05Z",
@@ -6599,7 +8111,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-06-03T19:01:10Z"
     }
    ]
   },
@@ -6648,6 +8161,18 @@
      "stable": "1.2.2",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "opencloudeu/opencloud-rolling:7.4.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/opencloud",
      "stars": 0,
      "pushed_at": "2026-10-13T01:43:11Z",
@@ -6662,7 +8187,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-08-09T10:28:54Z"
     }
    ]
   },
@@ -6708,6 +8234,20 @@
      "stable": "2.8.0",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/openldap-server:2.8.0"
+      ],
+      "authorizations": [
+       "ldapproxy@node:accountprovider",
+       "cluster:accountprovider",
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/openldap",
      "stars": 0,
      "pushed_at": "2026-10-14T09:22:52Z",
@@ -6722,7 +8262,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-18T13:19:07Z"
     }
    ]
   },
@@ -6770,6 +8311,19 @@
      "stable": "1.0.3",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "linuxserver/openssh-server:10.3_p1-r0-ls231"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/openssh",
      "stars": 0,
      "pushed_at": "2026-10-17T00:27:42Z",
@@ -6784,7 +8338,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-07-18T11:05:49Z"
     }
    ]
   },
@@ -6833,6 +8388,20 @@
      "stable": "1.0.3",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "openvpn/openvpn-as:3.1.0-e22fe316-Ubuntu24"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/openvpn",
      "stars": 0,
      "pushed_at": "2026-07-25T10:02:03Z",
@@ -6847,7 +8416,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-03-17T14:53:31Z"
     }
    ]
   },
@@ -6894,6 +8464,20 @@
      "stable": "1.2.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "open-webui/open-webui:v0.11.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "openwebui-data"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/openwebui",
      "stars": 0,
      "pushed_at": "2026-09-30T22:02:43Z",
@@ -6908,7 +8492,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-30T22:03:45Z"
     }
    ]
   },
@@ -6959,6 +8544,22 @@
      "stable": "1.3.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "redis:7.2.3-bookworm",
+       "postgres:15.5-bookworm",
+       "paperlessngx/paperless-ngx:2.11.4",
+       "apache/tika:3.0.0.0-BETA2-full",
+       "gotenberg/gotenberg:8.9.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/compgeniuses/paperlessngx",
      "stars": 1,
      "pushed_at": "2026-06-20T23:36:54Z",
@@ -6973,7 +8574,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-08-14T00:54:31Z"
     }
    ]
   },
@@ -7026,6 +8628,19 @@
      "stable": "1.0.7",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.19",
+       "passbolt/passbolt:5.15.0-1-ce-non-root"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/passbolt",
      "stars": 0,
      "pushed_at": "2026-10-17T04:23:35Z",
@@ -7040,7 +8655,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T07:34:04Z"
     }
    ]
   },
@@ -7091,6 +8707,18 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/passbolt-export-app:1.1.0"
+      ],
+      "authorizations": [
+       "traefik@any:reader"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/passbolt-export",
      "stars": 0,
      "pushed_at": "2026-10-11T14:46:25Z",
@@ -7105,7 +8733,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-10-11T14:31:57Z"
     }
    ]
   },
@@ -7197,6 +8826,21 @@
      "stable": "0.6.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:17-alpine",
+       "redis:7-alpine",
+       "patchmon/patchmon-server:2.1.3",
+       "guacamole/guacd:1.6.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/dz00te/patchmon",
      "stars": 0,
      "pushed_at": "2026-08-16T07:04:05Z",
@@ -7211,7 +8855,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-08-16T07:04:06Z"
     }
    ]
   },
@@ -7312,6 +8957,19 @@
      "stable": "0.1.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "pegaprox/pegaprox:1.1.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:portsadm"
+      ],
+      "tcp_ports": 3,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/dz00te/pegaprox",
      "stars": 0,
      "pushed_at": "2026-09-03T16:54:17Z",
@@ -7326,7 +8984,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-01T15:50:02Z"
     }
    ]
   },
@@ -7426,6 +9085,19 @@
      "stable": "1.1.8",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "pihole/pihole:2026.07.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/pihole",
      "stars": 0,
      "pushed_at": "2026-10-13T02:46:36Z",
@@ -7440,7 +9112,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T16:25:51Z"
     }
    ]
   },
@@ -7489,6 +9162,25 @@
      "stable": "1.3.0",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/piler-server:1.3.0",
+       "mariadb:10.11.19",
+       "memcached:1.6.45-alpine",
+       "manticoresearch/manticore:14.1.0"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm",
+       "mail@any:mailadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": [
+       "piler_store"
+      ]
+     },
      "source": "ghcr.io/nethserver/piler",
      "stars": 0,
      "pushed_at": "2026-10-14T15:38:41Z",
@@ -7503,7 +9195,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-07T11:54:32Z"
     }
    ]
   },
@@ -7552,6 +9245,19 @@
      "stable": "1.0.3",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "plankanban/planka:2.1.1",
+       "postgres:16.14-alpine"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/planka",
      "stars": 0,
      "pushed_at": "2026-10-13T00:37:52Z",
@@ -7566,7 +9272,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-07-18T20:38:34Z"
     }
    ]
   },
@@ -7613,6 +9320,21 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "plexinc/pms-docker:1.43.4.10903-e5521bd8c"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "plex-config",
+       "plex-transcode"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/plex",
      "stars": 0,
      "pushed_at": "2026-09-30T16:03:36Z",
@@ -7627,7 +9349,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:38:08Z"
     }
    ]
   },
@@ -7662,7 +9385,7 @@
       "documentation_url": "https://docs.postalserver.io/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/postal/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/postal/logo.png",
      "screenshots": [],
      "versions": [
       {
@@ -7673,6 +9396,20 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postalserver/postal:latest",
+       "mariadb:10.11.5",
+       "caddy:2.10.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/postal",
      "stars": 0,
      "pushed_at": "2025-10-06T08:35:09Z",
@@ -7687,7 +9424,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-07-29T10:13:20Z"
     }
    ]
   },
@@ -7735,6 +9473,19 @@
      "stable": "1.2.2",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "dpage/pgadmin4:9.17",
+       "postgres:14.24-bookworm"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/postgresql",
      "stars": 0,
      "pushed_at": "2026-10-13T13:00:47Z",
@@ -7749,7 +9500,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T07:48:13Z"
     }
    ]
   },
@@ -7784,7 +9536,7 @@
       "documentation_url": "https://docs.postiz.com/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/postiz/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/postiz/logo.png",
      "screenshots": [],
      "versions": [
       {
@@ -7795,6 +9547,25 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "gitroomhq/postiz-app:v2.19.0",
+       "getsentry/spotlight:latest",
+       "temporalio/ui:2.45.3",
+       "postgres:17-alpine",
+       "redis:7.2",
+       "elasticsearch:7.17.27",
+       "temporalio/auto-setup:1.29.3",
+       "temporalio/admin-tools:1.28.1-tctl-1.18.4-cli-1.4.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 3,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/postiz",
      "stars": 0,
      "pushed_at": "2026-02-23T13:37:11Z",
@@ -7809,7 +9580,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-23T13:36:52Z"
     }
    ]
   },
@@ -7863,6 +9635,18 @@
      "stable": "1.0.4",
      "testing": "1.1.0-dev.1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "prometheus/prometheus:v3.4.0"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/prometheus",
      "stars": 0,
      "pushed_at": "2026-10-14T07:00:45Z",
@@ -7877,7 +9661,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-05-22T07:54:51Z"
     }
    ]
   },
@@ -7926,6 +9711,18 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "rcourtman/pulse:6.0.5"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/pulse",
      "stars": 0,
      "pushed_at": "2026-10-13T01:29:21Z",
@@ -7940,7 +9737,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-07-15T14:54:40Z"
     }
    ]
   },
@@ -7975,14 +9773,14 @@
       "documentation_url": "https://docs.pwpush.com/",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/pwpush/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/pwpush/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/pwpush/screenshots/screen5.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/pwpush/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/pwpush/screenshots/screen4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/pwpush/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/pwpush/screenshots/screen6.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/pwpush/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen5.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen6.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -7993,6 +9791,19 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "pglombardo/pwpush:2.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/passwordpusher",
      "stars": 0,
      "pushed_at": "2026-08-02T09:00:24Z",
@@ -8007,7 +9818,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-03-31T17:34:52Z"
     }
    ]
   },
@@ -8042,9 +9854,9 @@
       "documentation_url": "https://wiki.nethserver.org/doku.php?id=ns8:rally",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/rally/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/rally/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/rally/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/rally/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -8055,6 +9867,19 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "lukevella/rallly:4.5"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/rally",
      "stars": 0,
      "pushed_at": "2025-12-14T18:18:30Z",
@@ -8069,7 +9894,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-12-14T18:18:05Z"
     }
    ]
   },
@@ -8118,6 +9944,21 @@
      "stable": "2.2.0",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.19",
+       "roundcube/roundcubemail:1.7.4-apache"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "mail@any:mailadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/roundcubemail",
      "stars": 1,
      "pushed_at": "2026-10-16T15:21:29Z",
@@ -8132,7 +9973,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-16T15:21:07Z"
     }
    ]
   },
@@ -8181,6 +10023,19 @@
      "stable": "1.0.4",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "rustdesk/rustdesk-server-s6:1.1.16"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/rustdesk",
      "stars": 0,
      "pushed_at": "2026-10-13T02:05:33Z",
@@ -8195,7 +10050,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-08-02T09:27:17Z"
     }
    ]
   },
@@ -8246,6 +10102,20 @@
      "stable": "1.0.5",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "rustfs/rustfs:1.0.0-rc.5-glibc"
+      ],
+      "authorizations": [
+       "traefik@any:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": [
+       "rustfs-data"
+      ]
+     },
      "source": "ghcr.io/nethserver/rustfs",
      "stars": 0,
      "pushed_at": "2026-10-13T14:01:37Z",
@@ -8260,7 +10130,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T08:03:38Z"
     }
    ]
   },
@@ -8307,6 +10178,20 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/sagemath-app:1.0.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "sagemath-userhomes"
+      ]
+     },
      "source": "ghcr.io/tebbiworld/sagemath",
      "stars": 0,
      "pushed_at": "2026-09-30T21:47:46Z",
@@ -8321,7 +10206,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:38:13Z"
     }
    ]
   },
@@ -8423,6 +10309,18 @@
      "stable": "1.0.4",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "stephdl/sam-server:1.0.5"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/sam",
      "stars": 0,
      "pushed_at": "2026-10-15T15:48:17Z",
@@ -8437,7 +10335,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-08-13T13:34:41Z"
     }
    ]
   },
@@ -8492,6 +10391,24 @@
      "stable": "3.5.1",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/samba-dc:3.5.1",
+       "timescale/timescaledb:2.30.2-pg17"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "cluster:accountprovider",
+       "traefik@node:fulladm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "shares",
+       "homes"
+      ]
+     },
      "source": "ghcr.io/nethserver/samba",
      "stars": 0,
      "pushed_at": "2026-10-15T08:04:13Z",
@@ -8506,7 +10423,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-15T08:03:50Z"
     }
    ]
   },
@@ -8552,6 +10470,14 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [],
+      "authorizations": [],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/davideprincipi/scratchpad",
      "stars": 0,
      "pushed_at": "2024-04-23T16:30:56Z",
@@ -8566,7 +10492,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2023-12-13T17:35:00Z"
     }
    ]
   },
@@ -8601,9 +10528,9 @@
       "documentation_url": "https://docs.semaphoreui.com/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/semaphore/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/semaphore/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/semaphore/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/semaphore/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -8614,6 +10541,19 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.5",
+       "semaphoreui/semaphore:v2.15.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/semaphoreui",
      "stars": 1,
      "pushed_at": "2025-07-16T11:41:19Z",
@@ -8628,7 +10568,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-07-14T15:58:55Z"
     }
    ]
   },
@@ -8680,6 +10621,21 @@
      "stable": "2.2.8",
      "testing": "5.2.1-dev.1",
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.19",
+       "nethserver/sogo-server:5.12.11"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "mail@any:mailadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/sogo",
      "stars": 0,
      "pushed_at": "2026-10-13T04:25:17Z",
@@ -8694,7 +10650,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T09:59:27Z"
     }
    ]
   },
@@ -8729,13 +10686,13 @@
       "documentation_url": "https://stirlingtools.com/docs/Overview/What%20is%20Stirling-PDF",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/stirlingpdf/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/stirlingpdf/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/stirlingpdf/screenshots/screen5.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/stirlingpdf/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/stirlingpdf/screenshots/screen4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/stirlingpdf/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/stirlingpdf/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen5.png",
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -8746,6 +10703,18 @@
      "stable": "1.2.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "stirlingtools/stirling-pdf:2.1.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/stirlingpdf",
      "stars": 0,
      "pushed_at": "2025-12-09T09:26:32Z",
@@ -8760,7 +10729,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-12-09T09:26:32Z"
     }
    ]
   },
@@ -8809,6 +10779,16 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tailscale/tailscale:v1.86.2"
+      ],
+      "authorizations": [],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/tailscale",
      "stars": 0,
      "pushed_at": "2026-10-13T23:39:42Z",
@@ -8823,7 +10803,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-18T12:46:15Z"
     }
    ]
   },
@@ -8858,12 +10839,12 @@
       "documentation_url": "https://docs.termix.site/",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/termix/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/termix/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/termix/screenshots/Image 4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/termix/screenshots/Image 3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/termix/screenshots/Image 2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/termix/screenshots/Image 1.png"
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 4.png",
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 3.png",
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 2.png",
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 1.png"
      ],
      "versions": [
       {
@@ -8874,6 +10855,18 @@
      "stable": "1.0.4",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "lukegus/termix:release-1.11.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/termix",
      "stars": null,
      "pushed_at": null,
@@ -8888,7 +10881,8 @@
       "docs": true,
       "min_core": false,
       "license": false
-     }
+     },
+     "released_at": null
     }
    ]
   },
@@ -8934,6 +10928,16 @@
      "stable": "4.2.5",
      "testing": null,
      "min_core": "3.17.0-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "traefik:v3.7.14"
+      ],
+      "authorizations": [],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/traefik",
      "stars": 0,
      "pushed_at": "2026-10-16T14:38:27Z",
@@ -8948,7 +10952,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-16T14:38:08Z"
     }
    ]
   },
@@ -8995,6 +11000,18 @@
      "stable": "1.1.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "sigstore/timestamp-server:v2.1.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/tsa",
      "stars": 0,
      "pushed_at": "2026-09-30T16:01:06Z",
@@ -9009,7 +11026,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:30:15Z"
     }
    ]
   },
@@ -9062,6 +11080,20 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16.9",
+       "redis:8.0.2",
+       "twentycrm/twenty:v1.2.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/twenty",
      "stars": 0,
      "pushed_at": "2026-10-16T12:49:46Z",
@@ -9076,7 +11108,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-23T08:33:31Z"
     }
    ]
   },
@@ -9111,11 +11144,11 @@
       "documentation_url": "https://umami.is/docs",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/umami/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/umami/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/umami/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/umami/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/umami/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -9126,6 +11159,19 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "umami-software/umami:postgresql-v2.19.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/umami",
      "stars": 0,
      "pushed_at": "2025-08-25T02:03:40Z",
@@ -9140,7 +11186,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-25T02:03:19Z"
     }
    ]
   },
@@ -9189,6 +11236,20 @@
      "stable": "1.0.8",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "linuxserver/unifi-network-application:10.4.57-ls139",
+       "mongo:8.0.28"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/unifi-network",
      "stars": 0,
      "pushed_at": "2026-10-13T16:55:12Z",
@@ -9203,7 +11264,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-08-01T19:56:23Z"
     }
    ]
   },
@@ -9308,6 +11370,19 @@
      "stable": "1.2.2",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "dpage/pgadmin4:9.17",
+       "postgres:16.15-bookworm"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/v16postgresql",
      "stars": 0,
      "pushed_at": "2026-10-13T00:57:57Z",
@@ -9322,7 +11397,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T16:23:45Z"
     }
    ]
   },
@@ -9375,6 +11451,19 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "dpage/pgadmin4:9.16",
+       "postgres:18.4-bookworm"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/v18postgresql",
      "stars": 0,
      "pushed_at": "2026-10-13T01:26:14Z",
@@ -9389,7 +11478,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T17:06:45Z"
     }
    ]
   },
@@ -9426,9 +11516,9 @@
       "documentation_url": "https://github.com/dani-garcia/vaultwarden/wiki",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/vaultwarden/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/vaultwarden/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/vaultwarden/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/vaultwarden/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -9439,6 +11529,18 @@
      "stable": "2.3.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "vaultwarden/server:1.37.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/vaultwarden",
      "stars": 0,
      "pushed_at": "2026-08-02T06:14:33Z",
@@ -9453,7 +11555,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-08-02T06:14:33Z"
     }
    ]
   },
@@ -9488,12 +11591,12 @@
       "documentation_url": "https://vikunja.io/docs",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/vikunja/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/vikunja/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/vikunja/screenshots/screen3.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/vikunja/screenshots/screen4.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/vikunja/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/vikunja/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -9504,6 +11607,19 @@
      "stable": "1.0.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.5-alpine3.19",
+       "vikunja/vikunja:0.24.6"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/vikunja",
      "stars": 0,
      "pushed_at": "2026-02-23T08:58:31Z",
@@ -9518,7 +11634,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-25T01:57:50Z"
     }
    ]
   },
@@ -9553,10 +11670,10 @@
       "documentation_url": "https://wallosapp.com/",
       "bug_url": "https://github.com/geniusdynamic/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/wallos/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/wallos/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/wallos/screenshots/screen2.png",
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/wallos/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/wallos/screenshots/screen2.png",
+      "https://forge.genius.ke/ns8/updates/wallos/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -9571,6 +11688,18 @@
      "stable": "1.0.0",
      "testing": "1.1.1-beta1",
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "bellamy/wallos:4.1.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/wallos",
      "stars": 1,
      "pushed_at": "2026-08-23T20:51:18Z",
@@ -9585,7 +11714,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2025-08-24T09:47:35Z"
     }
    ]
   },
@@ -9636,6 +11766,20 @@
      "stable": "1.4.1",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nginx:1.30.2-alpine",
+       "drakkan/sftpgo:v2.7.6-alpine"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/webserver",
      "stars": 0,
      "pushed_at": "2026-10-13T04:21:33Z",
@@ -9650,7 +11794,8 @@
       "docs": true,
       "min_core": true,
       "license": false
-     }
+     },
+     "released_at": "2026-09-28T09:35:39Z"
     }
    ]
   },
@@ -9701,6 +11846,26 @@
      "stable": "1.5.13",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "nethserver/webtop-webapp:1.5.13",
+       "nethserver/webtop-postgres:1.5.13",
+       "nethserver/webtop-apache:1.5.13",
+       "nethserver/webtop-webdav:1.5.13",
+       "nethserver/webtop-z-push:1.5.13",
+       "nethserver/webtop-phonebook:1.5.13"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "mail@any:mailadm",
+       "cluster:accountconsumer",
+       "nethvoice@any:pbookreader"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
      "pushed_at": "2026-10-15T15:03:47Z",
@@ -9715,7 +11880,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-10-15T15:03:47Z"
     }
    ]
   },
@@ -9762,6 +11928,18 @@
      "stable": "1.1.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/wesnoth-server:1.1.1"
+      ],
+      "authorizations": [
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/wesnoth",
      "stars": 0,
      "pushed_at": "2026-10-04T12:28:55Z",
@@ -9776,7 +11954,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-09-23T21:38:26Z"
     }
    ]
   },
@@ -9824,6 +12003,19 @@
      "stable": "1.0.2",
      "testing": null,
      "min_core": "3.9.0-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "wg-easy/wg-easy:14"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/wg-easy",
      "stars": 1,
      "pushed_at": "2026-08-14T07:52:22Z",
@@ -9838,7 +12030,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2025-04-10T09:52:21Z"
     }
    ]
   },
@@ -9885,6 +12078,16 @@
      "stable": "0.5.0",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/windeploy-samba:0.5.0"
+      ],
+      "authorizations": [],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/tebbiworld/windeploy",
      "stars": 0,
      "pushed_at": "2026-10-16T20:16:18Z",
@@ -9899,7 +12102,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-10-16T20:16:18Z"
     }
    ]
   },
@@ -9947,6 +12151,19 @@
      "stable": "1.2.4",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:10.11.19",
+       "nethserver/wordpress-app:1.2.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 3,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/nethserver/wordpress",
      "stars": 0,
      "pushed_at": "2026-10-17T04:23:41Z",
@@ -9961,7 +12178,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-03T07:14:54Z"
     }
    ]
   },
@@ -10037,6 +12255,19 @@
      "stable": "1.0.7",
      "testing": null,
      "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "xwiki:18.7.0-mariadb-tomcat",
+       "mariadb:11.4.13"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/stephdl/xwiki",
      "stars": 0,
      "pushed_at": "2026-10-13T00:32:47Z",
@@ -10051,7 +12282,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-09-16T16:14:15Z"
     }
    ]
   },
@@ -10099,6 +12331,22 @@
      "stable": "1.0.13",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:15.18-alpine",
+       "zabbix/zabbix-server-pgsql:7.0.28-alpine",
+       "zabbix/zabbix-agent2:7.0.28-alpine",
+       "zabbix/zabbix-web-nginx-pgsql:7.0.28-alpine"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@any:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/zabbix",
      "stars": 0,
      "pushed_at": "2026-10-13T02:43:36Z",
@@ -10113,7 +12361,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-07-15T12:41:16Z"
     }
    ]
   },
@@ -10161,6 +12410,22 @@
      "stable": "1.1.0",
      "testing": null,
      "min_core": "3.12.4-0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:17.10-alpine",
+       "elasticsearch:9.4.3",
+       "zammad/zammad:7.1.1-0020",
+       "memcached:1.6.44-alpine",
+       "redis:8.8.0-alpine"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/mrmarkuz/zammad",
      "stars": 0,
      "pushed_at": "2026-10-13T05:38:15Z",
@@ -10175,7 +12440,8 @@
       "docs": true,
       "min_core": true,
       "license": true
-     }
+     },
+     "released_at": "2026-07-13T19:27:57Z"
     }
    ]
   },
@@ -10210,9 +12476,9 @@
       "documentation_url": "https://zitadel.com/docs",
       "bug_url": "https://github.com/geniusdynamics/dev"
      },
-     "logo": "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/zitadel/logo.png",
+     "logo": "https://forge.genius.ke/ns8/updates/zitadel/logo.png",
      "screenshots": [
-      "https://raw.githubusercontent.com/geniusdynamics/ns8-genforge/repomd/ns8/updates/zitadel/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/zitadel/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -10223,6 +12489,19 @@
      "stable": "1.0.1",
      "testing": null,
      "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:17",
+       "zitadel/zitadel:v4.10.1"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
      "source": "ghcr.io/geniusdynamics/zitadel",
      "stars": 1,
      "pushed_at": "2026-10-14T08:01:59Z",
@@ -10237,7 +12516,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2026-02-15T06:30:50Z"
     }
    ]
   }
