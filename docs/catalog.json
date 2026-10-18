@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T05:20:33+00:00",
+ "generated_at": "2026-10-18T06:49:02+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -347,7 +347,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-07-10T07:31:52Z"
     }
    ]
   },
@@ -563,7 +564,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-08-15T04:42:33Z"
     }
    ]
   },
@@ -1570,7 +1572,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-02-28T17:16:39Z"
     }
    ]
   },
@@ -3093,7 +3096,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-03-01T00:18:22Z"
     }
    ]
   },
@@ -4021,7 +4025,8 @@
       "docs": true,
       "min_core": false,
       "license": true
-     }
+     },
+     "released_at": "2024-07-09T19:40:59Z"
     }
    ]
   },
