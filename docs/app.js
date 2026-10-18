@@ -214,7 +214,8 @@ function relDate(iso) {
   if (days < 1) return rtf.format(0, "day");
   if (days < 30) return rtf.format(-days, "day");
   if (days < 365) return rtf.format(-Math.round(days / 30), "month");
-  return rtf.format(-Math.round(days / 365), "year");
+  // "last year" spans 365 to 547 days, a month and year says more.
+  return new Intl.DateTimeFormat(state.lang, { month: "short", year: "numeric" }).format(new Date(iso));
 }
 
 function logo(v, cls = "") {
