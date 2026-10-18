@@ -244,8 +244,9 @@ function healthBadges(v) {
   ].filter(Boolean).join("");
 }
 
-function lastPush(app) {
-  return app.variants.map((v) => v.pushed_at || "").sort().pop();
+// Release date, not last push: bots like Renovate push without releasing.
+function lastRelease(app) {
+  return app.variants.map((v) => v.released_at || "").sort().pop();
 }
 
 function bestVariant(app) {
@@ -283,7 +284,7 @@ function sortApps(apps, by) {
   const cmp = {
     stars: (a, b) => b.stars - a.stars || a.id.localeCompare(b.id),
     name: (a, b) => bestVariant(a).name.localeCompare(bestVariant(b).name),
-    updated: (a, b) => (lastPush(b) || "").localeCompare(lastPush(a) || ""),
+    updated: (a, b) => (lastRelease(b) || "").localeCompare(lastRelease(a) || ""),
     quality: (a, b) => score(bestVariant(b)) - score(bestVariant(a)) || b.stars - a.stars,
   }[by] || ((a, b) => b.stars - a.stars);
   return [...apps].sort(cmp);
@@ -521,7 +522,7 @@ function renderApp(id) {
         <span class="version">${esc(v.stable || "–")}</span>
         <span class="col-hide">${v.testing ? `<span class="badge testing">${esc(v.testing)}</span>` : ""}</span>
         <span class="stars">${v.stars == null ? "" : "★ " + v.stars}</span>
-        <span class="col-hide" title="${esc(v.pushed_at || "")}">${relDate(v.pushed_at)}</span>
+        <span class="col-hide" title="${esc(v.released_at || "")}">${relDate(v.released_at)}</span>
       </summary>
       <div class="variant-body">
         ${sameText ? "" : `<p>${esc(describe(v))}</p>`}
