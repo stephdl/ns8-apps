@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T11:55:33+00:00",
+ "generated_at": "2026-10-18T16:19:25+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -1948,7 +1948,7 @@
      },
      "source": "ghcr.io/tebbiworld/clamav",
      "stars": 0,
-     "pushed_at": "2026-10-18T10:44:12Z",
+     "pushed_at": "2026-10-18T16:07:46Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4477,7 +4477,7 @@
      },
      "source": "ghcr.io/nethserver/grafana",
      "stars": 0,
-     "pushed_at": "2026-10-13T11:20:48Z",
+     "pushed_at": "2026-10-18T14:30:02Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4634,7 +4634,7 @@
      },
      "source": "ghcr.io/tebbiworld/hashtopolis",
      "stars": 0,
-     "pushed_at": "2026-10-18T10:44:16Z",
+     "pushed_at": "2026-10-18T16:07:43Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4715,7 +4715,7 @@
      },
      "source": "ghcr.io/mrmarkuz/headscale",
      "stars": 0,
-     "pushed_at": "2026-10-15T17:10:03Z",
+     "pushed_at": "2026-10-18T13:23:41Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5026,7 +5026,7 @@
      },
      "source": "ghcr.io/tebbiworld/huginn",
      "stars": 0,
-     "pushed_at": "2026-10-18T10:44:14Z",
+     "pushed_at": "2026-10-18T16:07:40Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5104,7 +5104,7 @@
      },
      "source": "ghcr.io/tebbiworld/idevice-backup",
      "stars": 0,
-     "pushed_at": "2026-10-18T10:51:39Z",
+     "pushed_at": "2026-10-18T16:07:49Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11210,7 +11210,7 @@
      },
      "source": "ghcr.io/nethserver/sogo",
      "stars": 0,
-     "pushed_at": "2026-10-13T04:25:17Z",
+     "pushed_at": "2026-10-18T14:27:34Z",
      "archived": false,
      "checks": {
       "topic": false,
