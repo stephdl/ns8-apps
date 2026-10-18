@@ -132,8 +132,9 @@ def enrich(catalog, gh, http):
             v["pushed_at"] = repo.get("pushed_at")
             v["archived"] = repo.get("archived", False)
         full_name = github_full_name(v["code_url"])
-        if full_name and v["stable"]:
-            v["released_at"] = gh.release_date(full_name, v["stable"])
+        tag = v["stable"] or v["testing"]
+        if full_name and tag:
+            v["released_at"] = gh.release_date(full_name, tag)
 
         base = v["description"].get("en") or next(iter(v["description"].values()), "")
         if len(base) >= MIN_ABOUT:

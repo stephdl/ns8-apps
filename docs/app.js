@@ -14,7 +14,7 @@ const UI = {
     variants: (n) => `${n} variants`, versionsCol: "Stable", testingCol: "Testing",
     devCol: "Developer", repoCol: "Repository", updatedCol: "Updated",
  officialBadge: "Official",
-    code: "Source code", docs: "Documentation", bugs: "Report a bug",
+    code: "Source code", docs: "Documentation", bugs: "Report a bug", releases: "Releases",
     history: "Stable", install: "Install on NS8", noVersion: "no release yet",
     stepOfficial: (n) => `Available by default: open the Software Center, search ${n} and click Install.`,
     stepEnableForge: "Open Software Center › Settings › Software repositories and enable NethForge.",
@@ -42,7 +42,7 @@ const UI = {
     variants: (n) => `${n} variantes`, versionsCol: "Stable", testingCol: "Testing",
     devCol: "Développeur", repoCol: "Dépôt", updatedCol: "Mise à jour",
  officialBadge: "Officiel",
-    code: "Code source", docs: "Documentation", bugs: "Signaler un bug",
+    code: "Code source", docs: "Documentation", bugs: "Signaler un bug", releases: "Versions",
     history: "Stable", install: "Installer sur NS8", noVersion: "pas encore de release",
     stepOfficial: (n) => `Disponible par défaut : ouvrir le Software Center, chercher ${n} et cliquer sur Installer.`,
     stepEnableForge: "Ouvrir Software Center › Paramètres › Dépôts logiciels et activer NethForge.",
@@ -70,7 +70,7 @@ const UI = {
     variants: (n) => `${n} varianti`, versionsCol: "Stabile", testingCol: "Testing",
     devCol: "Sviluppatore", repoCol: "Repository", updatedCol: "Aggiornato",
  officialBadge: "Ufficiale", archived: "archiviato",
-    code: "Codice sorgente", docs: "Documentazione", bugs: "Segnala un bug",
+    code: "Codice sorgente", docs: "Documentazione", bugs: "Segnala un bug", releases: "Release",
     history: "Stabile", install: "Installa su NS8", noVersion: "nessuna release",
     stepOfficial: (n) => `Disponibile di default: apri il Software Center, cerca ${n} e clicca Installa.`,
     stepEnableForge: "Apri Software Center › Impostazioni › Repository software e attiva NethForge.",
@@ -98,7 +98,7 @@ const UI = {
     variants: (n) => `${n} Varianten`, versionsCol: "Stabil", testingCol: "Testing",
     devCol: "Entwickler", repoCol: "Repository", updatedCol: "Aktualisiert",
  officialBadge: "Offiziell", archived: "archiviert",
-    code: "Quellcode", docs: "Dokumentation", bugs: "Fehler melden",
+    code: "Quellcode", docs: "Dokumentation", bugs: "Fehler melden", releases: "Releases",
     history: "Stabil", install: "Auf NS8 installieren", noVersion: "noch kein Release",
     stepOfficial: (n) => `Standardmäßig verfügbar: Software Center öffnen, nach ${n} suchen und auf Installieren klicken.`,
     stepEnableForge: "Software Center › Einstellungen › Software-Repositorys öffnen und NethForge aktivieren.",
@@ -126,7 +126,7 @@ const UI = {
     variants: (n) => `${n} variantes`, versionsCol: "Estable", testingCol: "Testing",
     devCol: "Desarrollador", repoCol: "Repositorio", updatedCol: "Actualizado",
  officialBadge: "Oficial", archived: "archivado",
-    code: "Código fuente", docs: "Documentación", bugs: "Reportar un error",
+    code: "Código fuente", docs: "Documentación", bugs: "Reportar un error", releases: "Versiones",
     history: "Estable", install: "Instalar en NS8", noVersion: "sin release todavía",
     stepOfficial: (n) => `Disponible por defecto: abre el Software Center, busca ${n} y haz clic en Instalar.`,
     stepEnableForge: "Abre Software Center › Ajustes › Repositorios de software y activa NethForge.",
@@ -214,7 +214,8 @@ function relDate(iso) {
   if (days < 1) return rtf.format(0, "day");
   if (days < 30) return rtf.format(-days, "day");
   if (days < 365) return rtf.format(-Math.round(days / 30), "month");
-  return rtf.format(-Math.round(days / 365), "year");
+  // "last year" spans 365 to 547 days, a month and year says more.
+  return new Intl.DateTimeFormat(state.lang, { month: "short", year: "numeric" }).format(new Date(iso));
 }
 
 function logo(v, cls = "") {
@@ -244,8 +245,17 @@ function healthBadges(v) {
   ].filter(Boolean).join("");
 }
 
-function lastPush(app) {
-  return app.variants.map((v) => v.pushed_at || "").sort().pop();
+// Release date, not last push: bots like Renovate push without releasing.
+function lastRelease(app) {
+  return app.variants.map((v) => v.released_at || "").sort().pop();
+}
+
+function isGitHub(url) {
+  try {
+    return new URL(url).hostname === "github.com";
+  } catch {
+    return false;
+  }
 }
 
 function bestVariant(app) {
@@ -283,7 +293,7 @@ function sortApps(apps, by) {
   const cmp = {
     stars: (a, b) => b.stars - a.stars || a.id.localeCompare(b.id),
     name: (a, b) => bestVariant(a).name.localeCompare(bestVariant(b).name),
-    updated: (a, b) => (lastPush(b) || "").localeCompare(lastPush(a) || ""),
+    updated: (a, b) => (lastRelease(b) || "").localeCompare(lastRelease(a) || ""),
     quality: (a, b) => score(bestVariant(b)) - score(bestVariant(a)) || b.stars - a.stars,
   }[by] || ((a, b) => b.stars - a.stars);
   return [...apps].sort(cmp);
@@ -504,6 +514,7 @@ function renderApp(id) {
     const docs = v.docs || {};
     const links = [
       v.code_url && `<a href="${esc(v.code_url)}" target="_blank" rel="noopener">${t("code")}</a>`,
+      isGitHub(v.code_url) && `<a href="${esc(v.code_url.replace(/\/$/, ""))}/releases" target="_blank" rel="noopener">${t("releases")}</a>`,
       docs.documentation_url && `<a href="${esc(docs.documentation_url)}" target="_blank" rel="noopener">${t("docs")}</a>`,
       docs.bug_url && `<a href="${esc(docs.bug_url)}" target="_blank" rel="noopener">${t("bugs")}</a>`,
     ].filter(Boolean).join("");
@@ -521,7 +532,7 @@ function renderApp(id) {
         <span class="version">${esc(v.stable || "–")}</span>
         <span class="col-hide">${v.testing ? `<span class="badge testing">${esc(v.testing)}</span>` : ""}</span>
         <span class="stars">${v.stars == null ? "" : "★ " + v.stars}</span>
-        <span class="col-hide" title="${esc(v.pushed_at || "")}">${relDate(v.pushed_at)}</span>
+        <span class="col-hide" title="${esc(v.released_at || "")}">${relDate(v.released_at)}</span>
       </summary>
       <div class="variant-body">
         ${sameText ? "" : `<p>${esc(describe(v))}</p>`}
