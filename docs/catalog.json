@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T05:36:54+00:00",
+ "generated_at": "2026-10-19T12:40:21+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -43,7 +43,7 @@
    "alt_url": "https://raw.githubusercontent.com/stephdl/ns8-stephdl/repomd/ns8/updates/",
    "kind": "community",
    "repo": "stephdl/ns8-stephdl",
-   "app_count": 9
+   "app_count": 10
   },
   {
    "id": "mrmarkuz",
@@ -5811,7 +5811,7 @@
      },
      "source": "ghcr.io/mrmarkuz/uptime-kuma",
      "stars": 0,
-     "pushed_at": "2026-10-14T22:56:44Z",
+     "pushed_at": "2026-10-19T08:05:36Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5890,7 +5890,7 @@
      },
      "source": "ghcr.io/stephdl/kuma",
      "stars": 0,
-     "pushed_at": "2026-10-15T07:16:13Z",
+     "pushed_at": "2026-10-19T07:28:42Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7295,7 +7295,7 @@
      },
      "source": "ghcr.io/nethserver/n8n",
      "stars": 0,
-     "pushed_at": "2026-10-18T08:21:23Z",
+     "pushed_at": "2026-10-19T12:15:43Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7644,29 +7644,29 @@
      ],
      "versions": [
       {
-       "tag": "2.4.0-dev.2",
+       "tag": "2.4.1-dev.1",
        "testing": true
       },
       {
-       "tag": "2.3.0",
+       "tag": "2.4.0",
        "testing": false
       }
      ],
-     "stable": "2.3.0",
-     "testing": "2.4.0-dev.2",
+     "stable": "2.4.0",
+     "testing": "2.4.1-dev.1",
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "nethserver/nethsecurity-vpn:2.3.0",
-       "nethserver/nethsecurity-api:2.3.0",
-       "nethserver/nethsecurity-ui:2.3.0",
-       "nethserver/nethsecurity-proxy:2.3.0",
+       "nethserver/nethsecurity-vpn:2.4.0",
+       "nethserver/nethsecurity-api:2.4.0",
+       "nethserver/nethsecurity-ui:2.4.0",
+       "nethserver/nethsecurity-proxy:2.4.0",
        "grafana/promtail:3.6.11",
        "grafana/loki:2.9.17",
        "prom/prometheus:v3.15.0",
        "grafana/grafana:13.2.3",
-       "nethserver/webssh:2.3.0",
+       "nethserver/webssh:2.4.0",
        "timescale/timescaledb:2.23.1-pg16"
       ],
       "authorizations": [
@@ -7679,7 +7679,7 @@
      },
      "source": "ghcr.io/nethserver/nethsecurity-controller",
      "stars": 1,
-     "pushed_at": "2026-10-19T02:48:09Z",
+     "pushed_at": "2026-10-19T10:36:17Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7692,7 +7692,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-12T14:33:20Z"
+     "released_at": "2026-10-19T07:21:27Z"
     }
    ]
   },
@@ -7732,11 +7732,7 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.7.12-testing.1",
-       "testing": true
-      },
-      {
-       "tag": "1.7.11",
+       "tag": "1.7.12",
        "testing": false
       },
       {
@@ -7748,26 +7744,26 @@
        "testing": false
       }
      ],
-     "stable": "1.7.11",
-     "testing": "1.7.12-testing.1",
+     "stable": "1.7.12",
+     "testing": null,
      "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
       "images": [
-       "nethesis/nethvoice-mariadb:1.7.11",
-       "nethesis/nethvoice-freepbx:1.7.11",
-       "nethesis/nethvoice-cti-server:1.7.11",
-       "nethesis/nethvoice-cti-middleware:1.7.11",
-       "nethesis/nethvoice-cti-ui:1.7.11",
-       "nethesis/nethvoice-tancredi:1.7.11",
-       "nethesis/nethvoice-janus:1.7.11",
-       "nethesis/nethvoice-phonebook:1.7.11",
+       "nethesis/nethvoice-mariadb:1.7.12",
+       "nethesis/nethvoice-freepbx:1.7.12",
+       "nethesis/nethvoice-cti-server:1.7.12",
+       "nethesis/nethvoice-cti-middleware:1.7.12",
+       "nethesis/nethvoice-cti-ui:1.7.12",
+       "nethesis/nethvoice-tancredi:1.7.12",
+       "nethesis/nethvoice-janus:1.7.12",
+       "nethesis/nethvoice-phonebook:1.7.12",
        "redis:7.0.10-alpine",
-       "nethesis/nethvoice-reports-ui:1.7.11",
-       "nethesis/nethvoice-reports-api:1.7.11",
-       "nethesis/nethvoice-sftp:1.7.11",
+       "nethesis/nethvoice-reports-ui:1.7.12",
+       "nethesis/nethvoice-reports-api:1.7.12",
+       "nethesis/nethvoice-sftp:1.7.12",
        "eclipse-mosquitto:2",
-       "nethesis/nethvoice-satellite:1.7.11",
+       "nethesis/nethvoice-satellite:1.7.12",
        "pgvector/pgvector:0.8.1-pg18-trixie"
       ],
       "authorizations": [
@@ -7784,7 +7780,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-19T01:57:41Z",
+     "pushed_at": "2026-10-19T12:25:19Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7797,7 +7793,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-16T09:26:53Z"
+     "released_at": "2026-10-19T10:00:28Z"
     }
    ]
   },
@@ -12240,6 +12236,96 @@
    ]
   },
   {
+   "id": "wazuh",
+   "categories": [
+    "security"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "wazuh",
+     "forges": [
+      "stephdl"
+     ],
+     "kind": "community",
+     "developer": "stephdl",
+     "name": "Wazuh",
+     "description": {
+      "en": "Central Wazuh server: collects the logs of your servers, raises alerts and keeps them searchable.",
+      "fr": "Serveur Wazuh central : collecte les journaux de vos serveurs, lève des alertes et les rend consultables.",
+      "it": "Server Wazuh centrale: raccoglie i log dei tuoi server, genera avvisi e li rende ricercabili.",
+      "de": "Zentraler Wazuh-Server: sammelt die Logs Ihrer Server, löst Warnungen aus und macht sie durchsuchbar.",
+      "es": "Servidor Wazuh central: recoge los registros de sus servidores, genera alertas y permite buscarlos.",
+      "pt": "Servidor Wazuh central: recolhe os registos dos seus servidores, gera alertas e torna-os pesquisáveis.",
+      "pt_BR": "Servidor Wazuh central: coleta os logs dos seus servidores, gera alertas e os torna pesquisáveis.",
+      "eu": "Wazuh zerbitzari zentrala: zure zerbitzarien erregistroak biltzen ditu, alertak sortzen ditu eta bilagarri uzten ditu."
+     },
+     "about": null,
+     "authors": [
+      "Stephane de Labrusse"
+     ],
+     "categories": [
+      "security"
+     ],
+     "code_url": "https://github.com/stephdl/ns8-wazuh",
+     "docs": {
+      "documentation_url": "https://github.com/stephdl/ns8-wazuh#readme",
+      "bug_url": "https://github.com/stephdl/dev/issues"
+     },
+     "logo": "https://forge.de-labrusse.fr/ns8/updates/wazuh/logo.png",
+     "screenshots": [
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png",
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen2.png",
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png"
+     ],
+     "versions": [
+      {
+       "tag": "1.0.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.0.0",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "wazuh/wazuh-manager:5.0.0-rc1",
+       "wazuh/wazuh-indexer:5.0.0-rc1",
+       "wazuh/wazuh-dashboard:5.0.0-rc1"
+      ],
+      "authorizations": [
+       "node:fwadm",
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "wazuh-indexer-data"
+      ]
+     },
+     "source": "ghcr.io/stephdl/wazuh",
+     "stars": 0,
+     "pushed_at": "2026-10-19T12:17:36Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-18T21:23:28Z"
+    }
+   ]
+  },
+  {
    "id": "webserver",
    "categories": [
     "web"
@@ -12688,7 +12774,7 @@
      },
      "source": "ghcr.io/nethserver/wordpress",
      "stars": 0,
-     "pushed_at": "2026-10-17T04:23:41Z",
+     "pushed_at": "2026-10-19T07:38:45Z",
      "archived": false,
      "checks": {
       "topic": false,
