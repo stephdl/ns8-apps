@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T12:40:21+00:00",
+ "generated_at": "2026-10-19T14:16:53+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -7780,7 +7780,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-19T12:25:19Z",
+     "pushed_at": "2026-10-19T14:08:58Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11612,7 +11612,7 @@
      },
      "source": "ghcr.io/mrmarkuz/twenty",
      "stars": 0,
-     "pushed_at": "2026-10-16T12:49:46Z",
+     "pushed_at": "2026-10-19T12:52:34Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12281,11 +12281,19 @@
      ],
      "versions": [
       {
+       "tag": "1.0.2",
+       "testing": false
+      },
+      {
+       "tag": "1.0.1",
+       "testing": false
+      },
+      {
        "tag": "1.0.0",
        "testing": false
       }
      ],
-     "stable": "1.0.0",
+     "stable": "1.0.2",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -12303,12 +12311,14 @@
       "tcp_ports": 1,
       "udp_ports": 0,
       "volumes": [
-       "wazuh-indexer-data"
+       "wazuh-indexer-data",
+       "wazuh-snapshots",
+       "wazuh-logs"
       ]
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-19T12:17:36Z",
+     "pushed_at": "2026-10-19T13:45:01Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12321,7 +12331,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-18T21:23:28Z"
+     "released_at": "2026-10-19T08:46:37Z"
     }
    ]
   },
@@ -12474,7 +12484,7 @@
      },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
-     "pushed_at": "2026-10-15T15:03:47Z",
+     "pushed_at": "2026-10-19T13:26:52Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12752,18 +12762,18 @@
      ],
      "versions": [
       {
-       "tag": "1.2.4",
+       "tag": "1.2.5",
        "testing": false
       }
      ],
-     "stable": "1.2.4",
+     "stable": "1.2.5",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
        "mariadb:10.11.19",
-       "nethserver/wordpress-app:1.2.4"
+       "nethserver/wordpress-app:1.2.5"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -12787,7 +12797,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-09-03T07:14:54Z"
+     "released_at": "2026-10-19T07:38:23Z"
     }
    ]
   },
