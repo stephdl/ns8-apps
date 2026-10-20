@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T17:44:28+00:00",
+ "generated_at": "2026-10-20T22:02:16+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -1258,7 +1258,7 @@
      },
      "source": "ghcr.io/francio87/borgbackupserver",
      "stars": 1,
-     "pushed_at": "2026-10-20T06:10:42Z",
+     "pushed_at": "2026-10-20T21:01:21Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1410,7 +1410,7 @@
      },
      "source": "ghcr.io/mrmarkuz/calcom",
      "stars": 0,
-     "pushed_at": "2026-10-13T17:36:43Z",
+     "pushed_at": "2026-10-20T20:49:51Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5740,7 +5740,7 @@
      },
      "source": "ghcr.io/mrmarkuz/kimai",
      "stars": 0,
-     "pushed_at": "2026-10-13T00:38:49Z",
+     "pushed_at": "2026-10-20T18:49:45Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6051,7 +6051,7 @@
      },
      "source": "ghcr.io/stephdl/lam",
      "stars": 0,
-     "pushed_at": "2026-10-13T01:50:13Z",
+     "pushed_at": "2026-10-20T20:00:46Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7865,7 +7865,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-20T17:41:34Z",
+     "pushed_at": "2026-10-20T18:08:16Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8828,7 +8828,7 @@
      },
      "source": "ghcr.io/mrmarkuz/openssh",
      "stars": 0,
-     "pushed_at": "2026-10-17T00:27:42Z",
+     "pushed_at": "2026-10-20T18:57:15Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9683,7 +9683,7 @@
      },
      "source": "ghcr.io/stephdl/pihole",
      "stars": 0,
-     "pushed_at": "2026-10-13T02:46:36Z",
+     "pushed_at": "2026-10-20T17:51:04Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9843,7 +9843,7 @@
      },
      "source": "ghcr.io/mrmarkuz/planka",
      "stars": 0,
-     "pushed_at": "2026-10-13T00:37:52Z",
+     "pushed_at": "2026-10-20T18:25:44Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10908,7 +10908,7 @@
      },
      "source": "ghcr.io/stephdl/sam",
      "stars": 0,
-     "pushed_at": "2026-10-18T09:05:44Z",
+     "pushed_at": "2026-10-20T18:09:36Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12278,21 +12278,17 @@
      ],
      "versions": [
       {
-       "tag": "1.1.1-beta1",
-       "testing": true
-      },
-      {
-       "tag": "1.0.0",
+       "tag": "1.2.0",
        "testing": false
       }
      ],
-     "stable": "1.0.0",
-     "testing": "1.1.1-beta1",
+     "stable": "1.2.0",
+     "testing": null,
      "min_core": null,
      "tech": {
       "rootfull": false,
       "images": [
-       "bellamy/wallos:4.1.1"
+       "bellamy/wallos:5.10.0"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -12303,7 +12299,7 @@
      },
      "source": "ghcr.io/geniusdynamics/wallos",
      "stars": 1,
-     "pushed_at": "2026-10-19T21:57:17Z",
+     "pushed_at": "2026-10-20T20:07:58Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12316,7 +12312,7 @@
       "min_core": false,
       "license": true
      },
-     "released_at": "2025-08-24T09:47:35Z"
+     "released_at": "2026-10-20T20:07:38Z"
     }
    ]
   },
@@ -12360,9 +12356,9 @@
      },
      "logo": "https://forge.de-labrusse.fr/ns8/updates/wazuh/logo.png",
      "screenshots": [
-      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png",
       "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png"
      ],
      "versions": [
       {
