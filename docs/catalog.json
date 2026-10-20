@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T05:39:23+00:00",
+ "generated_at": "2026-10-20T09:39:43+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -43,7 +43,7 @@
    "alt_url": "https://raw.githubusercontent.com/stephdl/ns8-stephdl/repomd/ns8/updates/",
    "kind": "community",
    "repo": "stephdl/ns8-stephdl",
-   "app_count": 10
+   "app_count": 11
   },
   {
    "id": "mrmarkuz",
@@ -1258,7 +1258,7 @@
      },
      "source": "ghcr.io/francio87/borgbackupserver",
      "stars": 1,
-     "pushed_at": "2026-10-20T05:35:15Z",
+     "pushed_at": "2026-10-20T06:10:42Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4346,6 +4346,87 @@
       "license": true
      },
      "released_at": "2025-07-05T14:36:48Z"
+    },
+    {
+     "module_id": "glpi",
+     "forges": [
+      "stephdl"
+     ],
+     "kind": "community",
+     "developer": "stephdl",
+     "name": "GLPI",
+     "description": {
+      "en": "IT service management and asset inventory, with domain user login and email notifications.",
+      "fr": "Gestion des services informatiques et inventaire du parc, avec connexion des utilisateurs du domaine et notifications par email.",
+      "it": "Gestione dei servizi IT e inventario degli asset, con accesso degli utenti del dominio e notifiche email.",
+      "de": "IT-Service-Management und Inventarisierung, mit Anmeldung der Domainbenutzer und E-Mail-Benachrichtigungen.",
+      "es": "Gestión de servicios TI e inventario de activos, con inicio de sesión de usuarios del dominio y notificaciones por correo.",
+      "pt": "Gestão de serviços de TI e inventário de ativos, com início de sessão dos utilizadores do domínio e notificações por email.",
+      "pt_BR": "Gestão de serviços de TI e inventário de ativos, com login dos usuários do domínio e notificações por e-mail.",
+      "eu": "IKT zerbitzuen kudeaketa eta aktiboen inbentarioa, domeinuko erabiltzaileen saio hasierarekin eta posta bidezko jakinarazpenekin."
+     },
+     "about": null,
+     "authors": [
+      "Stephane de Labrusse"
+     ],
+     "categories": [
+      "collaboration"
+     ],
+     "code_url": "https://github.com/stephdl/ns8-glpi",
+     "docs": {
+      "documentation_url": "https://github.com/stephdl/ns8-glpi#readme",
+      "bug_url": "https://github.com/stephdl/dev/issues"
+     },
+     "logo": "https://forge.de-labrusse.fr/ns8/updates/glpi/logo.png",
+     "screenshots": [
+      "https://forge.de-labrusse.fr/ns8/updates/glpi/screenshots/screen2.png",
+      "https://forge.de-labrusse.fr/ns8/updates/glpi/screenshots/screen1.png"
+     ],
+     "versions": [
+      {
+       "tag": "1.0.1",
+       "testing": false
+      },
+      {
+       "tag": "1.0.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.0.1",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:12.3.3",
+       "glpi/glpi:12.0.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "glpi-data"
+      ]
+     },
+     "source": "ghcr.io/stephdl/glpi",
+     "stars": 0,
+     "pushed_at": "2026-10-20T08:33:58Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-20T08:33:58Z"
     }
    ]
   },
@@ -7784,7 +7865,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-19T16:07:51Z",
+     "pushed_at": "2026-10-20T09:21:02Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12285,6 +12366,10 @@
      ],
      "versions": [
       {
+       "tag": "1.0.5",
+       "testing": false
+      },
+      {
        "tag": "1.0.4",
        "testing": false
       },
@@ -12305,7 +12390,7 @@
        "testing": false
       }
      ],
-     "stable": "1.0.4",
+     "stable": "1.0.5",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -12330,7 +12415,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-19T19:33:06Z",
+     "pushed_at": "2026-10-20T08:39:31Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12343,7 +12428,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-19T19:33:06Z"
+     "released_at": "2026-10-20T08:39:31Z"
     }
    ]
   },
@@ -12496,7 +12581,7 @@
      },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
-     "pushed_at": "2026-10-19T17:55:18Z",
+     "pushed_at": "2026-10-20T07:40:50Z",
      "archived": false,
      "checks": {
       "topic": false,
