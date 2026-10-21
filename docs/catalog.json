@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T22:02:16+00:00",
+ "generated_at": "2026-10-21T05:39:51+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -255,7 +255,7 @@
      },
      "source": "ghcr.io/stephdl/backuppc",
      "stars": 0,
-     "pushed_at": "2026-10-20T09:58:41Z",
+     "pushed_at": "2026-10-21T02:10:29Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -840,8 +840,8 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/authentik/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/authentik/screenshots/screen2.png",
       "https://forge.genius.ke/ns8/updates/authentik/screenshots/screen.png",
+      "https://forge.genius.ke/ns8/updates/authentik/screenshots/screen2.png",
       "https://forge.genius.ke/ns8/updates/authentik/screenshots/screen1.png"
      ],
      "versions": [
@@ -1097,7 +1097,7 @@
      },
      "source": "ghcr.io/stephdl/bigbluebutton",
      "stars": 0,
-     "pushed_at": "2026-10-18T20:12:50Z",
+     "pushed_at": "2026-10-21T02:45:26Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1147,9 +1147,9 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/bookstack/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen.png",
       "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen.png"
+      "https://forge.genius.ke/ns8/updates/bookstack/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -1258,7 +1258,7 @@
      },
      "source": "ghcr.io/francio87/borgbackupserver",
      "stars": 1,
-     "pushed_at": "2026-10-20T21:01:21Z",
+     "pushed_at": "2026-10-21T05:02:56Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1642,7 +1642,7 @@
      },
      "source": "ghcr.io/stephdl/calrs",
      "stars": 0,
-     "pushed_at": "2026-10-20T12:02:51Z",
+     "pushed_at": "2026-10-21T02:05:50Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1692,9 +1692,9 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/checkcle/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -1796,7 +1796,7 @@
      },
      "source": "ghcr.io/mrmarkuz/checkmk",
      "stars": 0,
-     "pushed_at": "2026-10-20T10:43:50Z",
+     "pushed_at": "2026-10-21T03:10:49Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2027,7 +2027,7 @@
      },
      "source": "ghcr.io/nethserver/collabora",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:47:43Z",
+     "pushed_at": "2026-10-21T03:44:52Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2077,9 +2077,9 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/coolify/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -2261,7 +2261,7 @@
      },
      "source": "ghcr.io/nethserver/crowdsec",
      "stars": 1,
-     "pushed_at": "2026-10-20T11:07:20Z",
+     "pushed_at": "2026-10-21T03:45:01Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2465,7 +2465,7 @@
      },
      "source": "ghcr.io/stephdl/ddclient",
      "stars": 0,
-     "pushed_at": "2026-10-17T07:50:47Z",
+     "pushed_at": "2026-10-21T02:32:47Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2511,9 +2511,9 @@
      },
      "logo": "https://forge.nethserver.org/ns8/updates/dependencytrack/logo.png",
      "screenshots": [
-      "https://forge.nethserver.org/ns8/updates/dependencytrack/screenshots/screen3.png",
       "https://forge.nethserver.org/ns8/updates/dependencytrack/screenshots/screen2.png",
-      "https://forge.nethserver.org/ns8/updates/dependencytrack/screenshots/screen1.png"
+      "https://forge.nethserver.org/ns8/updates/dependencytrack/screenshots/screen1.png",
+      "https://forge.nethserver.org/ns8/updates/dependencytrack/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -2542,7 +2542,7 @@
      },
      "source": "ghcr.io/nethserver/dependencytrack",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:49:45Z",
+     "pushed_at": "2026-10-21T03:43:53Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2698,7 +2698,7 @@
      },
      "source": "ghcr.io/nethserver/dnsmasq",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:58:52Z",
+     "pushed_at": "2026-10-21T03:46:15Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2748,9 +2748,9 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/docmost/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -2904,10 +2904,10 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/dokploy/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen4.png",
       "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -3011,7 +3011,7 @@
      },
      "source": "ghcr.io/nethserver/dokuwiki",
      "stars": 0,
-     "pushed_at": "2026-10-13T04:23:30Z",
+     "pushed_at": "2026-10-21T03:42:31Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -3245,7 +3245,7 @@
      },
      "source": "ghcr.io/nethserver/ejabberd",
      "stars": 1,
-     "pushed_at": "2026-10-13T04:25:22Z",
+     "pushed_at": "2026-10-21T03:43:44Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -3375,11 +3375,11 @@
      "logo": "https://forge.genius.ke/ns8/updates/erpnext/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen6.png",
       "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen4.png",
       "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen6.png",
-      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -4146,9 +4146,9 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/gitea/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -4413,7 +4413,7 @@
      },
      "source": "ghcr.io/stephdl/glpi",
      "stars": 0,
-     "pushed_at": "2026-10-20T08:33:58Z",
+     "pushed_at": "2026-10-21T04:27:04Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4539,9 +4539,9 @@
      },
      "logo": "https://forge.nethserver.org/ns8/updates/grafana/logo.png",
      "screenshots": [
-      "https://forge.nethserver.org/ns8/updates/grafana/screenshots/screen3.png",
       "https://forge.nethserver.org/ns8/updates/grafana/screenshots/screen2.png",
-      "https://forge.nethserver.org/ns8/updates/grafana/screenshots/screen1.png"
+      "https://forge.nethserver.org/ns8/updates/grafana/screenshots/screen1.png",
+      "https://forge.nethserver.org/ns8/updates/grafana/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -4566,7 +4566,7 @@
      },
      "source": "ghcr.io/nethserver/grafana",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:56:24Z",
+     "pushed_at": "2026-10-21T03:41:50Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4645,7 +4645,7 @@
      },
      "source": "ghcr.io/mrmarkuz/guacamole",
      "stars": 0,
-     "pushed_at": "2026-10-20T13:54:07Z",
+     "pushed_at": "2026-10-21T02:53:14Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4805,7 +4805,7 @@
      },
      "source": "ghcr.io/mrmarkuz/headscale",
      "stars": 0,
-     "pushed_at": "2026-10-20T12:36:11Z",
+     "pushed_at": "2026-10-21T02:56:14Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5271,7 +5271,7 @@
      },
      "source": "ghcr.io/nethserver/imapsync",
      "stars": 0,
-     "pushed_at": "2026-10-13T04:22:39Z",
+     "pushed_at": "2026-10-21T03:45:06Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5352,7 +5352,7 @@
      },
      "source": "ghcr.io/mrmarkuz/immich",
      "stars": 1,
-     "pushed_at": "2026-10-20T10:07:40Z",
+     "pushed_at": "2026-10-21T02:01:00Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5634,10 +5634,10 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/joplin/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen4.png",
       "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -5740,7 +5740,7 @@
      },
      "source": "ghcr.io/mrmarkuz/kimai",
      "stars": 0,
-     "pushed_at": "2026-10-20T18:49:45Z",
+     "pushed_at": "2026-10-21T02:35:23Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5817,7 +5817,7 @@
      },
      "source": "ghcr.io/mrmarkuz/kitchenowl",
      "stars": 1,
-     "pushed_at": "2026-10-20T14:39:41Z",
+     "pushed_at": "2026-10-21T03:11:43Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6127,7 +6127,7 @@
      },
      "source": "ghcr.io/nethserver/lamp",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:52:15Z",
+     "pushed_at": "2026-10-21T03:42:36Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6326,9 +6326,9 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/listmonk/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -6442,7 +6442,7 @@
      },
      "source": "ghcr.io/nethserver/mail",
      "stars": 3,
-     "pushed_at": "2026-10-20T13:04:20Z",
+     "pushed_at": "2026-10-21T03:43:34Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -6519,7 +6519,7 @@
      },
      "source": "ghcr.io/nethserver/mariadb",
      "stars": 0,
-     "pushed_at": "2026-10-17T04:24:21Z",
+     "pushed_at": "2026-10-21T03:44:53Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6675,7 +6675,7 @@
      },
      "source": "ghcr.io/nethserver/matrix",
      "stars": 3,
-     "pushed_at": "2026-10-20T15:52:33Z",
+     "pushed_at": "2026-10-21T03:45:15Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6761,7 +6761,7 @@
      },
      "source": "ghcr.io/nethserver/mattermost",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:58:18Z",
+     "pushed_at": "2026-10-21T03:46:09Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7380,7 +7380,7 @@
      },
      "source": "ghcr.io/nethserver/n8n",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:54:39Z",
+     "pushed_at": "2026-10-21T03:40:37Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7670,7 +7670,7 @@
      },
      "source": "ghcr.io/nethserver/netdata",
      "stars": 0,
-     "pushed_at": "2026-10-13T19:47:06Z",
+     "pushed_at": "2026-10-21T03:42:12Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7764,7 +7764,7 @@
      },
      "source": "ghcr.io/nethserver/nethsecurity-controller",
      "stars": 1,
-     "pushed_at": "2026-10-20T15:55:22Z",
+     "pushed_at": "2026-10-21T03:40:46Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7952,7 +7952,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-20T17:23:49Z",
+     "pushed_at": "2026-10-21T03:13:01Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8057,7 +8057,7 @@
      },
      "source": "ghcr.io/nethserver/nextcloud",
      "stars": 0,
-     "pushed_at": "2026-10-13T04:21:29Z",
+     "pushed_at": "2026-10-21T03:46:27Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8108,11 +8108,11 @@
      "logo": "https://forge.genius.ke/ns8/updates/nocodb/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen6.png",
       "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen4.png",
       "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen6.png",
-      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -8828,7 +8828,7 @@
      },
      "source": "ghcr.io/mrmarkuz/openssh",
      "stars": 0,
-     "pushed_at": "2026-10-20T18:57:15Z",
+     "pushed_at": "2026-10-21T02:15:22Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9113,9 +9113,9 @@
      "logo": "https://forge.nethserver.org/ns8/updates/paperlessngx/logo.png",
      "screenshots": [
       "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen5.png",
-      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen3.png",
       "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen4.png",
-      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen2.png"
+      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen2.png",
+      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -9197,9 +9197,9 @@
      },
      "logo": "https://forge.nethserver.org/ns8/updates/passbolt/logo.png",
      "screenshots": [
-      "https://forge.nethserver.org/ns8/updates/passbolt/screenshots/screen3.png",
       "https://forge.nethserver.org/ns8/updates/passbolt/screenshots/screen2.png",
-      "https://forge.nethserver.org/ns8/updates/passbolt/screenshots/screen1.png"
+      "https://forge.nethserver.org/ns8/updates/passbolt/screenshots/screen1.png",
+      "https://forge.nethserver.org/ns8/updates/passbolt/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -9225,7 +9225,7 @@
      },
      "source": "ghcr.io/nethserver/passbolt",
      "stars": 0,
-     "pushed_at": "2026-10-17T04:23:35Z",
+     "pushed_at": "2026-10-21T03:42:28Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9683,7 +9683,7 @@
      },
      "source": "ghcr.io/stephdl/pihole",
      "stars": 0,
-     "pushed_at": "2026-10-20T17:51:04Z",
+     "pushed_at": "2026-10-21T04:50:30Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9766,7 +9766,7 @@
      },
      "source": "ghcr.io/nethserver/piler",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:52:26Z",
+     "pushed_at": "2026-10-21T03:44:56Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10072,7 +10072,7 @@
      },
      "source": "ghcr.io/nethserver/postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-13T13:00:47Z",
+     "pushed_at": "2026-10-21T03:44:51Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10233,7 +10233,7 @@
      },
      "source": "ghcr.io/nethserver/prometheus",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:58:26Z",
+     "pushed_at": "2026-10-21T03:40:13Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10309,7 +10309,7 @@
      },
      "source": "ghcr.io/mrmarkuz/pulse",
      "stars": 0,
-     "pushed_at": "2026-10-20T11:28:33Z",
+     "pushed_at": "2026-10-21T02:57:56Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10360,11 +10360,11 @@
      "logo": "https://forge.genius.ke/ns8/updates/pwpush/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen3.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen6.png",
       "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen4.png",
       "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen6.png",
-      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -10545,7 +10545,7 @@
      },
      "source": "ghcr.io/nethserver/roundcubemail",
      "stars": 1,
-     "pushed_at": "2026-10-16T15:21:29Z",
+     "pushed_at": "2026-10-21T03:46:16Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10622,7 +10622,7 @@
      },
      "source": "ghcr.io/mrmarkuz/rustdesk",
      "stars": 0,
-     "pushed_at": "2026-10-20T10:18:43Z",
+     "pushed_at": "2026-10-21T02:58:56Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10702,7 +10702,7 @@
      },
      "source": "ghcr.io/nethserver/rustfs",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:56:53Z",
+     "pushed_at": "2026-10-21T03:43:57Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10996,7 +10996,7 @@
      },
      "source": "ghcr.io/nethserver/samba",
      "stars": 0,
-     "pushed_at": "2026-10-15T08:04:13Z",
+     "pushed_at": "2026-10-21T03:45:11Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -11309,7 +11309,7 @@
      },
      "source": "ghcr.io/nethserver/sogo",
      "stars": 0,
-     "pushed_at": "2026-10-18T14:27:34Z",
+     "pushed_at": "2026-10-21T03:45:07Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11360,10 +11360,10 @@
      "logo": "https://forge.genius.ke/ns8/updates/stirlingpdf/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen4.png",
       "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -11512,10 +11512,10 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/termix/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 4.png",
-      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 3.png",
       "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 2.png",
-      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 1.png"
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 1.png",
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 3.png",
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 4.png"
      ],
      "versions": [
       {
@@ -11747,9 +11747,9 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/umami/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/umami/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -11853,7 +11853,7 @@
      },
      "source": "ghcr.io/mrmarkuz/unifi-network",
      "stars": 0,
-     "pushed_at": "2026-10-20T11:15:06Z",
+     "pushed_at": "2026-10-21T04:48:16Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11986,7 +11986,7 @@
      },
      "source": "ghcr.io/stephdl/v16postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-20T10:33:45Z",
+     "pushed_at": "2026-10-21T02:29:51Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12067,7 +12067,7 @@
      },
      "source": "ghcr.io/stephdl/v18postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-20T11:55:44Z",
+     "pushed_at": "2026-10-21T02:47:56Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12194,10 +12194,10 @@
      },
      "logo": "https://forge.genius.ke/ns8/updates/vikunja/logo.png",
      "screenshots": [
-      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen3.png",
       "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen4.png",
       "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -12356,9 +12356,9 @@
      },
      "logo": "https://forge.de-labrusse.fr/ns8/updates/wazuh/logo.png",
      "screenshots": [
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png",
       "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png",
-      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png"
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png"
      ],
      "versions": [
       {
@@ -12411,7 +12411,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-20T11:51:02Z",
+     "pushed_at": "2026-10-21T01:56:53Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12462,9 +12462,9 @@
      },
      "logo": "https://forge.nethserver.org/ns8/updates/webserver/logo.png",
      "screenshots": [
-      "https://forge.nethserver.org/ns8/updates/webserver/screenshots/screen3.png",
       "https://forge.nethserver.org/ns8/updates/webserver/screenshots/screen2.png",
-      "https://forge.nethserver.org/ns8/updates/webserver/screenshots/screen1.png"
+      "https://forge.nethserver.org/ns8/updates/webserver/screenshots/screen1.png",
+      "https://forge.nethserver.org/ns8/updates/webserver/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -12491,7 +12491,7 @@
      },
      "source": "ghcr.io/nethserver/webserver",
      "stars": 0,
-     "pushed_at": "2026-10-13T04:21:33Z",
+     "pushed_at": "2026-10-21T03:44:03Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12577,7 +12577,7 @@
      },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
-     "pushed_at": "2026-10-20T15:51:23Z",
+     "pushed_at": "2026-10-21T03:42:20Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12877,7 +12877,7 @@
      },
      "source": "ghcr.io/nethserver/wordpress",
      "stars": 0,
-     "pushed_at": "2026-10-19T07:38:45Z",
+     "pushed_at": "2026-10-21T03:44:51Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13139,7 +13139,7 @@
      },
      "source": "ghcr.io/mrmarkuz/zammad",
      "stars": 0,
-     "pushed_at": "2026-10-20T13:04:29Z",
+     "pushed_at": "2026-10-21T03:21:49Z",
      "archived": false,
      "checks": {
       "topic": false,
