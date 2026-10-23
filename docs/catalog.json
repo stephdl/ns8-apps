@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T05:40:34+00:00",
+ "generated_at": "2026-10-23T12:22:21+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -6668,12 +6668,16 @@
      "screenshots": [],
      "versions": [
       {
+       "tag": "3.0.0-dev.2",
+       "testing": true
+      },
+      {
        "tag": "2.1.0",
        "testing": false
       }
      ],
      "stable": "2.1.0",
-     "testing": null,
+     "testing": "3.0.0-dev.2",
      "min_core": null,
      "tech": {
       "rootfull": false,
@@ -6690,7 +6694,7 @@
      },
      "source": "ghcr.io/geniusdynamics/matomo",
      "stars": 0,
-     "pushed_at": "2026-06-08T13:14:52Z",
+     "pushed_at": "2026-10-23T12:18:37Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7143,18 +7147,18 @@
      ],
      "versions": [
       {
-       "tag": "1.1.4",
+       "tag": "1.2.0",
        "testing": false
       }
      ],
-     "stable": "1.1.4",
+     "stable": "1.2.0",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "mongo:7.0.43",
-       "ylianst/meshcentral:1.2.5-mongodb"
+       "mongo:7.0.45",
+       "ylianst/meshcentral:1.3.0-mongodb"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -7165,7 +7169,7 @@
      },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
-     "pushed_at": "2026-10-21T20:33:22Z",
+     "pushed_at": "2026-10-23T07:54:11Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7178,7 +7182,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-09-22T08:52:02Z"
+     "released_at": "2026-10-23T07:54:11Z"
     }
    ]
   },
@@ -7914,7 +7918,7 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.8.0-testing.27",
+       "tag": "1.8.0-testing.29",
        "testing": true
       },
       {
@@ -7931,7 +7935,7 @@
       }
      ],
      "stable": "1.7.14",
-     "testing": "1.8.0-testing.27",
+     "testing": "1.8.0-testing.29",
      "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
@@ -7966,7 +7970,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-22T19:04:37Z",
+     "pushed_at": "2026-10-23T12:15:15Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8053,7 +8057,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-22T14:41:50Z",
+     "pushed_at": "2026-10-23T11:56:28Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9409,7 +9413,7 @@
      },
      "source": "ghcr.io/tebbiworld/passbolt-export",
      "stars": 0,
-     "pushed_at": "2026-10-11T14:46:25Z",
+     "pushed_at": "2026-10-23T11:08:22Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -9788,7 +9792,7 @@
      },
      "source": "ghcr.io/stephdl/pihole",
      "stars": 0,
-     "pushed_at": "2026-10-22T19:32:24Z",
+     "pushed_at": "2026-10-23T11:51:15Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12767,7 +12771,7 @@
      },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
-     "pushed_at": "2026-10-22T22:09:31Z",
+     "pushed_at": "2026-10-23T09:54:00Z",
      "archived": false,
      "checks": {
       "topic": false,
