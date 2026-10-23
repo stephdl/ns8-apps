@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T22:03:45+00:00",
+ "generated_at": "2026-10-23T05:40:34+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -7477,7 +7477,7 @@
      },
      "source": "ghcr.io/nethserver/n8n",
      "stars": 0,
-     "pushed_at": "2026-10-22T08:43:05Z",
+     "pushed_at": "2026-10-22T22:10:20Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9145,17 +9145,17 @@
      ],
      "versions": [
       {
-       "tag": "0.3.2",
+       "tag": "0.3.3",
        "testing": false
       }
      ],
-     "stable": "0.3.2",
+     "stable": "0.3.3",
      "testing": null,
      "min_core": "3.2.2",
      "tech": {
       "rootfull": false,
       "images": [
-       "platypuschan/organizr-runtime:7f433ddef3ce"
+       "platypuschan/organizr-runtime:5c011d027e66"
       ],
       "authorizations": [
        "traefik@node:routeadm",
@@ -12767,7 +12767,7 @@
      },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
-     "pushed_at": "2026-10-22T15:52:00Z",
+     "pushed_at": "2026-10-22T22:09:31Z",
      "archived": false,
      "checks": {
       "topic": false,
