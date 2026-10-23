@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T12:22:21+00:00",
+ "generated_at": "2026-10-23T17:40:30+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -88,7 +88,7 @@
    "alt_url": null,
    "kind": "community",
    "repo": "tebbiworld/ns8-repo",
-   "app_count": 21
+   "app_count": 22
   },
   {
    "id": "Platypuschan",
@@ -2096,20 +2096,20 @@
        "testing": true
       },
       {
-       "tag": "1.6.1",
+       "tag": "1.7.0",
        "testing": false
       }
      ],
-     "stable": "1.6.1",
+     "stable": "1.7.0",
      "testing": "4.0.0-beta.394",
      "min_core": null,
      "tech": {
       "rootfull": false,
       "images": [
-       "coollabsio/coolify:4.0.0-beta.463",
+       "coollabsio/coolify:4.0.1",
        "postgres:15-alpine",
        "redis:7-alpine",
-       "coollabsio/coolify-realtime:1.0.10"
+       "coollabsio/coolify-realtime:1.0.13"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -2120,7 +2120,7 @@
      },
      "source": "ghcr.io/geniusdynamics/coolify",
      "stars": 0,
-     "pushed_at": "2026-02-14T15:00:30Z",
+     "pushed_at": "2026-10-23T15:30:39Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2133,7 +2133,7 @@
       "min_core": false,
       "license": true
      },
-     "released_at": "2026-02-14T15:00:11Z"
+     "released_at": "2026-10-23T15:30:18Z"
     }
    ]
   },
@@ -2270,7 +2270,7 @@
      },
      "source": "ghcr.io/nethserver/crowdsec",
      "stars": 1,
-     "pushed_at": "2026-10-21T07:44:13Z",
+     "pushed_at": "2026-10-23T14:46:34Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4323,18 +4323,18 @@
      ],
      "versions": [
       {
-       "tag": "1.0.3",
+       "tag": "1.0.4",
        "testing": false
       }
      ],
-     "stable": "1.0.3",
+     "stable": "1.0.4",
      "testing": null,
      "min_core": "3.0.0",
      "tech": {
       "rootfull": false,
       "images": [
-       "gitlab/gitlab-ce:19.5.0-ce.0",
-       "gitlab/gitlab-runner:v19.5.0"
+       "gitlab/gitlab-ce:19.5.1-ce.0",
+       "gitlab/gitlab-runner:v19.5.1"
       ],
       "authorizations": [
        "traefik@any:routeadm",
@@ -4352,7 +4352,7 @@
      },
      "source": "ghcr.io/bls-isp/gitlab",
      "stars": 1,
-     "pushed_at": "2026-10-22T14:42:54Z",
+     "pushed_at": "2026-10-23T16:43:02Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -4365,7 +4365,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-22T14:30:31Z"
+     "released_at": "2026-10-23T16:41:26Z"
     }
    ]
   },
@@ -7918,7 +7918,7 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.8.0-testing.29",
+       "tag": "1.8.0-testing.34",
        "testing": true
       },
       {
@@ -7935,7 +7935,7 @@
       }
      ],
      "stable": "1.7.14",
-     "testing": "1.8.0-testing.29",
+     "testing": "1.8.0-testing.34",
      "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
@@ -7970,7 +7970,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-23T12:15:15Z",
+     "pushed_at": "2026-10-23T17:28:37Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9714,6 +9714,10 @@
      ],
      "versions": [
       {
+       "tag": "1.2.1",
+       "testing": false
+      },
+      {
        "tag": "1.2.0",
        "testing": false
       },
@@ -9768,19 +9772,15 @@
       {
        "tag": "1.0.12",
        "testing": false
-      },
-      {
-       "tag": "1.0.11",
-       "testing": false
       }
      ],
-     "stable": "1.2.0",
+     "stable": "1.2.1",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "pihole/pihole:2026.09.0"
+       "pihole/pihole:2026.10.0"
       ],
       "authorizations": [
        "traefik@node:routeadm",
@@ -9805,7 +9805,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-21T15:41:40Z"
+     "released_at": "2026-10-23T11:51:10Z"
     }
    ]
   },
@@ -11350,6 +11350,85 @@
       "license": true
      },
      "released_at": "2025-07-14T15:58:55Z"
+    }
+   ]
+  },
+  {
+   "id": "snipeit",
+   "categories": [
+    "office",
+    "system_administration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "snipeit",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Snipe-IT",
+     "description": {
+      "en": "IT asset management: hardware, software licenses, accessories and consumables, who has what, check-out/check-in, audits and maintenances. Login with a user domain of the cluster.",
+      "de": "IT-Inventarverwaltung: Hardware, Softwarelizenzen, Zubehör und Verbrauchsmaterial, wer hat was, Ausgabe/Rücknahme, Inventuren und Wartungen. Anmeldung mit einer Benutzerdomäne des Clusters."
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "office",
+      "system_administration"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-snipeit",
+     "docs": {
+      "documentation_url": "https://snipe-it.readme.io/docs",
+      "bug_url": "https://github.com/tebbiworld/ns8-snipeit/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-snipeit/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/snipeit/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.0.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.0.0",
+     "testing": null,
+     "min_core": "3.22.0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "snipe/snipe-it:v8.8.3",
+       "mariadb:11.4.13"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/snipeit",
+     "stars": 0,
+     "pushed_at": "2026-10-23T13:23:41Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-23T13:25:05Z"
     }
    ]
   },
