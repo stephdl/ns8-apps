@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T16:25:43+00:00",
+ "generated_at": "2026-10-24T18:38:04+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -52,7 +52,7 @@
    "alt_url": "https://raw.githubusercontent.com/stephdl/ns8-stephdl/repomd/ns8/updates/",
    "kind": "community",
    "repo": "stephdl/ns8-stephdl",
-   "app_count": 11
+   "app_count": 12
   },
   {
    "id": "mrmarkuz",
@@ -264,7 +264,7 @@
      },
      "source": "ghcr.io/stephdl/backuppc",
      "stars": 0,
-     "pushed_at": "2026-10-21T16:05:53Z",
+     "pushed_at": "2026-10-24T17:38:14Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1106,7 +1106,7 @@
      },
      "source": "ghcr.io/stephdl/bigbluebutton",
      "stars": 0,
-     "pushed_at": "2026-10-21T15:53:13Z",
+     "pushed_at": "2026-10-24T17:06:27Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1263,7 +1263,7 @@
      },
      "source": "ghcr.io/francio87/borgbackupserver",
      "stars": 1,
-     "pushed_at": "2026-10-23T22:16:13Z",
+     "pushed_at": "2026-10-24T17:35:14Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1651,7 +1651,7 @@
      },
      "source": "ghcr.io/stephdl/calrs",
      "stars": 0,
-     "pushed_at": "2026-10-21T16:10:12Z",
+     "pushed_at": "2026-10-24T17:25:09Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2474,7 +2474,7 @@
      },
      "source": "ghcr.io/stephdl/ddclient",
      "stars": 0,
-     "pushed_at": "2026-10-21T06:31:30Z",
+     "pushed_at": "2026-10-24T16:29:04Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -3040,6 +3040,7 @@
   {
    "id": "dolibarr",
    "categories": [
+    "collaboration",
     "office"
    ],
    "official": false,
@@ -3111,6 +3112,92 @@
       "license": true
      },
      "released_at": "2024-03-01T00:18:22Z"
+    },
+    {
+     "module_id": "dolibarr",
+     "forges": [
+      "stephdl"
+     ],
+     "kind": "community",
+     "developer": "stephdl",
+     "name": "Dolibarr",
+     "description": {
+      "en": "ERP and CRM for small businesses: customers, quotes, invoices, stock and projects, with domain user login and email.",
+      "fr": "ERP et CRM pour les petites entreprises : clients, devis, factures, stock et projets, avec connexion des utilisateurs du domaine et envoi d'emails.",
+      "it": "ERP e CRM per piccole imprese: clienti, preventivi, fatture, magazzino e progetti, con accesso degli utenti del dominio ed email.",
+      "de": "ERP und CRM für kleine Unternehmen: Kunden, Angebote, Rechnungen, Lager und Projekte, mit Anmeldung der Domänenbenutzer und E-Mail.",
+      "es": "ERP y CRM para pequeñas empresas: clientes, presupuestos, facturas, stock y proyectos, con inicio de sesión de usuarios del dominio y correo.",
+      "pt": "ERP e CRM para pequenas empresas: clientes, orçamentos, faturas, stock e projetos, com início de sessão dos utilizadores do domínio e email.",
+      "pt_BR": "ERP e CRM para pequenas empresas: clientes, orçamentos, faturas, estoque e projetos, com login dos usuários do domínio e e-mail.",
+      "eu": "Enpresa txikientzako ERP eta CRM: bezeroak, aurrekontuak, fakturak, stocka eta proiektuak, domeinuko erabiltzaileen saio hasierarekin eta posta elektronikoarekin."
+     },
+     "about": null,
+     "authors": [
+      "Stephane de Labrusse"
+     ],
+     "categories": [
+      "collaboration"
+     ],
+     "code_url": "https://github.com/stephdl/ns8-dolibarr",
+     "docs": {
+      "documentation_url": "https://github.com/stephdl/ns8-dolibarr#readme",
+      "bug_url": "https://github.com/stephdl/dev/issues"
+     },
+     "logo": "https://forge.de-labrusse.fr/ns8/updates/dolibarr/logo.png",
+     "screenshots": [
+      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen3.png",
+      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen2.png",
+      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen1.png"
+     ],
+     "versions": [
+      {
+       "tag": "1.0.2",
+       "testing": false
+      },
+      {
+       "tag": "1.0.1",
+       "testing": false
+      },
+      {
+       "tag": "1.0.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.0.2",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "mariadb:12.3.3",
+       "dolibarr/dolibarr:24.0.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "dolibarr-documents"
+      ]
+     },
+     "source": "ghcr.io/stephdl/dolibarr",
+     "stars": 0,
+     "pushed_at": "2026-10-24T18:23:31Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-23T15:13:25Z"
     }
    ]
   },
@@ -4510,7 +4597,7 @@
      },
      "source": "ghcr.io/stephdl/glpi",
      "stars": 0,
-     "pushed_at": "2026-10-22T14:43:52Z",
+     "pushed_at": "2026-10-24T16:43:19Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4745,7 +4832,7 @@
      },
      "source": "ghcr.io/mrmarkuz/guacamole",
      "stars": 0,
-     "pushed_at": "2026-10-24T14:49:28Z",
+     "pushed_at": "2026-10-24T17:46:56Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -4905,7 +4992,7 @@
      },
      "source": "ghcr.io/mrmarkuz/headscale",
      "stars": 0,
-     "pushed_at": "2026-10-22T19:09:54Z",
+     "pushed_at": "2026-10-24T18:12:17Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5992,7 +6079,7 @@
      },
      "source": "ghcr.io/mrmarkuz/uptime-kuma",
      "stars": 0,
-     "pushed_at": "2026-10-21T11:27:22Z",
+     "pushed_at": "2026-10-24T17:06:13Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6075,7 +6162,7 @@
      },
      "source": "ghcr.io/stephdl/kuma",
      "stars": 0,
-     "pushed_at": "2026-10-21T10:55:50Z",
+     "pushed_at": "2026-10-24T18:12:08Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6151,7 +6238,7 @@
      },
      "source": "ghcr.io/stephdl/lam",
      "stars": 0,
-     "pushed_at": "2026-10-21T16:33:51Z",
+     "pushed_at": "2026-10-24T18:14:24Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7973,7 +8060,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-24T10:27:23Z",
+     "pushed_at": "2026-10-24T17:06:56Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8060,7 +8147,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-24T08:12:14Z",
+     "pushed_at": "2026-10-24T18:08:31Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9795,7 +9882,7 @@
      },
      "source": "ghcr.io/stephdl/pihole",
      "stars": 0,
-     "pushed_at": "2026-10-23T11:51:15Z",
+     "pushed_at": "2026-10-24T17:59:56Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12177,7 +12264,7 @@
      },
      "source": "ghcr.io/stephdl/v16postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-21T15:58:06Z",
+     "pushed_at": "2026-10-24T18:10:53Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12262,7 +12349,7 @@
      },
      "source": "ghcr.io/stephdl/v18postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-21T15:53:19Z",
+     "pushed_at": "2026-10-24T16:24:50Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12683,7 +12770,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-21T15:36:27Z",
+     "pushed_at": "2026-10-24T18:06:52Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13004,7 +13091,7 @@
      },
      "source": "ghcr.io/mrmarkuz/wg-easy",
      "stars": 1,
-     "pushed_at": "2026-08-14T07:52:22Z",
+     "pushed_at": "2026-10-24T18:10:15Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13261,7 +13348,7 @@
      },
      "source": "ghcr.io/stephdl/xwiki",
      "stars": 0,
-     "pushed_at": "2026-10-21T15:51:44Z",
+     "pushed_at": "2026-10-24T17:39:40Z",
      "archived": false,
      "checks": {
       "topic": false,
