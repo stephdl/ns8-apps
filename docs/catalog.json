@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:18:54+00:00",
+ "generated_at": "2026-10-24T11:48:40+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -3097,7 +3097,7 @@
      },
      "source": "ghcr.io/geniusdynamics/dolibarr",
      "stars": 0,
-     "pushed_at": "2025-07-15T14:01:27Z",
+     "pushed_at": "2026-10-24T09:51:11Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -4429,7 +4429,7 @@
      },
      "source": "ghcr.io/geniusdynamics/glpi",
      "stars": 0,
-     "pushed_at": "2025-10-02T14:05:15Z",
+     "pushed_at": "2026-10-24T09:54:52Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7481,7 +7481,7 @@
      },
      "source": "ghcr.io/nethserver/n8n",
      "stars": 0,
-     "pushed_at": "2026-10-22T22:10:20Z",
+     "pushed_at": "2026-10-24T10:37:03Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7970,7 +7970,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-23T17:28:37Z",
+     "pushed_at": "2026-10-24T10:27:23Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8057,7 +8057,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-23T11:56:28Z",
+     "pushed_at": "2026-10-24T08:12:14Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12850,7 +12850,7 @@
      },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
-     "pushed_at": "2026-10-23T09:54:00Z",
+     "pushed_at": "2026-10-24T10:36:18Z",
      "archived": false,
      "checks": {
       "topic": false,
