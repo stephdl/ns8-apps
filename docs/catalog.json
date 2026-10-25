@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T12:17:57+00:00",
+ "generated_at": "2026-10-25T12:49:16+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -52,7 +52,7 @@
    "alt_url": "https://raw.githubusercontent.com/stephdl/ns8-stephdl/repomd/ns8/updates/",
    "kind": "community",
    "repo": "stephdl/ns8-stephdl",
-   "app_count": 12
+   "app_count": 13
   },
   {
    "id": "mrmarkuz",
@@ -2577,6 +2577,94 @@
    ]
   },
   {
+   "id": "discourse",
+   "categories": [
+    "collaboration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "discourse",
+     "forges": [
+      "stephdl"
+     ],
+     "kind": "community",
+     "developer": "stephdl",
+     "name": "Discourse",
+     "description": {
+      "en": "Community forum for discussions, questions and announcements, with local accounts and optional OpenID Connect login.",
+      "fr": "Forum communautaire pour les discussions, les questions et les annonces, avec comptes locaux et connexion OpenID Connect en option.",
+      "it": "Forum della community per discussioni, domande e annunci, con account locali e accesso OpenID Connect opzionale.",
+      "de": "Community-Forum für Diskussionen, Fragen und Ankündigungen, mit lokalen Konten und optionaler OpenID-Connect-Anmeldung.",
+      "es": "Foro de comunidad para debates, preguntas y anuncios, con cuentas locales e inicio de sesión OpenID Connect opcional.",
+      "pt": "Fórum comunitário para discussões, perguntas e anúncios, com contas locais e início de sessão OpenID Connect opcional.",
+      "pt_BR": "Fórum de comunidade para discussões, perguntas e anúncios, com contas locais e login OpenID Connect opcional.",
+      "eu": "Komunitateko foroa eztabaidetarako, galderetarako eta iragarkietarako, kontu lokalekin eta aukerako OpenID Connect saio hasierarekin."
+     },
+     "about": null,
+     "authors": [
+      "Stephane de Labrusse"
+     ],
+     "categories": [
+      "collaboration"
+     ],
+     "code_url": "https://github.com/stephdl/ns8-discourse",
+     "docs": {
+      "documentation_url": "https://github.com/stephdl/ns8-discourse#readme",
+      "bug_url": "https://github.com/stephdl/dev/issues"
+     },
+     "logo": "https://forge.de-labrusse.fr/ns8/updates/discourse/logo.png",
+     "screenshots": [
+      "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen2.png",
+      "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen3.png",
+      "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen1.png"
+     ],
+     "versions": [
+      {
+       "tag": "1.0.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.0.0",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "discourse/postgres:pg18",
+       "redis:8.10.2-alpine",
+       "discourse/discourse:2026.7.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "discourse-shared"
+      ]
+     },
+     "source": "ghcr.io/stephdl/discourse",
+     "stars": 0,
+     "pushed_at": "2026-10-25T12:18:37Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-25T12:18:38Z"
+    }
+   ]
+  },
+  {
    "id": "dnshelper",
    "categories": [
     "security",
@@ -3153,8 +3241,8 @@
      },
      "logo": "https://forge.de-labrusse.fr/ns8/updates/dolibarr/logo.png",
      "screenshots": [
-      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen3.png",
       "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen2.png",
+      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen3.png",
       "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen1.png"
      ],
      "versions": [
@@ -12732,8 +12820,8 @@
      },
      "logo": "https://forge.de-labrusse.fr/ns8/updates/wazuh/logo.png",
      "screenshots": [
-      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png",
       "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen2.png",
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png",
       "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png"
      ],
      "versions": [
