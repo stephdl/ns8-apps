@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T16:57:20+00:00",
+ "generated_at": "2026-10-25T21:21:34+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -1663,7 +1663,7 @@
      },
      "source": "ghcr.io/stephdl/calrs",
      "stars": 0,
-     "pushed_at": "2026-10-25T16:46:21Z",
+     "pushed_at": "2026-10-25T20:56:20Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2486,7 +2486,7 @@
      },
      "source": "ghcr.io/stephdl/ddclient",
      "stars": 0,
-     "pushed_at": "2026-10-25T16:33:05Z",
+     "pushed_at": "2026-10-25T20:54:34Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2651,7 +2651,7 @@
      },
      "source": "ghcr.io/stephdl/discourse",
      "stars": 0,
-     "pushed_at": "2026-10-25T12:18:37Z",
+     "pushed_at": "2026-10-25T17:51:41Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8064,7 +8064,7 @@
      },
      "source": "ghcr.io/nethserver/nethsecurity-controller",
      "stars": 1,
-     "pushed_at": "2026-10-24T03:29:28Z",
+     "pushed_at": "2026-10-25T18:32:57Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11304,7 +11304,7 @@
      },
      "source": "ghcr.io/nethserver/samba",
      "stars": 0,
-     "pushed_at": "2026-10-24T18:42:13Z",
+     "pushed_at": "2026-10-25T18:36:40Z",
      "archived": false,
      "checks": {
       "topic": true,
