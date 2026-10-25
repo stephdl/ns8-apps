@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T12:49:16+00:00",
+ "generated_at": "2026-10-25T16:57:20+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -1319,18 +1319,18 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.0.1",
+       "tag": "1.1.0",
        "testing": false
       }
      ],
-     "stable": "1.0.1",
+     "stable": "1.1.0",
      "testing": null,
      "min_core": null,
      "tech": {
       "rootfull": false,
       "images": [
        "mysql:9.4.0",
-       "bugsink/bugsink:1.7.6"
+       "bugsink/bugsink:2.6.2"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -1354,7 +1354,7 @@
       "min_core": false,
       "license": true
      },
-     "released_at": "2025-08-13T02:22:23Z"
+     "released_at": "2026-10-25T11:54:27Z"
     }
    ]
   },
@@ -1626,6 +1626,10 @@
      ],
      "versions": [
       {
+       "tag": "1.0.4",
+       "testing": false
+      },
+      {
        "tag": "1.0.3",
        "testing": false
       },
@@ -1642,13 +1646,13 @@
        "testing": false
       }
      ],
-     "stable": "1.0.3",
+     "stable": "1.0.4",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "olivierlambert/calrs:1.20.3"
+       "olivierlambert/calrs:1.20.5"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -1659,7 +1663,7 @@
      },
      "source": "ghcr.io/stephdl/calrs",
      "stars": 0,
-     "pushed_at": "2026-10-25T09:56:27Z",
+     "pushed_at": "2026-10-25T16:46:21Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1672,7 +1676,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-25T09:56:28Z"
+     "released_at": "2026-10-25T16:19:02Z"
     }
    ]
   },
@@ -2482,7 +2486,7 @@
      },
      "source": "ghcr.io/stephdl/ddclient",
      "stars": 0,
-     "pushed_at": "2026-10-25T10:04:05Z",
+     "pushed_at": "2026-10-25T16:33:05Z",
      "archived": false,
      "checks": {
       "topic": false,
