@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T21:21:34+00:00",
+ "generated_at": "2026-10-26T05:43:20+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -482,7 +482,7 @@
      },
      "source": "ghcr.io/platypuschan/adguard-home",
      "stars": 0,
-     "pushed_at": "2026-10-17T11:54:55Z",
+     "pushed_at": "2026-10-26T01:40:10Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -495,7 +495,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": null
+     "released_at": "2026-10-26T01:40:10Z"
     }
    ]
   },
@@ -2651,7 +2651,7 @@
      },
      "source": "ghcr.io/stephdl/discourse",
      "stars": 0,
-     "pushed_at": "2026-10-25T17:51:41Z",
+     "pushed_at": "2026-10-26T05:38:55Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2807,7 +2807,7 @@
      },
      "source": "ghcr.io/nethserver/dnsmasq",
      "stars": 0,
-     "pushed_at": "2026-10-25T02:10:41Z",
+     "pushed_at": "2026-10-26T02:54:39Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -3909,7 +3909,7 @@
      },
      "source": "ghcr.io/platypuschan/fail2ban-reworked",
      "stars": 0,
-     "pushed_at": "2026-10-24T22:30:20Z",
+     "pushed_at": "2026-10-26T02:02:51Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -3922,7 +3922,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": null
+     "released_at": "2026-10-26T02:02:52Z"
     }
    ]
   },
@@ -4431,18 +4431,18 @@
      ],
      "versions": [
       {
-       "tag": "0.4.2",
+       "tag": "0.4.5",
        "testing": false
       }
      ],
-     "stable": "0.4.2",
+     "stable": "0.4.5",
      "testing": null,
      "min_core": "3.2.2",
      "tech": {
       "rootfull": false,
       "images": [
        "postgres:15.19-alpine3.23",
-       "docker.gitea.com/gitea:28.0.0"
+       "docker.gitea.com/gitea:28.2.0"
       ],
       "authorizations": [
        "traefik@node:routeadm",
@@ -4455,7 +4455,7 @@
      },
      "source": "ghcr.io/platypuschan/gitea-reworked",
      "stars": 0,
-     "pushed_at": "2026-10-24T22:29:59Z",
+     "pushed_at": "2026-10-26T04:29:42Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -4468,7 +4468,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": null
+     "released_at": "2026-10-26T04:29:42Z"
     }
    ]
   },
@@ -6741,7 +6741,7 @@
      },
      "source": "ghcr.io/nethserver/mail",
      "stars": 3,
-     "pushed_at": "2026-10-24T18:43:18Z",
+     "pushed_at": "2026-10-25T23:19:41Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -7138,7 +7138,7 @@
      },
      "source": "ghcr.io/platypuschan/maubot",
      "stars": 0,
-     "pushed_at": "2026-10-17T11:54:57Z",
+     "pushed_at": "2026-10-26T01:46:02Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -7151,7 +7151,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": null
+     "released_at": "2026-10-26T01:46:03Z"
     }
    ]
   },
@@ -8361,7 +8361,7 @@
      },
      "source": "ghcr.io/nethserver/nextcloud",
      "stars": 0,
-     "pushed_at": "2026-10-24T18:45:15Z",
+     "pushed_at": "2026-10-26T02:50:10Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8652,21 +8652,21 @@
      ],
      "versions": [
       {
-       "tag": "0.4.0-testing.1",
-       "testing": true
+       "tag": "0.4.1",
+       "testing": false
       },
       {
-       "tag": "0.3.5",
-       "testing": false
+       "tag": "0.4.0-testing.1",
+       "testing": true
       }
      ],
-     "stable": "0.3.5",
-     "testing": "0.4.0-testing.1",
+     "stable": "0.4.1",
+     "testing": null,
      "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
       "images": [
-       "binwiederhier/ntfy:v2.28.0"
+       "binwiederhier/ntfy:v2.34.0"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -8677,7 +8677,7 @@
      },
      "source": "ghcr.io/platypuschan/ntfy-reworked",
      "stars": 0,
-     "pushed_at": "2026-10-21T22:25:00Z",
+     "pushed_at": "2026-10-26T01:58:18Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -8690,7 +8690,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": null
+     "released_at": "2026-10-26T01:58:18Z"
     }
    ]
   },
@@ -8755,7 +8755,7 @@
      },
      "source": "ghcr.io/platypuschan/obsidian-livesync",
      "stars": 0,
-     "pushed_at": "2026-10-17T11:55:03Z",
+     "pushed_at": "2026-10-26T01:37:53Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -8768,7 +8768,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": null
+     "released_at": "2026-10-26T01:37:54Z"
     }
    ]
   },
@@ -9370,7 +9370,7 @@
      },
      "source": "ghcr.io/platypuschan/organizr-reworked",
      "stars": 0,
-     "pushed_at": "2026-10-22T21:36:25Z",
+     "pushed_at": "2026-10-26T02:23:01Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -9383,7 +9383,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": null
+     "released_at": "2026-10-26T02:23:02Z"
     }
    ]
   },
@@ -12240,7 +12240,7 @@
      },
      "source": "ghcr.io/mrmarkuz/unifi-network",
      "stars": 0,
-     "pushed_at": "2026-10-22T19:11:19Z",
+     "pushed_at": "2026-10-25T22:07:10Z",
      "archived": false,
      "checks": {
       "topic": false,
