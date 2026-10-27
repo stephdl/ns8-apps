@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T16:18:52+00:00",
+ "generated_at": "2026-10-27T18:39:14+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -82,6 +82,15 @@
    "app_count": 1
   },
   {
+   "id": "tebbiworld",
+   "name": "tebbiworld/ns8-repo",
+   "url": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/",
+   "alt_url": null,
+   "kind": "community",
+   "repo": "tebbiworld/ns8-repo",
+   "app_count": 22
+  },
+  {
    "id": "Platypuschan",
    "name": "Platypuschan/ns8-modules",
    "url": "https://platypuschan.github.io/ns8-modules/ns8/updates/",
@@ -98,6 +107,24 @@
    "kind": "community",
    "repo": "danb35/ns8-repomd",
    "app_count": 2
+  },
+  {
+   "id": "antonwantstosleep",
+   "name": "antonwantstosleep/ns8-repo",
+   "url": "https://antonwantstosleep.github.io/ns8-repo/",
+   "alt_url": null,
+   "kind": "community",
+   "repo": "antonwantstosleep/ns8-repo",
+   "app_count": 1
+  },
+  {
+   "id": "francio87",
+   "name": "francio87/ns8-repomd",
+   "url": "https://francio87.github.io/ns8-repomd/",
+   "alt_url": null,
+   "kind": "community",
+   "repo": "francio87/ns8-repomd",
+   "app_count": 1
   }
  ],
  "apps": [
@@ -628,6 +655,168 @@
    ]
   },
   {
+   "id": "aiidalab",
+   "categories": [
+    "development"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "aiidalab",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "AiiDAlab",
+     "description": {
+      "en": "AiiDAlab — web platform for computational chemistry and materials science: AiiDA workflows with full provenance, Jupyter apps (e.g. Quantum ESPRESSO), calculations dispatched over SSH to a remote GPU/compute node",
+      "de": "AiiDAlab — Web-Plattform für Computerchemie und Materialwissenschaft: AiiDA-Workflows mit vollständiger Provenienz, Jupyter-Apps (z. B. Quantum ESPRESSO), Rechnungen per SSH auf einen externen GPU-/Rechenknoten"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "development"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-aiidalab",
+     "docs": {
+      "documentation_url": "https://aiidalab.readthedocs.io/",
+      "bug_url": "https://github.com/tebbiworld/ns8-aiidalab/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-aiidalab/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/aiidalab/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "aiidalab/full-stack:2026.1031"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "aiidalab-home"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/aiidalab",
+     "stars": 0,
+     "pushed_at": "2026-09-30T16:02:11Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:37:15Z"
+    }
+   ]
+  },
+  {
+   "id": "arsnova",
+   "categories": [
+    "collaboration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "arsnova",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "ARSnova",
+     "description": {
+      "en": "Live audience response and interactive learning system (Particify)",
+      "de": "Live-Audience-Response- und interaktives Lernsystem (Particify)"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "collaboration"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-arsnova",
+     "docs": {
+      "documentation_url": "https://particify.de/manual/",
+      "bug_url": "https://github.com/tebbiworld/ns8-arsnova/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-arsnova/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/arsnova/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.2.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.2.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "particify/couchdb",
+       "postgres:13.8-alpine",
+       "particify/rabbitmq-stomp",
+       "particify/arsnova-server-authz:3.13.20260613",
+       "particify/arsnova-server-core:3.13.20260613",
+       "particify/arsnova-server-comments:3.13.20260613",
+       "particify/arsnova-server-websocket:3.13.20260613",
+       "particify/arsnova-server-gateway:3.13.20260613",
+       "particify/arsnova-server-formatting:3.13.20260613",
+       "particify/arsnova-webclient:3.13.20260613",
+       "particify/arsnova-proxy"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/arsnova",
+     "stars": 0,
+     "pushed_at": "2026-09-30T21:46:48Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:37:20Z"
+    }
+   ]
+  },
+  {
    "id": "authentik",
    "categories": [
     "security"
@@ -1013,6 +1202,85 @@
       "license": true
      },
      "released_at": "2026-10-24T19:58:03Z"
+    }
+   ]
+  },
+  {
+   "id": "borgbackupserver",
+   "categories": [
+    "storage"
+   ],
+   "official": false,
+   "stars": 1,
+   "variants": [
+    {
+     "module_id": "borgbackupserver",
+     "forges": [
+      "francio87"
+     ],
+     "kind": "community",
+     "developer": "francio87",
+     "name": "Borg Backup Server",
+     "description": {
+      "en": "Manage BorgBackup clients, repositories, schedules, and restores."
+     },
+     "about": null,
+     "authors": [
+      "Davide Franceschelli"
+     ],
+     "categories": [
+      "storage"
+     ],
+     "code_url": "https://github.com/francio87/ns8-borgbackupserver",
+     "docs": {
+      "documentation_url": "https://github.com/francio87/ns8-borgbackupserver#readme",
+      "bug_url": "https://github.com/francio87/ns8-borgbackupserver/issues"
+     },
+     "logo": "https://francio87.github.io/ns8-repomd/borgbackupserver/logo.png",
+     "screenshots": [
+      "https://francio87.github.io/ns8-repomd/borgbackupserver/screenshots/bbs-gui.png",
+      "https://francio87.github.io/ns8-repomd/borgbackupserver/screenshots/bbs-architecture.png"
+     ],
+     "versions": [
+      {
+       "tag": "0.3.0",
+       "testing": false
+      }
+     ],
+     "stable": "0.3.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "marcpope/borgbackupserver:v2.99.2"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "bbs-data"
+      ]
+     },
+     "source": "ghcr.io/francio87/borgbackupserver",
+     "stars": 1,
+     "pushed_at": "2026-10-27T15:59:02Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": false,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-10-22T10:35:27Z"
     }
    ]
   },
@@ -1648,6 +1916,84 @@
    ]
   },
   {
+   "id": "clamav",
+   "categories": [
+    "security"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "clamav",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "ClamAV",
+     "description": {
+      "en": "ClamAV antivirus daemon for the cluster — scan endpoint for Nextcloud and other modules on the same node or via the cluster VPN",
+      "de": "ClamAV-Virenscanner für den Cluster — Scan-Dienst für Nextcloud und andere Module auf demselben Knoten oder über das Cluster-VPN"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "security"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-clamav",
+     "docs": {
+      "documentation_url": "https://docs.clamav.net/",
+      "bug_url": "https://github.com/tebbiworld/ns8-clamav/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-clamav/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/clamav/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.5.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.5.0",
+     "testing": null,
+     "min_core": "3.22.0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "clamav/clamav:1.5.4",
+       "tebbiworld/clamav-web:1.5.0"
+      ],
+      "authorizations": [
+       "node:fwadm,portsadm",
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/clamav",
+     "stars": 0,
+     "pushed_at": "2026-10-18T16:41:52Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-18T16:43:06Z"
+    }
+   ]
+  },
+  {
    "id": "collabora",
    "categories": [
     "collaboration"
@@ -1954,6 +2300,83 @@
       "license": true
      },
      "released_at": "2026-10-14T07:00:32Z"
+    }
+   ]
+  },
+  {
+   "id": "cs2",
+   "categories": [
+    "multimedia"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "cs2",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Counter-Strike 2 Server",
+     "description": {
+      "en": "Counter-Strike 2 dedicated server (joedwards32/cs2, SteamCMD) — game modes, bots, workshop maps, CSTV, RCON console; players join with the free CS2 client via steam://connect",
+      "de": "Counter-Strike-2-Dedicated-Server (joedwards32/cs2, SteamCMD) — Spielmodi, Bots, Workshop-Maps, CSTV, RCON-Konsole; Spieler verbinden sich mit dem kostenlosen CS2-Client per steam://connect"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "multimedia"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-cs2",
+     "docs": {
+      "documentation_url": "https://github.com/joedwards32/CS2#readme",
+      "bug_url": "https://github.com/tebbiworld/ns8-cs2/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-cs2/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/cs2/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "joedwards32/cs2:4.0.1"
+      ],
+      "authorizations": [
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": [
+       "cs2-data"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/cs2",
+     "stars": 0,
+     "pushed_at": "2026-10-01T10:39:15Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:37:28Z"
     }
    ]
   },
@@ -2887,6 +3310,84 @@
    ]
   },
   {
+   "id": "ecodms",
+   "categories": [
+    "office"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "ecodms",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "ecoDMS",
+     "description": {
+      "en": "ecoDMS document archive and management system",
+      "de": "ecoDMS Dokumentenarchiv- und Verwaltungssystem"
+     },
+     "about": "A NethServer 8 module that packages the ecoDMS document archive and management system (ecoDMS 26.01 \"burns\") from the official ecodms/ecodms image.",
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "office"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-ecodms",
+     "docs": {
+      "documentation_url": "https://www.ecodms.de/de/kaufberatung/downloads/handbuecher",
+      "bug_url": "https://github.com/tebbiworld/ns8-ecodms/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-ecodms/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/ecodms/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "ecodms/ecodms:26.01-02"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "ecodms-data",
+       "ecodms-backup"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/ecodms",
+     "stars": 0,
+     "pushed_at": "2026-09-30T21:47:28Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": false,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:37:32Z"
+    }
+   ]
+  },
+  {
    "id": "ejabberd",
    "categories": [
     "collaboration"
@@ -2962,6 +3463,85 @@
       "license": true
      },
      "released_at": "2026-10-21T10:17:16Z"
+    }
+   ]
+  },
+  {
+   "id": "elabftw",
+   "categories": [
+    "office"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "elabftw",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "eLabFTW",
+     "description": {
+      "en": "eLabFTW — electronic lab notebook with chemical structure editor, inventory and AD/LDAP login",
+      "de": "eLabFTW — elektronisches Laborjournal mit Struktureditor, Inventar und AD/LDAP-Anmeldung"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "office"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-elabftw",
+     "docs": {
+      "documentation_url": "https://doc.elabftw.net/",
+      "bug_url": "https://github.com/tebbiworld/ns8-elabftw/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-elabftw/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/elabftw/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.2.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.2.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/elabimg:6.0.1-php8.4.27",
+       "mysql:8.4.10"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "elabftw-uploads",
+       "elabftw-exports"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/elabftw",
+     "stars": 0,
+     "pushed_at": "2026-10-21T20:20:49Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-10-21T20:20:50Z"
     }
    ]
   },
@@ -3661,6 +4241,83 @@
    ]
   },
   {
+   "id": "foundryvtt",
+   "categories": [
+    "multimedia"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "foundryvtt",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Foundry VTT",
+     "description": {
+      "en": "Foundry Virtual Tabletop — self-hosted web virtual tabletop for tabletop RPGs",
+      "de": "Foundry Virtual Tabletop — selbst gehosteter virtueller Tisch für Pen-&-Paper-Rollenspiele"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "multimedia"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-foundryvtt",
+     "docs": {
+      "documentation_url": "https://foundryvtt.com/kb/",
+      "bug_url": "https://github.com/tebbiworld/ns8-foundryvtt/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-foundryvtt/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/foundryvtt/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "felddy/foundryvtt:14.367.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "foundryvtt-data"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/foundryvtt",
+     "stars": 0,
+     "pushed_at": "2026-09-30T21:48:07Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:37:40Z"
+    }
+   ]
+  },
+  {
    "id": "gitea",
    "categories": [
     "development"
@@ -4070,6 +4727,81 @@
    ]
   },
   {
+   "id": "gophish",
+   "categories": [
+    "security"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "gophish",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "GoPhish",
+     "description": {
+      "en": "GoPhish phishing simulation server (self-built from the official release) — separate admin and phishing host names behind Traefik, SQLite storage, for authorised security-awareness testing",
+      "de": "GoPhish-Phishing-Simulationsserver (selbst aus dem offiziellen Release gebaut) — getrennte Admin- und Phishing-Hostnamen hinter Traefik, SQLite-Speicher, für autorisierte Security-Awareness-Tests"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "security"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-gophish",
+     "docs": {
+      "documentation_url": "https://docs.getgophish.com/",
+      "bug_url": "https://github.com/tebbiworld/ns8-gophish/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-gophish/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/gophish/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.3",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.3",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/gophish-app:1.1.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 2,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/gophish",
+     "stars": 0,
+     "pushed_at": "2026-09-30T16:04:26Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:38:17Z"
+    }
+   ]
+  },
+  {
    "id": "grafana",
    "categories": [
     "monitoring"
@@ -4226,6 +4958,85 @@
       "license": true
      },
      "released_at": "2024-11-20T22:10:22Z"
+    }
+   ]
+  },
+  {
+   "id": "hashtopolis",
+   "categories": [
+    "security"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "hashtopolis",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Hashtopolis",
+     "description": {
+      "en": "Distributed hashcat password recovery management",
+      "de": "Verteiltes hashcat-Passwort-Recovery-Management"
+     },
+     "about": "All three containers share one pod, so they reach each other over the pod's localhost.",
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "security"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-hashtopolis",
+     "docs": {
+      "documentation_url": "https://docs.hashtopolis.org",
+      "bug_url": "https://github.com/tebbiworld/ns8-hashtopolis/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-hashtopolis/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/hashtopolis/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.4.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.4.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/hashtopolis-backend:1.0.1-php8.5.12",
+       "hashtopolis/frontend:v1.0.1",
+       "mysql:8.4.11"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "hashtopolis-data"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/hashtopolis",
+     "stars": 0,
+     "pushed_at": "2026-10-21T19:47:57Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": false,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": false
+     },
+     "released_at": "2026-10-21T19:47:57Z"
     }
    ]
   },
@@ -4541,6 +5352,163 @@
       "license": true
      },
      "released_at": "2026-01-31T15:00:59Z"
+    }
+   ]
+  },
+  {
+   "id": "huginn",
+   "categories": [
+    "development",
+    "monitoring"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "huginn",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Huginn",
+     "description": {
+      "en": "Build agents that monitor and act on your behalf",
+      "de": "Erstelle Agenten, die in deinem Namen überwachen und handeln"
+     },
+     "about": "NethServer 8 module for Huginn (agents that monitor and act on your behalf)",
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "development",
+      "monitoring"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-huginn",
+     "docs": {
+      "documentation_url": "https://github.com/huginn/huginn/wiki",
+      "bug_url": "https://github.com/tebbiworld/ns8-huginn/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-huginn/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/huginn/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.4.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.4.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "huginn/huginn:v2026.09.09",
+       "mariadb:11.4.12"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/huginn",
+     "stars": 0,
+     "pushed_at": "2026-10-18T16:41:48Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": false,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-10-18T16:42:57Z"
+    }
+   ]
+  },
+  {
+   "id": "idevice-backup",
+   "categories": [
+    "storage"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "idevice-backup",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "iOS Device Backup",
+     "description": {
+      "en": "Back up iPhones and iPads over WiFi with pymobiledevice3 — upload a lockdown pairing file created on your computer, no USB on the server; encrypted backups and restore per device",
+      "de": "iPhones und iPads über WLAN sichern mit pymobiledevice3 — Lockdown-Pairing-Datei vom eigenen Rechner hochladen, kein USB am Server; verschlüsselte Backups und Restore je Gerät"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "storage"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-idevice-backup",
+     "docs": {
+      "documentation_url": "https://github.com/tebbiworld/ns8-idevice-backup/blob/main/README.md",
+      "bug_url": "https://github.com/tebbiworld/ns8-idevice-backup/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-idevice-backup/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/idevice-backup/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.6.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.6.0",
+     "testing": null,
+     "min_core": "3.22.0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/idevice-backup-app:1.6.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:portsadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "idevice-data"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/idevice-backup",
+     "stars": 0,
+     "pushed_at": "2026-10-18T16:41:54Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-18T16:44:09Z"
     }
    ]
   },
@@ -5715,7 +6683,7 @@
      },
      "source": "ghcr.io/stephdl/lemp",
      "stars": 0,
-     "pushed_at": "2026-10-27T14:16:08Z",
+     "pushed_at": "2026-10-27T18:31:10Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6673,6 +7641,83 @@
    ]
   },
   {
+   "id": "minecraft",
+   "categories": [
+    "multimedia"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "minecraft",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Minecraft Server",
+     "description": {
+      "en": "Minecraft server (Java Edition, optional Bedrock support via Geyser) — Vanilla, Paper or Fabric from the itzg image, with whitelist, operators and world backup",
+      "de": "Minecraft-Server (Java Edition, optional Bedrock-Unterstützung via Geyser) — Vanilla, Paper oder Fabric aus dem itzg-Image, mit Whitelist, Operatoren und Welt-Backup"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "multimedia"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-minecraft",
+     "docs": {
+      "documentation_url": "https://docker-minecraft-server.readthedocs.io/",
+      "bug_url": "https://github.com/tebbiworld/ns8-minecraft/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-minecraft/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/minecraft/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "itzg/minecraft-server:2026.9.1-java25"
+      ],
+      "authorizations": [
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": [
+       "minecraft-data"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/minecraft",
+     "stars": 0,
+     "pushed_at": "2026-09-30T21:48:56Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:37:56Z"
+    }
+   ]
+  },
+  {
    "id": "monica",
    "categories": [
     "office"
@@ -6832,6 +7877,73 @@
     {
      "module_id": "n8n",
      "forges": [
+      "antonwantstosleep"
+     ],
+     "kind": "community",
+     "developer": "antonwantstosleep",
+     "name": "N8n",
+     "description": {
+      "en": "n8n is a flexible AI workflow automation for technical teams."
+     },
+     "about": null,
+     "authors": [
+      "Martin Bhuong",
+      "Markus Neuberger",
+      "Anton Vakhrameev"
+     ],
+     "categories": [
+      "development"
+     ],
+     "code_url": "https://github.com/antonwantstosleep/ns8-n8n",
+     "docs": {
+      "documentation_url": "https://docs.n8n.io/",
+      "bug_url": "https://github.com/antonwantstosleep/ns8-n8n/issues"
+     },
+     "logo": "https://antonwantstosleep.github.io/ns8-repo/n8n/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.1.2",
+       "testing": false
+      }
+     ],
+     "stable": "0.1.2",
+     "testing": null,
+     "min_core": "3.20.1",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "postgres:16.15",
+       "n8nio/n8n:2.42.3",
+       "n8nio/runners:2.42.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/antonwantstosleep/n8n",
+     "stars": 0,
+     "pushed_at": "2026-10-05T11:42:43Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": false,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-05T11:42:21Z"
+    },
+    {
+     "module_id": "n8n",
+     "forges": [
       "geniusdynamics"
      ],
      "kind": "community",
@@ -6897,6 +8009,84 @@
       "license": true
      },
      "released_at": "2025-12-24T02:07:37Z"
+    }
+   ]
+  },
+  {
+   "id": "netbootxyz",
+   "categories": [
+    "system_administration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "netbootxyz",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Netboot.xyz",
+     "description": {
+      "en": "PXE network boot server: boot installers and live systems for dozens of operating systems straight from the internet, no ISO uploads needed",
+      "de": "PXE-Netzwerk-Bootserver: Installer und Live-Systeme für Dutzende Betriebssysteme direkt aus dem Internet starten, ganz ohne ISO-Uploads"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "system_administration"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-netbootxyz",
+     "docs": {
+      "documentation_url": "https://github.com/tebbiworld/ns8-netbootxyz/blob/main/README.md",
+      "bug_url": "https://github.com/tebbiworld/ns8-netbootxyz/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-netbootxyz/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/netbootxyz/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "netbootxyz/netbootxyz:0.7.6-nbxyz24"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "node:fwadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "netbootxyz-config"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/netbootxyz",
+     "stars": 0,
+     "pushed_at": "2026-09-30T16:03:56Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:38:00Z"
     }
    ]
   },
@@ -7158,7 +8348,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-27T15:54:20Z",
+     "pushed_at": "2026-10-27T16:46:18Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7245,7 +8435,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-27T14:27:26Z",
+     "pushed_at": "2026-10-27T16:46:57Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7762,6 +8952,84 @@
    ]
   },
   {
+   "id": "odoo",
+   "categories": [
+    "office"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "odoo",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Odoo",
+     "description": {
+      "en": "Odoo 19 ERP/CRM (community) with PostgreSQL, custom/OCA add-ons",
+      "de": "Odoo 19 ERP/CRM (Community) mit PostgreSQL, eigene/OCA-Module"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "office"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-odoo",
+     "docs": {
+      "documentation_url": "https://www.odoo.com/documentation/19.0/",
+      "bug_url": "https://github.com/tebbiworld/ns8-odoo/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-odoo/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/odoo/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.1",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.1",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "odoo:19.0-20260908",
+       "postgres:16.14"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "odoo-data"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/odoo",
+     "stars": 0,
+     "pushed_at": "2026-09-30T16:01:21Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:38:04Z"
+    }
+   ]
+  },
+  {
    "id": "onlyoffice",
    "categories": [
     "collaboration"
@@ -8143,6 +9411,83 @@
    ]
   },
   {
+   "id": "openwebui",
+   "categories": [
+    "development"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "openwebui",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Open WebUI",
+     "description": {
+      "en": "Open WebUI — self-hosted AI chat interface for an external Ollama backend, with AD/LDAP login",
+      "de": "Open WebUI — selbst gehostete KI-Chat-Oberfläche für ein externes Ollama-Backend, mit AD/LDAP-Anmeldung"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "development"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-openwebui",
+     "docs": {
+      "documentation_url": "https://docs.openwebui.com/",
+      "bug_url": "https://github.com/tebbiworld/ns8-openwebui/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-openwebui/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/openwebui/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.2.1",
+       "testing": false
+      }
+     ],
+     "stable": "1.2.1",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "open-webui/open-webui:v0.11.4"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "openwebui-data"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/openwebui",
+     "stars": 0,
+     "pushed_at": "2026-09-30T22:02:43Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-30T22:03:45Z"
+    }
+   ]
+  },
+  {
    "id": "organizr-reworked",
    "categories": [
     "collaboration"
@@ -8381,6 +9726,85 @@
       "license": true
      },
      "released_at": "2026-10-21T17:07:39Z"
+    }
+   ]
+  },
+  {
+   "id": "passbolt-export",
+   "categories": [
+    "security",
+    "storage"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "passbolt-export",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Passbolt Export",
+     "description": {
+      "en": "Regular emergency copy of Passbolt as an encrypted KeePass file (KDBX 4) on Dropbox, OneDrive, Google Drive, pCloud, S3, WebDAV or SMB: open it with KeePassXC, Strongbox or KeePassDX when Passbolt or the whole server is gone",
+      "de": "Regelmäßige Notfallkopie von Passbolt als verschlüsselte KeePass-Datei (KDBX 4) in Dropbox, OneDrive, Google Drive, pCloud, S3, WebDAV oder SMB: mit KeePassXC, Strongbox oder KeePassDX lesbar, auch wenn Passbolt oder der ganze Server ausgefallen ist",
+      "it": "Copia di emergenza periodica di Passbolt come file KeePass cifrato (KDBX 4) su Dropbox, OneDrive, Google Drive, pCloud, S3, WebDAV o SMB: si apre con KeePassXC, Strongbox o KeePassDX quando Passbolt o l'intero server non sono disponibili",
+      "fr": "Copie de secours régulière de Passbolt sous forme de fichier KeePass chiffré (KDBX 4) sur Dropbox, OneDrive, Google Drive, pCloud, S3, WebDAV ou SMB : lisible avec KeePassXC, Strongbox ou KeePassDX quand Passbolt ou tout le serveur est hors service"
+     },
+     "about": null,
+     "authors": [
+      "tebbiworld"
+     ],
+     "categories": [
+      "security",
+      "storage"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-passbolt-export",
+     "docs": {
+      "documentation_url": "https://github.com/tebbiworld/ns8-passbolt-export",
+      "bug_url": "https://github.com/tebbiworld/ns8-passbolt-export/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-passbolt-export/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/passbolt-export/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/passbolt-export-app:1.1.0"
+      ],
+      "authorizations": [
+       "traefik@any:reader"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/passbolt-export",
+     "stars": 0,
+     "pushed_at": "2026-10-23T11:08:22Z",
+     "archived": false,
+     "checks": {
+      "topic": true,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-10-11T14:31:57Z"
     }
    ]
   },
@@ -8920,6 +10344,84 @@
       "license": true
      },
      "released_at": "2026-07-18T20:38:34Z"
+    }
+   ]
+  },
+  {
+   "id": "plex",
+   "categories": [
+    "multimedia"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "plex",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Plex Media Server",
+     "description": {
+      "en": "Plex Media Server — stream your own movies, series, music and photos from media on iSCSI/NFS mounts of the node",
+      "de": "Plex Media Server — eigene Filme, Serien, Musik und Fotos streamen; Medien auf iSCSI-/NFS-Mounts des Knotens"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "multimedia"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-plex",
+     "docs": {
+      "documentation_url": "https://support.plex.tv/articles/",
+      "bug_url": "https://github.com/tebbiworld/ns8-plex/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-plex/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/plex/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "plexinc/pms-docker:1.43.4.10903-e5521bd8c"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "plex-config",
+       "plex-transcode"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/plex",
+     "stars": 0,
+     "pushed_at": "2026-09-30T16:03:36Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:38:08Z"
     }
    ]
   },
@@ -9793,6 +11295,83 @@
    ]
   },
   {
+   "id": "sagemath",
+   "categories": [
+    "development"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "sagemath",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "SageMath",
+     "description": {
+      "en": "SageMath in the browser: multi-user JupyterLab with the SageMath kernel and Active Directory login",
+      "de": "SageMath im Browser: Mehrbenutzer-JupyterLab mit SageMath-Kernel und Active-Directory-Anmeldung"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "development"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-sagemath",
+     "docs": {
+      "documentation_url": "https://github.com/tebbiworld/ns8-sagemath/blob/main/README.md",
+      "bug_url": "https://github.com/tebbiworld/ns8-sagemath/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-sagemath/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/sagemath/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/sagemath-app:1.0.0"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": [
+       "sagemath-userhomes"
+      ]
+     },
+     "source": "ghcr.io/tebbiworld/sagemath",
+     "stars": 0,
+     "pushed_at": "2026-09-30T21:47:46Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:38:13Z"
+    }
+   ]
+  },
+  {
    "id": "sam",
    "categories": [
     "security"
@@ -10241,6 +11820,85 @@
    ]
   },
   {
+   "id": "snipeit",
+   "categories": [
+    "office",
+    "system_administration"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "snipeit",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Snipe-IT",
+     "description": {
+      "en": "IT asset management: hardware, software licenses, accessories and consumables, who has what, check-out/check-in, audits and maintenances. Login with a user domain of the cluster.",
+      "de": "IT-Inventarverwaltung: Hardware, Softwarelizenzen, Zubehör und Verbrauchsmaterial, wer hat was, Ausgabe/Rücknahme, Inventuren und Wartungen. Anmeldung mit einer Benutzerdomäne des Clusters."
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "office",
+      "system_administration"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-snipeit",
+     "docs": {
+      "documentation_url": "https://snipe-it.readme.io/docs",
+      "bug_url": "https://github.com/tebbiworld/ns8-snipeit/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-snipeit/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/snipeit/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.0.0",
+       "testing": false
+      }
+     ],
+     "stable": "1.0.0",
+     "testing": null,
+     "min_core": "3.22.0",
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "snipe/snipe-it:v8.8.3",
+       "mariadb:11.4.13"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/snipeit",
+     "stars": 0,
+     "pushed_at": "2026-10-23T13:23:41Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": true,
+      "license": true
+     },
+     "released_at": "2026-10-23T13:25:05Z"
+    }
+   ]
+  },
+  {
    "id": "sogo",
    "categories": [
     "collaboration"
@@ -10651,6 +12309,81 @@
       "license": false
      },
      "released_at": null
+    }
+   ]
+  },
+  {
+   "id": "tsa",
+   "categories": [
+    "security"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "tsa",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "TSA",
+     "description": {
+      "en": "RFC 3161 timestamp authority (trusted timestamping)",
+      "de": "RFC-3161-Zeitstempeldienst (vertrauenswürdige Zeitstempel)"
+     },
+     "about": "NethServer 8 module: RFC 3161 timestamp authority (sigstore timestamp-server)",
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "security"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-tsa",
+     "docs": {
+      "documentation_url": "https://github.com/tebbiworld/ns8-tsa/blob/main/README.md",
+      "bug_url": "https://github.com/tebbiworld/ns8-tsa/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-tsa/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/tsa/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.1",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.1",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "sigstore/timestamp-server:v2.1.3"
+      ],
+      "authorizations": [
+       "traefik@node:routeadm"
+      ],
+      "tcp_ports": 1,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/tsa",
+     "stars": 0,
+     "pushed_at": "2026-09-30T16:01:06Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": false,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:30:15Z"
     }
    ]
   },
@@ -11465,6 +13198,10 @@
      ],
      "versions": [
       {
+       "tag": "1.1.1",
+       "testing": false
+      },
+      {
        "tag": "1.1.0",
        "testing": false
       },
@@ -11501,7 +13238,7 @@
        "testing": false
       }
      ],
-     "stable": "1.1.0",
+     "stable": "1.1.1",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -11539,7 +13276,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-27T13:12:38Z"
+     "released_at": "2026-10-27T15:21:10Z"
     }
    ]
   },
@@ -11714,6 +13451,81 @@
    ]
   },
   {
+   "id": "wesnoth",
+   "categories": [
+    "multimedia"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "wesnoth",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "Wesnoth Server",
+     "description": {
+      "en": "Battle for Wesnoth multiplayer server (wesnothd, built from the official source) — permanent lobby for the free turn-based strategy game, admin console, replays, players connect with the Wesnoth client",
+      "de": "Battle-for-Wesnoth-Mehrspieler-Server (wesnothd, aus dem offiziellen Quellcode gebaut) — dauerhafte Lobby für das freie rundenbasierte Strategiespiel, Admin-Konsole, Replays, Spieler verbinden sich mit dem Wesnoth-Client"
+     },
+     "about": null,
+     "authors": [
+      "tebbi"
+     ],
+     "categories": [
+      "multimedia"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-wesnoth",
+     "docs": {
+      "documentation_url": "https://wiki.wesnoth.org/ServerAdministration",
+      "bug_url": "https://github.com/tebbiworld/ns8-wesnoth/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-wesnoth/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/wesnoth/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "1.1.1",
+       "testing": false
+      }
+     ],
+     "stable": "1.1.1",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/wesnoth-server:1.1.1"
+      ],
+      "authorizations": [
+       "node:fwadm"
+      ],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/wesnoth",
+     "stars": 0,
+     "pushed_at": "2026-10-04T12:28:55Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-09-23T21:38:26Z"
+    }
+   ]
+  },
+  {
    "id": "wg-easy",
    "categories": [
     "collaboration"
@@ -11786,6 +13598,79 @@
       "license": true
      },
      "released_at": "2025-04-10T09:52:21Z"
+    }
+   ]
+  },
+  {
+   "id": "windeploy",
+   "categories": [
+    "system_administration"
+   ],
+   "official": false,
+   "stars": 1,
+   "variants": [
+    {
+     "module_id": "windeploy",
+     "forges": [
+      "tebbiworld"
+     ],
+     "kind": "community",
+     "developer": "tebbiworld",
+     "name": "GPO based Software Deployment for Windows",
+     "description": {
+      "en": "Search the winget community repository and roll out Windows software through Group Policy scheduled tasks in a Samba or Windows Active Directory",
+      "de": "Windows-Software aus dem winget-Community-Repository suchen und per Gruppenrichtlinie (geplante Aufgabe) im Samba- oder Windows-AD verteilen"
+     },
+     "about": null,
+     "authors": [
+      "tebbiworld"
+     ],
+     "categories": [
+      "system_administration"
+     ],
+     "code_url": "https://github.com/tebbiworld/ns8-windeploy",
+     "docs": {
+      "documentation_url": "https://github.com/tebbiworld/ns8-windeploy",
+      "bug_url": "https://github.com/tebbiworld/ns8-windeploy/issues",
+      "relnotes_url": "https://github.com/tebbiworld/ns8-windeploy/releases"
+     },
+     "logo": "https://raw.githubusercontent.com/tebbiworld/ns8-repo/main/ns8/updates/windeploy/logo.png",
+     "screenshots": [],
+     "versions": [
+      {
+       "tag": "0.5.0",
+       "testing": false
+      }
+     ],
+     "stable": "0.5.0",
+     "testing": null,
+     "min_core": null,
+     "tech": {
+      "rootfull": false,
+      "images": [
+       "tebbiworld/windeploy-samba:0.5.0"
+      ],
+      "authorizations": [],
+      "tcp_ports": 0,
+      "udp_ports": 0,
+      "volumes": []
+     },
+     "source": "ghcr.io/tebbiworld/windeploy",
+     "stars": 1,
+     "pushed_at": "2026-10-16T20:16:18Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": false,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     },
+     "released_at": "2026-10-16T20:16:18Z"
     }
    ]
   },
