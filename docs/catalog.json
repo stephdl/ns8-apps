@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T12:56:15+00:00",
+ "generated_at": "2026-10-27T14:41:59+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -52,7 +52,7 @@
    "alt_url": "https://raw.githubusercontent.com/stephdl/ns8-stephdl/repomd/ns8/updates/",
    "kind": "community",
    "repo": "stephdl/ns8-stephdl",
-   "app_count": 15
+   "app_count": 16
   },
   {
    "id": "mrmarkuz",
@@ -6525,6 +6525,77 @@
    ]
   },
   {
+   "id": "lemp",
+   "categories": [
+    "development",
+    "web"
+   ],
+   "official": false,
+   "stars": 0,
+   "variants": [
+    {
+     "module_id": "lemp",
+     "forges": [
+      "stephdl"
+     ],
+     "kind": "community",
+     "developer": "stephdl",
+     "name": "LEMP",
+     "description": {
+      "en": "Host a PHP web site with nginx, PHP-FPM 8.2 to 8.5, MariaDB and phpMyAdmin, with mail through the cluster smarthost.",
+      "fr": "Hébergez un site web PHP avec nginx, PHP-FPM 8.2 à 8.5, MariaDB et phpMyAdmin, avec l'envoi de mails par le smarthost du cluster.",
+      "it": "Ospita un sito web PHP con nginx, PHP-FPM da 8.2 a 8.5, MariaDB e phpMyAdmin, con invio di posta tramite lo smarthost del cluster.",
+      "de": "Betreiben Sie eine PHP-Website mit nginx, PHP-FPM 8.2 bis 8.5, MariaDB und phpMyAdmin, mit Mailversand über den Smarthost des Clusters.",
+      "es": "Aloje un sitio web PHP con nginx, PHP-FPM 8.2 a 8.5, MariaDB y phpMyAdmin, con envío de correo a través del smarthost del clúster.",
+      "pt": "Aloje um site web PHP com nginx, PHP-FPM 8.2 a 8.5, MariaDB e phpMyAdmin, com envio de correio através do smarthost do cluster.",
+      "pt_BR": "Hospede um site PHP com nginx, PHP-FPM 8.2 a 8.5, MariaDB e phpMyAdmin, com envio de e-mail pelo smarthost do cluster.",
+      "eu": "Ostatatu PHP webgune bat nginx, PHP-FPM 8.2tik 8.5era, MariaDB eta phpMyAdmin-ekin, klusterraren smarthost bidezko posta-bidalketarekin.",
+      "nl": "Host een PHP-website met nginx, PHP-FPM 8.2 tot 8.5, MariaDB en phpMyAdmin, met e-mail via de smarthost van het cluster.",
+      "ar": "استضف موقع PHP مع nginx و PHP-FPM من 8.2 إلى 8.5 و MariaDB و phpMyAdmin، مع إرسال البريد عبر المضيف الذكي للعنقود."
+     },
+     "about": null,
+     "authors": [
+      "Stephane de Labrusse"
+     ],
+     "categories": [
+      "development",
+      "web"
+     ],
+     "code_url": "https://github.com/stephdl/ns8-lemp",
+     "docs": {
+      "documentation_url": "https://github.com/stephdl/ns8-lemp#readme",
+      "bug_url": "https://github.com/stephdl/ns8-lemp/issues"
+     },
+     "logo": "https://forge.de-labrusse.fr/ns8/updates/lemp/logo.png",
+     "screenshots": [
+      "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen2.png",
+      "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen3.png",
+      "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen1.png"
+     ],
+     "versions": [],
+     "stable": null,
+     "testing": null,
+     "min_core": null,
+     "tech": null,
+     "source": "ghcr.io/stephdl/lemp",
+     "stars": 0,
+     "pushed_at": "2026-10-27T14:16:08Z",
+     "archived": false,
+     "checks": {
+      "topic": false,
+      "categories": true,
+      "logo": true,
+      "screenshots": true,
+      "description": true,
+      "translations": true,
+      "docs": true,
+      "min_core": false,
+      "license": true
+     }
+    }
+   ]
+  },
+  {
    "id": "linkwarden",
    "categories": [
     "collaboration"
@@ -8172,7 +8243,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-27T12:54:09Z",
+     "pushed_at": "2026-10-27T14:22:29Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8259,7 +8330,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-27T10:11:17Z",
+     "pushed_at": "2026-10-27T14:27:26Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13022,6 +13093,10 @@
      ],
      "versions": [
       {
+       "tag": "1.1.0",
+       "testing": false
+      },
+      {
        "tag": "1.0.7",
        "testing": false
       },
@@ -13054,7 +13129,7 @@
        "testing": false
       }
      ],
-     "stable": "1.0.7",
+     "stable": "1.1.0",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -13079,7 +13154,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-27T12:07:49Z",
+     "pushed_at": "2026-10-27T14:28:38Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13092,7 +13167,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-25T09:58:41Z"
+     "released_at": "2026-10-27T13:12:38Z"
     }
    ]
   },
