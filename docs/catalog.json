@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T13:45:15+00:00",
+ "generated_at": "2026-10-28T22:57:13+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -61,7 +61,7 @@
    "alt_url": "https://raw.githubusercontent.com/mrmarkuz/ns8-mrmarkuz/repomd/ns8/updates/",
    "kind": "community",
    "repo": "mrmarkuz/ns8-mrmarkuz",
-   "app_count": 27
+   "app_count": 26
   },
   {
    "id": "geniusdynamics",
@@ -1422,7 +1422,7 @@
      "pushed_at": "2026-10-28T12:16:08Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
@@ -1667,7 +1667,7 @@
      },
      "source": "ghcr.io/stephdl/calrs",
      "stars": 0,
-     "pushed_at": "2026-10-28T02:32:06Z",
+     "pushed_at": "2026-10-28T14:01:03Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1718,8 +1718,8 @@
      "logo": "https://forge.genius.ke/ns8/updates/checkcle/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/checkcle/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -2052,7 +2052,7 @@
      },
      "source": "ghcr.io/nethserver/collabora",
      "stars": 0,
-     "pushed_at": "2026-10-28T00:10:04Z",
+     "pushed_at": "2026-10-28T21:44:36Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2103,8 +2103,8 @@
      "logo": "https://forge.genius.ke/ns8/updates/coolify/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/coolify/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -2266,7 +2266,7 @@
      ],
      "versions": [
       {
-       "tag": "1.4.2-dev.1",
+       "tag": "1.4.2-dev.2",
        "testing": true
       },
       {
@@ -2275,7 +2275,7 @@
       }
      ],
      "stable": "1.4.1",
-     "testing": "1.4.2-dev.1",
+     "testing": "1.4.2-dev.2",
      "min_core": "3.20.1",
      "tech": {
       "rootfull": true,
@@ -2290,7 +2290,7 @@
      },
      "source": "ghcr.io/nethserver/crowdsec",
      "stars": 1,
-     "pushed_at": "2026-10-28T08:43:49Z",
+     "pushed_at": "2026-10-28T21:42:32Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2629,8 +2629,8 @@
      "logo": "https://forge.de-labrusse.fr/ns8/updates/discourse/logo.png",
      "screenshots": [
       "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen3.png",
-      "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/discourse/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -2866,8 +2866,8 @@
      "logo": "https://forge.genius.ke/ns8/updates/docmost/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/docmost/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -3022,9 +3022,9 @@
      "logo": "https://forge.genius.ke/ns8/updates/dokploy/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen1.png",
       "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/dokploy/screenshots/screen4.png"
      ],
      "versions": [
       {
@@ -3254,8 +3254,8 @@
      "logo": "https://forge.de-labrusse.fr/ns8/updates/dolibarr/logo.png",
      "screenshots": [
       "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen3.png",
-      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/dolibarr/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -3583,11 +3583,11 @@
      "logo": "https://forge.genius.ke/ns8/updates/erpnext/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen6.png",
-      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen1.png",
       "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen5.png",
+      "https://forge.genius.ke/ns8/updates/erpnext/screenshots/screen6.png"
      ],
      "versions": [
       {
@@ -3796,10 +3796,13 @@
      ],
      "kind": "community",
      "developer": "mrmarkuz",
-     "name": "Euro Office",
+     "name": "Euro-office",
      "description": {
-      "en": "Euro-Office is a self-hostable document server",
-      "de": "Euro-Office ist ein selbst hostbarer Dokumentserver"
+      "en": "Euro-Office is a free, open-source web-based office suite and collaborative productivity component",
+      "de": "Euro-Office ist eine kostenlose, quelloffene, webbasierte Office-Suite sowie eine Komponente für kollaborative Produktivität",
+      "fr": "Euro-Office est une suite bureautique en ligne, gratuite et open source, qui constitue un outil de productivité collaborative",
+      "it": "Euro-Office è una suite per ufficio basata sul web, gratuita e open source, che funge da strumento per la produttività collaborativa",
+      "es": "Euro-Office es una suite ofimática basada en la web, de código abierto y gratuita, que funciona como herramienta de productividad colaborativa"
      },
      "about": null,
      "authors": [
@@ -3819,17 +3822,17 @@
      ],
      "versions": [
       {
-       "tag": "1.0.1",
+       "tag": "1.0.2",
        "testing": false
       }
      ],
-     "stable": "1.0.1",
+     "stable": "1.0.2",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "euro-office/documentserver:v9.3.2"
+       "euro-office/documentserver:v9.3.7"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -3840,20 +3843,20 @@
      },
      "source": "ghcr.io/mrmarkuz/euro-office",
      "stars": 0,
-     "pushed_at": "2026-10-28T13:41:04Z",
+     "pushed_at": "2026-10-28T14:56:45Z",
      "archived": false,
      "checks": {
       "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
-      "description": false,
+      "description": true,
       "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-06-27T10:44:47Z"
+     "released_at": "2026-10-28T14:56:46Z"
     }
    ]
   },
@@ -4355,8 +4358,8 @@
      "logo": "https://forge.genius.ke/ns8/updates/gitea/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/gitea/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -5027,7 +5030,7 @@
      },
      "source": "ghcr.io/tebbiworld/hashtopolis",
      "stars": 0,
-     "pushed_at": "2026-10-28T13:41:47Z",
+     "pushed_at": "2026-10-28T19:50:48Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5574,7 +5577,7 @@
      },
      "source": "ghcr.io/nethserver/imapsync",
      "stars": 0,
-     "pushed_at": "2026-10-28T08:23:40Z",
+     "pushed_at": "2026-10-28T15:02:55Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5608,8 +5611,11 @@
      "developer": "mrmarkuz",
      "name": "Immich",
      "description": {
-      "en": "Online photo management",
-      "de": "Online Fotoverwaltung"
+      "en": "Immich is a self-hosted, open-source photo and video management solution",
+      "de": "Immich ist eine selbstgehostete Open-Source-Lösung zur Verwaltung von Fotos und Videos",
+      "fr": "Immich est une solution de gestion de photos et de vidéos, open source et auto-hébergée",
+      "it": "Immich è una soluzione open source per la gestione di foto e video, pensata per l'hosting in autonomia",
+      "es": "Immich es una solución de gestión de fotos y vídeos de código abierto y autohospedada"
      },
      "about": null,
      "authors": [
@@ -5620,8 +5626,8 @@
      ],
      "code_url": "https://github.com/mrmarkuz/ns8-immich",
      "docs": {
-      "documentation_url": "https://immich.app/docs/overview/welcome/",
-      "bug_url": "https://community.nethserver.org"
+      "documentation_url": "https://immich.app/docs/overview/welcome",
+      "bug_url": "https://github.com/mrmarkuz/ns8-immich"
      },
      "logo": "https://repo.mrmarkuz.com/ns8/updates/immich/logo.png",
      "screenshots": [
@@ -5629,19 +5635,19 @@
      ],
      "versions": [
       {
-       "tag": "1.2.5",
+       "tag": "1.2.6",
        "testing": false
       }
      ],
-     "stable": "1.2.5",
+     "stable": "1.2.6",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
        "immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0",
-       "immich-app/immich-server:v3.1.0",
-       "immich-app/immich-machine-learning:v3.1.0",
+       "immich-app/immich-server:v3.3.5",
+       "immich-app/immich-machine-learning:v3.3.5",
        "valkey/valkey:9"
       ],
       "authorizations": [
@@ -5655,20 +5661,20 @@
      },
      "source": "ghcr.io/mrmarkuz/immich",
      "stars": 1,
-     "pushed_at": "2026-10-28T00:31:43Z",
+     "pushed_at": "2026-10-28T21:14:12Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
-      "description": false,
+      "description": true,
       "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-07-31T15:34:16Z"
+     "released_at": "2026-10-28T21:14:12Z"
     }
    ]
   },
@@ -5887,10 +5893,10 @@
      },
      "source": "ghcr.io/mrmarkuz/jitsi",
      "stars": 0,
-     "pushed_at": "2026-07-25T09:08:46Z",
+     "pushed_at": "2026-10-28T22:55:31Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
@@ -5938,9 +5944,9 @@
      "logo": "https://forge.genius.ke/ns8/updates/joplin/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen1.png",
       "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/joplin/screenshots/screen4.png"
      ],
      "versions": [
       {
@@ -6000,8 +6006,11 @@
      "developer": "mrmarkuz",
      "name": "Kimai",
      "description": {
-      "en": "Online time tracking",
-      "de": "Online Zeiterfassung"
+      "en": "Kimai is a free, open-source time-tracking and invoicing application designed for freelancers, agencies, and businesses",
+      "de": "Kimai ist eine kostenlose Open-Source-Anwendung zur Zeiterfassung und Rechnungsstellung, die für Freiberufler, Agenturen und Unternehmen konzipiert wurde",
+      "fr": "Kimai est une application gratuite et open source de suivi du temps et de facturation, conçue pour les freelances, les agences et les entreprises",
+      "it": "Kimai è un'applicazione gratuita e open source per il monitoraggio del tempo e la fatturazione, pensata per liberi professionisti, agenzie e aziende",
+      "es": "Kimai es una aplicación gratuita de código abierto para el seguimiento del tiempo y la facturación, diseñada para trabajadores autónomos, agencias y empresas"
      },
      "about": null,
      "authors": [
@@ -6021,18 +6030,18 @@
      ],
      "versions": [
       {
-       "tag": "1.0.20",
+       "tag": "1.1.0",
        "testing": false
       }
      ],
-     "stable": "1.0.20",
+     "stable": "1.1.0",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
        "mariadb:10.11.19",
-       "kimai/kimai2:2.70.1"
+       "kimai/kimai2:2.71.0"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -6043,20 +6052,20 @@
      },
      "source": "ghcr.io/mrmarkuz/kimai",
      "stars": 0,
-     "pushed_at": "2026-10-28T02:30:03Z",
+     "pushed_at": "2026-10-28T21:42:29Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
-      "description": false,
+      "description": true,
       "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-21T18:20:32Z"
+     "released_at": "2026-10-28T21:42:30Z"
     }
    ]
   },
@@ -6123,7 +6132,7 @@
      "pushed_at": "2026-10-28T00:58:47Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
@@ -6489,8 +6498,8 @@
      "logo": "https://forge.de-labrusse.fr/ns8/updates/launcher/logo.png",
      "screenshots": [
       "https://forge.de-labrusse.fr/ns8/updates/launcher/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/launcher/screenshots/screen3.png",
-      "https://forge.de-labrusse.fr/ns8/updates/launcher/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/launcher/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/launcher/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -6663,8 +6672,8 @@
      "logo": "https://forge.de-labrusse.fr/ns8/updates/lemp/logo.png",
      "screenshots": [
       "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen3.png",
-      "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/lemp/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -6703,7 +6712,7 @@
      },
      "source": "ghcr.io/stephdl/lemp",
      "stars": 0,
-     "pushed_at": "2026-10-28T02:11:10Z",
+     "pushed_at": "2026-10-28T14:05:59Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -6826,8 +6835,8 @@
      "logo": "https://forge.genius.ke/ns8/updates/listmonk/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/listmonk/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -6941,7 +6950,7 @@
      },
      "source": "ghcr.io/nethserver/mail",
      "stars": 3,
-     "pushed_at": "2026-10-28T08:10:21Z",
+     "pushed_at": "2026-10-28T15:04:41Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -7070,17 +7079,17 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "3.0.0",
+       "tag": "3.1.0",
        "testing": false
       }
      ],
-     "stable": "3.0.0",
+     "stable": "3.1.0",
      "testing": null,
      "min_core": null,
      "tech": {
       "rootfull": false,
       "images": [
-       "geniusdynamics/matomo-app:3.0.0",
+       "geniusdynamics/matomo-app:3.1.0",
        "mariadb:10.11.19"
       ],
       "authorizations": [
@@ -7093,7 +7102,7 @@
      },
      "source": "ghcr.io/geniusdynamics/matomo",
      "stars": 0,
-     "pushed_at": "2026-10-24T19:52:10Z",
+     "pushed_at": "2026-10-28T17:16:17Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7106,7 +7115,7 @@
       "min_core": false,
       "license": true
      },
-     "released_at": "2026-10-24T19:52:10Z"
+     "released_at": "2026-10-28T17:16:17Z"
     }
    ]
   },
@@ -7512,7 +7521,7 @@
   {
    "id": "meshcentral",
    "categories": [
-    "collaboration"
+    "system_administration"
    ],
    "official": false,
    "stars": 0,
@@ -7526,14 +7535,18 @@
      "developer": "mrmarkuz",
      "name": "MeshCentral",
      "description": {
-      "en": "Full computer management web site"
+      "en": "MeshCentral is a free, open-source, self-hosted web-based remote computer management and monitoring platform",
+      "de": "MeshCentral ist eine kostenlose, quelloffene, selbst gehostete und webbasierte Plattform zur Fernverwaltung und Überwachung von Computern",
+      "fr": "MeshCentral est une plateforme web gratuite, open source et auto-hébergée, destinée à la gestion et à la surveillance d'ordinateurs à distance",
+      "it": "MeshCentral è una piattaforma web gratuita, open source e autospostata per la gestione e il monitoraggio remoto di computer",
+      "es": "MeshCentral es una plataforma web gratuita, de código abierto y autohospedada para la gestión y supervisión remota de equipos informáticos"
      },
-     "about": "MeshCentral is a full computer management web site. \\ Documentation: https://ylianst.github.io/MeshCentral/meshcentral/",
+     "about": null,
      "authors": [
       "Markus Neuberger"
      ],
      "categories": [
-      "collaboration"
+      "system_administration"
      ],
      "code_url": "https://github.com/mrmarkuz/ns8-meshcentral",
      "docs": {
@@ -7568,95 +7581,20 @@
      },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
-     "pushed_at": "2026-10-23T22:03:46Z",
+     "pushed_at": "2026-10-28T15:19:09Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
-      "description": false,
-      "translations": false,
+      "description": true,
+      "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
      "released_at": "2026-10-23T22:03:47Z"
-    }
-   ]
-  },
-  {
-   "id": "meshcentral-light",
-   "categories": [
-    "collaboration"
-   ],
-   "official": false,
-   "stars": 0,
-   "variants": [
-    {
-     "module_id": "meshcentral-light",
-     "forges": [
-      "mrmarkuz"
-     ],
-     "kind": "community",
-     "developer": "mrmarkuz",
-     "name": "MeshCentral light",
-     "description": {
-      "en": "Full computer management web site without MongoDB"
-     },
-     "about": "MeshCentral is a full computer management web site. \\ Documentation: https://ylianst.github.io/MeshCentral/meshcentral/",
-     "authors": [
-      "Markus Neuberger"
-     ],
-     "categories": [
-      "collaboration"
-     ],
-     "code_url": "https://github.com/mrmarkuz/ns8-meshcentral-light",
-     "docs": {
-      "documentation_url": "https://ylianst.github.io/MeshCentral",
-      "bug_url": "https://community.nethserver.org"
-     },
-     "logo": "https://repo.mrmarkuz.com/ns8/updates/meshcentral-light/logo.png",
-     "screenshots": [
-      "https://repo.mrmarkuz.com/ns8/updates/meshcentral-light/screenshots/screen1.png"
-     ],
-     "versions": [
-      {
-       "tag": "1.0.12",
-       "testing": false
-      }
-     ],
-     "stable": "1.0.12",
-     "testing": null,
-     "min_core": null,
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "typhonragewind/meshcentral:preloadlibs-1.1.53"
-      ],
-      "authorizations": [
-       "traefik@node:routeadm"
-      ],
-      "tcp_ports": 1,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/mrmarkuz/meshcentral-light",
-     "stars": 0,
-     "pushed_at": "2026-07-25T12:58:49Z",
-     "archived": false,
-     "checks": {
-      "topic": false,
-      "categories": true,
-      "logo": true,
-      "screenshots": true,
-      "description": false,
-      "translations": false,
-      "docs": true,
-      "min_core": false,
-      "license": true
-     },
-     "released_at": "2026-03-17T13:36:59Z"
     }
    ]
   },
@@ -8165,7 +8103,7 @@
      },
      "source": "ghcr.io/nethserver/netdata",
      "stars": 0,
-     "pushed_at": "2026-10-28T00:09:14Z",
+     "pushed_at": "2026-10-28T21:28:48Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8364,7 +8302,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-28T13:34:12Z",
+     "pushed_at": "2026-10-28T17:37:26Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8451,7 +8389,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice-proxy",
      "stars": 4,
-     "pushed_at": "2026-10-28T09:18:54Z",
+     "pushed_at": "2026-10-28T16:46:45Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8556,7 +8494,7 @@
      },
      "source": "ghcr.io/nethserver/nextcloud",
      "stars": 0,
-     "pushed_at": "2026-10-28T00:07:58Z",
+     "pushed_at": "2026-10-28T21:44:19Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8607,11 +8545,11 @@
      "logo": "https://forge.genius.ke/ns8/updates/nocodb/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen6.png",
-      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen1.png",
       "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen5.png",
+      "https://forge.genius.ke/ns8/updates/nocodb/screenshots/screen6.png"
      ],
      "versions": [
       {
@@ -9048,7 +8986,7 @@
   {
    "id": "onlyoffice",
    "categories": [
-    "collaboration"
+    "office"
    ],
    "official": false,
    "stars": 0,
@@ -9062,15 +9000,18 @@
      "developer": "mrmarkuz",
      "name": "Onlyoffice",
      "description": {
-      "en": "Onlyoffice is a web document editor",
-      "de": "Onlyoffice ist ein webbasierter Dokumenteditor"
+      "en": "ONLYOFFICE is a free, open-source office suite and collaborative productivity platform used to create, edit, and work together on text documents, spreadsheets, presentations, and PDFs",
+      "de": "ONLYOFFICE ist eine kostenlose Open-Source-Office-Suite sowie eine Plattform für kollaboratives Arbeiten zum Erstellen und Bearbeiten von Textdokumenten, Tabellenkalkulationen, Präsentationen und PDFs",
+      "fr": "ONLYOFFICE est une suite bureautique gratuite et open source, ainsi qu’une plateforme de productivité collaborative, permettant de créer, de modifier et de travailler collectivement sur des documents texte, des feuilles de calcul, des présentations et des fichiers PDF",
+      "it": "ONLYOFFICE è una suite per ufficio gratuita e open source, nonché una piattaforma di produttività collaborativa, utilizzata per creare, modificare e lavorare insieme su documenti di testo, fogli di calcolo, presentazioni e file PDF",
+      "es": "ONLYOFFICE es una suite ofimática de código abierto y gratuita, además de una plataforma de productividad colaborativa, utilizada para crear, editar y trabajar de forma conjunta en documentos de texto, hojas de cálculo, presentaciones y archivos PDF"
      },
      "about": null,
      "authors": [
       "Markus Neuberger"
      ],
      "categories": [
-      "collaboration"
+      "office"
      ],
      "code_url": "https://github.com/mrmarkuz/ns8-onlyoffice",
      "docs": {
@@ -9083,17 +9024,17 @@
      ],
      "versions": [
       {
-       "tag": "1.1.7",
+       "tag": "1.2.0",
        "testing": false
       }
      ],
-     "stable": "1.1.7",
+     "stable": "1.2.0",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "onlyoffice/documentserver:9.4.0.1"
+       "onlyoffice/documentserver:10.0.0.1"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -9104,20 +9045,20 @@
      },
      "source": "ghcr.io/mrmarkuz/onlyoffice",
      "stars": 0,
-     "pushed_at": "2026-10-28T13:43:06Z",
+     "pushed_at": "2026-10-28T21:00:18Z",
      "archived": false,
      "checks": {
       "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
-      "description": false,
+      "description": true,
       "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-06-03T19:01:10Z"
+     "released_at": "2026-10-28T14:35:25Z"
     }
    ]
   },
@@ -9255,7 +9196,7 @@
      },
      "source": "ghcr.io/nethserver/openldap",
      "stars": 0,
-     "pushed_at": "2026-10-28T08:11:13Z",
+     "pushed_at": "2026-10-28T15:05:24Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9615,10 +9556,10 @@
      },
      "logo": "https://forge.nethserver.org/ns8/updates/paperlessngx/logo.png",
      "screenshots": [
-      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen5.png",
       "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen3.png",
+      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen2.png",
       "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen4.png",
-      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen2.png"
+      "https://forge.nethserver.org/ns8/updates/paperlessngx/screenshots/screen5.png"
      ],
      "versions": [
       {
@@ -10269,7 +10210,7 @@
      },
      "source": "ghcr.io/nethserver/piler",
      "stars": 0,
-     "pushed_at": "2026-10-28T08:12:32Z",
+     "pushed_at": "2026-10-28T18:26:04Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10715,8 +10656,8 @@
      "logo": "https://forge.de-labrusse.fr/ns8/updates/privatebin/logo.png",
      "screenshots": [
       "https://forge.de-labrusse.fr/ns8/updates/privatebin/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/privatebin/screenshots/screen3.png",
-      "https://forge.de-labrusse.fr/ns8/updates/privatebin/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/privatebin/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/privatebin/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -10903,7 +10844,7 @@
      "pushed_at": "2026-10-28T03:11:13Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
@@ -10951,11 +10892,11 @@
      "logo": "https://forge.genius.ke/ns8/updates/pwpush/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen6.png",
-      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen1.png",
       "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen5.png",
+      "https://forge.genius.ke/ns8/updates/pwpush/screenshots/screen6.png"
      ],
      "versions": [
       {
@@ -12030,10 +11971,10 @@
      "logo": "https://forge.genius.ke/ns8/updates/stirlingpdf/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen5.png",
-      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen1.png",
       "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/stirlingpdf/screenshots/screen5.png"
      ],
      "versions": [
       {
@@ -12116,8 +12057,8 @@
      "logo": "https://forge.de-labrusse.fr/ns8/updates/sympa/logo.png",
      "screenshots": [
       "https://forge.de-labrusse.fr/ns8/updates/sympa/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/sympa/screenshots/screen3.png",
-      "https://forge.de-labrusse.fr/ns8/updates/sympa/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/sympa/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/sympa/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -12284,9 +12225,9 @@
      "logo": "https://forge.genius.ke/ns8/updates/termix/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 4.png",
-      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 3.png",
       "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 2.png",
-      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 1.png"
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 1.png",
+      "https://forge.genius.ke/ns8/updates/termix/screenshots/Image 3.png"
      ],
      "versions": [
       {
@@ -12519,8 +12460,8 @@
      "logo": "https://forge.genius.ke/ns8/updates/umami/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/umami/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen1.png",
+      "https://forge.genius.ke/ns8/updates/umami/screenshots/screen3.png"
      ],
      "versions": [
       {
@@ -12580,8 +12521,11 @@
      "developer": "mrmarkuz",
      "name": "Unifi Network Application",
      "description": {
-      "en": "Unifi Network Application is a software platform from Ubiquiti for managing networks, gateways, switches, and wireless access points.",
-      "de": "Unifi Network Application ist eine Software Plattform von Ubiquiti um Netzwerke, Gateways, Switches und Access Points zu verwalten."
+      "en": "Unifi Network Application is a software platform from Ubiquiti for managing networks, gateways, switches, and wireless access points",
+      "de": "UniFi Network Application ist eine Softwareplattform von Ubiquiti zur Verwaltung von Netzwerken, Gateways, Switches und Wireless Access Points",
+      "fr": "Unifi Network Application est une plateforme logicielle proposée par Ubiquiti pour la gestion de réseaux, de passerelles, de commutateurs et de points d’accès sans fil",
+      "it": "UniFi Network Application è una piattaforma software di Ubiquiti per la gestione di reti, gateway, switch e punti di accesso wireless",
+      "es": "UniFi Network Application es una plataforma de software de Ubiquiti para la gestión de redes, gateways, switches y puntos de acceso inalámbricos"
      },
      "about": null,
      "authors": [
@@ -12601,18 +12545,18 @@
      ],
      "versions": [
       {
-       "tag": "1.0.8",
+       "tag": "1.0.9",
        "testing": false
       }
      ],
-     "stable": "1.0.8",
+     "stable": "1.0.9",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "linuxserver/unifi-network-application:10.4.57-ls139",
-       "mongo:8.0.28"
+       "linuxserver/unifi-network-application:10.6.109-ls152",
+       "mongo:8.0.34"
       ],
       "authorizations": [
        "traefik@node:routeadm",
@@ -12624,10 +12568,10 @@
      },
      "source": "ghcr.io/mrmarkuz/unifi-network",
      "stars": 0,
-     "pushed_at": "2026-10-28T00:30:16Z",
+     "pushed_at": "2026-10-28T22:15:55Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
@@ -12637,7 +12581,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-08-01T19:56:23Z"
+     "released_at": "2026-10-28T22:15:55Z"
     }
    ]
   },
@@ -13047,9 +12991,9 @@
      "logo": "https://forge.genius.ke/ns8/updates/vikunja/logo.png",
      "screenshots": [
       "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen2.png",
-      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen4.png",
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen1.png",
       "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen3.png",
-      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen1.png"
+      "https://forge.genius.ke/ns8/updates/vikunja/screenshots/screen4.png"
      ],
      "versions": [
       {
@@ -13209,10 +13153,14 @@
      "logo": "https://forge.de-labrusse.fr/ns8/updates/wazuh/logo.png",
      "screenshots": [
       "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen2.png",
-      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png",
-      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png"
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen1.png",
+      "https://forge.de-labrusse.fr/ns8/updates/wazuh/screenshots/screen3.png"
      ],
      "versions": [
+      {
+       "tag": "1.1.2",
+       "testing": false
+      },
       {
        "tag": "1.1.1",
        "testing": false
@@ -13254,7 +13202,7 @@
        "testing": false
       }
      ],
-     "stable": "1.1.1",
+     "stable": "1.1.2",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -13279,7 +13227,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-28T13:20:45Z",
+     "pushed_at": "2026-10-28T17:05:43Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13292,7 +13240,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-27T15:21:10Z"
+     "released_at": "2026-10-28T15:19:19Z"
     }
    ]
   },
@@ -13785,7 +13733,7 @@
      "description": {
       "en": "XWiki is a free and open source wiki software platform"
      },
-     "about": "Runs XWiki 18.5.0 (MariaDB/Tomcat flavour) as a rootless Podman pod alongside MariaDB 11.4. The pod uses slirp4netns networking so XWiki can reach the NS8 LDAP account provider on the host without any extra firewall rules.",
+     "about": "Runs XWiki (MariaDB/Tomcat flavour) as a rootless Podman pod alongside MariaDB 11.4. The pod uses slirp4netns networking so XWiki can reach the NS8 LDAP account provider on the host without any extra firewall rules.",
      "authors": [
       "stephane de Labrusse"
      ],
@@ -13861,7 +13809,7 @@
      },
      "source": "ghcr.io/stephdl/xwiki",
      "stars": 0,
-     "pushed_at": "2026-10-28T02:35:57Z",
+     "pushed_at": "2026-10-28T20:07:04Z",
      "archived": false,
      "checks": {
       "topic": false,
