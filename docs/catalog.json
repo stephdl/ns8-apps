@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T06:43:12+00:00",
+ "generated_at": "2026-10-29T13:55:33+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -799,7 +799,7 @@
      },
      "source": "ghcr.io/tebbiworld/arsnova",
      "stars": 0,
-     "pushed_at": "2026-09-30T21:46:48Z",
+     "pushed_at": "2026-10-29T13:43:24Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -1419,7 +1419,7 @@
      },
      "source": "ghcr.io/mrmarkuz/calcom",
      "stars": 0,
-     "pushed_at": "2026-10-28T12:16:08Z",
+     "pushed_at": "2026-10-29T09:15:49Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -2741,7 +2741,7 @@
      },
      "source": "ghcr.io/danb35/dnshelper",
      "stars": 0,
-     "pushed_at": "2026-10-28T10:14:00Z",
+     "pushed_at": "2026-10-29T12:36:28Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -4951,7 +4951,7 @@
      },
      "source": "ghcr.io/mrmarkuz/guacamole",
      "stars": 0,
-     "pushed_at": "2026-10-28T00:38:29Z",
+     "pushed_at": "2026-10-29T09:01:47Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -5893,7 +5893,7 @@
      },
      "source": "ghcr.io/mrmarkuz/jitsi",
      "stars": 0,
-     "pushed_at": "2026-10-29T05:13:12Z",
+     "pushed_at": "2026-10-29T12:35:04Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -8250,7 +8250,7 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.8.0-testing.62",
+       "tag": "1.8.0-testing.69",
        "testing": true
       },
       {
@@ -8267,7 +8267,7 @@
       }
      ],
      "stable": "1.7.14",
-     "testing": "1.8.0-testing.62",
+     "testing": "1.8.0-testing.69",
      "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
@@ -8302,7 +8302,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-28T17:37:26Z",
+     "pushed_at": "2026-10-29T13:43:53Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9024,11 +9024,11 @@
      ],
      "versions": [
       {
-       "tag": "1.2.0",
+       "tag": "1.2.1",
        "testing": false
       }
      ],
-     "stable": "1.2.0",
+     "stable": "1.2.1",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
@@ -9045,7 +9045,7 @@
      },
      "source": "ghcr.io/mrmarkuz/onlyoffice",
      "stars": 0,
-     "pushed_at": "2026-10-28T21:00:18Z",
+     "pushed_at": "2026-10-29T13:16:18Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -9058,7 +9058,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-28T14:35:25Z"
+     "released_at": "2026-10-29T10:56:36Z"
     }
    ]
   },
@@ -10210,7 +10210,7 @@
      },
      "source": "ghcr.io/nethserver/piler",
      "stars": 0,
-     "pushed_at": "2026-10-28T18:26:04Z",
+     "pushed_at": "2026-10-29T09:38:02Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10287,7 +10287,7 @@
      },
      "source": "ghcr.io/mrmarkuz/planka",
      "stars": 0,
-     "pushed_at": "2026-10-28T02:59:43Z",
+     "pushed_at": "2026-10-29T09:16:55Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11815,11 +11815,11 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.0.0",
+       "tag": "1.1.0",
        "testing": false
       }
      ],
-     "stable": "1.0.0",
+     "stable": "1.1.0",
      "testing": null,
      "min_core": "3.22.0",
      "tech": {
@@ -11838,7 +11838,7 @@
      },
      "source": "ghcr.io/tebbiworld/snipeit",
      "stars": 0,
-     "pushed_at": "2026-10-28T12:04:38Z",
+     "pushed_at": "2026-10-29T12:23:21Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11851,7 +11851,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-23T13:25:05Z"
+     "released_at": "2026-10-29T08:39:06Z"
     }
    ]
   },
@@ -13158,6 +13158,14 @@
      ],
      "versions": [
       {
+       "tag": "1.1.5",
+       "testing": false
+      },
+      {
+       "tag": "1.1.4",
+       "testing": false
+      },
+      {
        "tag": "1.1.2",
        "testing": false
       },
@@ -13202,7 +13210,7 @@
        "testing": false
       }
      ],
-     "stable": "1.1.2",
+     "stable": "1.1.5",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -13227,7 +13235,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-29T06:17:05Z",
+     "pushed_at": "2026-10-29T07:58:57Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13240,7 +13248,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-28T15:19:19Z"
+     "released_at": "2026-10-29T07:58:57Z"
     }
    ]
   },
@@ -13892,7 +13900,7 @@
      },
      "source": "ghcr.io/mrmarkuz/zabbix",
      "stars": 0,
-     "pushed_at": "2026-10-28T23:10:29Z",
+     "pushed_at": "2026-10-29T08:54:00Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -13971,7 +13979,7 @@
      },
      "source": "ghcr.io/mrmarkuz/zammad",
      "stars": 0,
-     "pushed_at": "2026-10-28T23:50:54Z",
+     "pushed_at": "2026-10-29T11:23:59Z",
      "archived": false,
      "checks": {
       "topic": true,
