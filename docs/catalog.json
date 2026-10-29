@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T22:57:13+00:00",
+ "generated_at": "2026-10-29T06:43:12+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -2052,7 +2052,7 @@
      },
      "source": "ghcr.io/nethserver/collabora",
      "stars": 0,
-     "pushed_at": "2026-10-28T21:44:36Z",
+     "pushed_at": "2026-10-29T03:49:52Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2290,7 +2290,7 @@
      },
      "source": "ghcr.io/nethserver/crowdsec",
      "stars": 1,
-     "pushed_at": "2026-10-28T21:42:32Z",
+     "pushed_at": "2026-10-29T03:49:44Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5577,7 +5577,7 @@
      },
      "source": "ghcr.io/nethserver/imapsync",
      "stars": 0,
-     "pushed_at": "2026-10-28T15:02:55Z",
+     "pushed_at": "2026-10-29T03:50:43Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5893,7 +5893,7 @@
      },
      "source": "ghcr.io/mrmarkuz/jitsi",
      "stars": 0,
-     "pushed_at": "2026-10-28T22:55:31Z",
+     "pushed_at": "2026-10-29T05:13:12Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -6950,7 +6950,7 @@
      },
      "source": "ghcr.io/nethserver/mail",
      "stars": 3,
-     "pushed_at": "2026-10-28T15:04:41Z",
+     "pushed_at": "2026-10-29T03:49:27Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -8103,7 +8103,7 @@
      },
      "source": "ghcr.io/nethserver/netdata",
      "stars": 0,
-     "pushed_at": "2026-10-28T21:28:48Z",
+     "pushed_at": "2026-10-29T03:51:11Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -11614,7 +11614,7 @@
      },
      "source": "ghcr.io/platypuschan/samba",
      "stars": 0,
-     "pushed_at": "2026-10-24T22:57:12Z",
+     "pushed_at": "2026-10-29T04:09:15Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -12174,7 +12174,7 @@
      },
      "source": "ghcr.io/mrmarkuz/tailscale",
      "stars": 0,
-     "pushed_at": "2026-10-21T06:10:02Z",
+     "pushed_at": "2026-10-28T23:32:07Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13227,7 +13227,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-28T17:05:43Z",
+     "pushed_at": "2026-10-29T06:17:05Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13809,7 +13809,7 @@
      },
      "source": "ghcr.io/stephdl/xwiki",
      "stars": 0,
-     "pushed_at": "2026-10-28T20:07:04Z",
+     "pushed_at": "2026-10-29T02:25:20Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13892,7 +13892,7 @@
      },
      "source": "ghcr.io/mrmarkuz/zabbix",
      "stars": 0,
-     "pushed_at": "2026-10-28T03:23:52Z",
+     "pushed_at": "2026-10-28T23:10:29Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -13971,10 +13971,10 @@
      },
      "source": "ghcr.io/mrmarkuz/zammad",
      "stars": 0,
-     "pushed_at": "2026-10-28T07:01:44Z",
+     "pushed_at": "2026-10-28T23:50:54Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
