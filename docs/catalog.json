@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T13:55:33+00:00",
+ "generated_at": "2026-10-29T23:05:17+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -768,18 +768,18 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.2.0",
+       "tag": "1.3.0",
        "testing": false
       }
      ],
-     "stable": "1.2.0",
+     "stable": "1.3.0",
      "testing": null,
      "min_core": null,
      "tech": {
       "rootfull": false,
       "images": [
        "particify/couchdb",
-       "postgres:13.8-alpine",
+       "postgres:18.6-alpine",
        "particify/rabbitmq-stomp",
        "particify/arsnova-server-authz:3.13.20260613",
        "particify/arsnova-server-core:3.13.20260613",
@@ -791,15 +791,18 @@
        "particify/arsnova-proxy"
       ],
       "authorizations": [
-       "traefik@node:routeadm"
+       "traefik@node:routeadm",
+       "cluster:accountconsumer"
       ],
       "tcp_ports": 1,
       "udp_ports": 0,
-      "volumes": []
+      "volumes": [
+       "arsnova-couchdb"
+      ]
      },
      "source": "ghcr.io/tebbiworld/arsnova",
      "stars": 0,
-     "pushed_at": "2026-10-29T13:43:24Z",
+     "pushed_at": "2026-10-29T17:26:48Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -812,7 +815,7 @@
       "min_core": false,
       "license": true
      },
-     "released_at": "2026-09-23T21:37:20Z"
+     "released_at": "2026-10-29T17:27:54Z"
     }
    ]
   },
@@ -1419,7 +1422,7 @@
      },
      "source": "ghcr.io/mrmarkuz/calcom",
      "stars": 0,
-     "pushed_at": "2026-10-29T09:15:49Z",
+     "pushed_at": "2026-10-29T16:01:33Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -2266,22 +2269,18 @@
      ],
      "versions": [
       {
-       "tag": "1.4.2-dev.2",
-       "testing": true
-      },
-      {
-       "tag": "1.4.1",
+       "tag": "1.4.2",
        "testing": false
       }
      ],
-     "stable": "1.4.1",
-     "testing": "1.4.2-dev.2",
+     "stable": "1.4.2",
+     "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": true,
       "images": [
        "crowdsecurity/crowdsec:v1.8.1-debian",
-       "nethserver/crowdsec-firewall-bouncer:1.4.1"
+       "nethserver/crowdsec-firewall-bouncer:1.4.2"
       ],
       "authorizations": [],
       "tcp_ports": 2,
@@ -2290,7 +2289,7 @@
      },
      "source": "ghcr.io/nethserver/crowdsec",
      "stars": 1,
-     "pushed_at": "2026-10-29T03:49:44Z",
+     "pushed_at": "2026-10-29T15:10:52Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -2303,7 +2302,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-14T07:00:32Z"
+     "released_at": "2026-10-29T15:10:29Z"
     }
    ]
   },
@@ -2724,11 +2723,11 @@
      ],
      "versions": [
       {
-       "tag": "0.4.3",
+       "tag": "0.4.4",
        "testing": false
       }
      ],
-     "stable": "0.4.3",
+     "stable": "0.4.4",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -2741,7 +2740,7 @@
      },
      "source": "ghcr.io/danb35/dnshelper",
      "stars": 0,
-     "pushed_at": "2026-10-29T12:36:28Z",
+     "pushed_at": "2026-10-29T18:39:06Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -2754,7 +2753,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-26T15:32:37Z"
+     "released_at": "2026-10-29T18:39:05Z"
     }
    ]
   },
@@ -3843,7 +3842,7 @@
      },
      "source": "ghcr.io/mrmarkuz/euro-office",
      "stars": 0,
-     "pushed_at": "2026-10-28T14:56:45Z",
+     "pushed_at": "2026-10-29T22:03:01Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -3920,7 +3919,7 @@
      },
      "source": "ghcr.io/platypuschan/fail2ban-reworked",
      "stars": 0,
-     "pushed_at": "2026-10-26T02:02:51Z",
+     "pushed_at": "2026-10-29T21:08:42Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -4525,11 +4524,11 @@
      ],
      "versions": [
       {
-       "tag": "1.0.4",
+       "tag": "1.0.5",
        "testing": false
       }
      ],
-     "stable": "1.0.4",
+     "stable": "1.0.5",
      "testing": null,
      "min_core": "3.0.0",
      "tech": {
@@ -4554,7 +4553,7 @@
      },
      "source": "ghcr.io/bls-isp/gitlab",
      "stars": 1,
-     "pushed_at": "2026-10-23T16:43:02Z",
+     "pushed_at": "2026-10-29T21:53:41Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -4567,7 +4566,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-23T16:41:26Z"
+     "released_at": "2026-10-29T21:54:19Z"
     }
    ]
   },
@@ -4951,7 +4950,7 @@
      },
      "source": "ghcr.io/mrmarkuz/guacamole",
      "stars": 0,
-     "pushed_at": "2026-10-29T09:01:47Z",
+     "pushed_at": "2026-10-29T22:47:46Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -5111,7 +5110,7 @@
      },
      "source": "ghcr.io/mrmarkuz/headscale",
      "stars": 0,
-     "pushed_at": "2026-10-28T03:21:51Z",
+     "pushed_at": "2026-10-29T16:00:36Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -5661,7 +5660,7 @@
      },
      "source": "ghcr.io/mrmarkuz/immich",
      "stars": 1,
-     "pushed_at": "2026-10-28T21:14:12Z",
+     "pushed_at": "2026-10-29T21:54:58Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -5893,7 +5892,7 @@
      },
      "source": "ghcr.io/mrmarkuz/jitsi",
      "stars": 0,
-     "pushed_at": "2026-10-29T12:35:04Z",
+     "pushed_at": "2026-10-29T18:48:24Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -6052,7 +6051,7 @@
      },
      "source": "ghcr.io/mrmarkuz/kimai",
      "stars": 0,
-     "pushed_at": "2026-10-28T21:42:29Z",
+     "pushed_at": "2026-10-29T21:35:05Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -7581,7 +7580,7 @@
      },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
-     "pushed_at": "2026-10-28T15:19:09Z",
+     "pushed_at": "2026-10-29T22:34:41Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -8250,7 +8249,7 @@
      "screenshots": [],
      "versions": [
       {
-       "tag": "1.8.0-testing.69",
+       "tag": "1.8.0-testing.80",
        "testing": true
       },
       {
@@ -8267,7 +8266,7 @@
       }
      ],
      "stable": "1.7.14",
-     "testing": "1.8.0-testing.69",
+     "testing": "1.8.0-testing.80",
      "min_core": "3.22.0",
      "tech": {
       "rootfull": false,
@@ -8302,7 +8301,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-29T13:43:53Z",
+     "pushed_at": "2026-10-29T15:02:23Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8494,7 +8493,7 @@
      },
      "source": "ghcr.io/nethserver/nextcloud",
      "stars": 0,
-     "pushed_at": "2026-10-28T21:44:19Z",
+     "pushed_at": "2026-10-29T20:24:10Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10799,8 +10798,11 @@
      "developer": "mrmarkuz",
      "name": "Pulse",
      "description": {
-      "en": "Pulse is a real-time monitoring for Proxmox VE, Proxmox Mail Gateway, PBS, and Docker infrastructure with alerts and webhooks.",
-      "de": "Pulse ist ein Echtzeit Monitoring für Proxmox VE, Proxmox Mail Gateway, PBS und Docker mit Warnungen und Webhooks."
+      "en": "Pulse is a self-hosted dashboard and alerting tool for your homelab or infrastructure",
+      "de": "Pulse ist ein selbst gehostetes Dashboard- und Benachrichtigungstool für dein Homelab oder deine Infrastruktur",
+      "fr": "Pulse est un tableau de bord et un outil d’alerte auto-hébergés, destinés à votre homelab ou à votre infrastructure",
+      "it": "Pulse è uno strumento di dashboard e avvisi, ospitabile in autonomia, pensato per il tuo homelab o la tua infrastruttura",
+      "es": "Pulse es un panel de control y herramienta de alertas autohospedados para tu homelab o infraestructura"
      },
      "about": null,
      "authors": [
@@ -10820,17 +10822,17 @@
      ],
      "versions": [
       {
-       "tag": "1.2.0",
+       "tag": "1.2.1",
        "testing": false
       }
      ],
-     "stable": "1.2.0",
+     "stable": "1.2.1",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "rcourtman/pulse:6.0.5"
+       "rcourtman/pulse:6.6.0"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -10841,7 +10843,7 @@
      },
      "source": "ghcr.io/mrmarkuz/pulse",
      "stars": 0,
-     "pushed_at": "2026-10-28T03:11:13Z",
+     "pushed_at": "2026-10-29T21:18:18Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -10854,7 +10856,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-07-15T14:54:40Z"
+     "released_at": "2026-10-29T21:18:18Z"
     }
    ]
   },
@@ -12409,7 +12411,7 @@
      },
      "source": "ghcr.io/mrmarkuz/twenty",
      "stars": 0,
-     "pushed_at": "2026-10-27T19:29:33Z",
+     "pushed_at": "2026-10-29T16:57:33Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12568,7 +12570,7 @@
      },
      "source": "ghcr.io/mrmarkuz/unifi-network",
      "stars": 0,
-     "pushed_at": "2026-10-28T22:15:55Z",
+     "pushed_at": "2026-10-29T21:27:10Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -12849,11 +12851,11 @@
      ],
      "versions": [
       {
-       "tag": "1.0.2",
+       "tag": "1.0.3",
        "testing": false
       }
      ],
-     "stable": "1.0.2",
+     "stable": "1.0.3",
      "testing": null,
      "min_core": "3.0.0",
      "tech": {
@@ -12863,7 +12865,7 @@
        "vividboarder/vaultwarden_ldap:2.2.1"
       ],
       "authorizations": [
-       "traefik@any:routeadm",
+       "traefik@node:routeadm",
        "cluster:accountconsumer"
       ],
       "tcp_ports": 1,
@@ -12874,7 +12876,7 @@
      },
      "source": "ghcr.io/bls-isp/vaultwarden",
      "stars": 1,
-     "pushed_at": "2026-10-22T14:28:14Z",
+     "pushed_at": "2026-10-29T21:53:35Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -12887,7 +12889,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-22T14:26:52Z"
+     "released_at": "2026-10-29T21:52:04Z"
     },
     {
      "module_id": "vaultwarden",
@@ -13405,7 +13407,7 @@
      },
      "source": "ghcr.io/nethserver/webtop",
      "stars": 0,
-     "pushed_at": "2026-10-28T08:11:29Z",
+     "pushed_at": "2026-10-29T16:55:19Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13900,7 +13902,7 @@
      },
      "source": "ghcr.io/mrmarkuz/zabbix",
      "stars": 0,
-     "pushed_at": "2026-10-29T08:54:00Z",
+     "pushed_at": "2026-10-29T22:19:08Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -13934,7 +13936,11 @@
      "developer": "mrmarkuz",
      "name": "Zammad",
      "description": {
-      "en": "Zammad is an open source user support/ticketing solution"
+      "en": "Zammad is a free, open-source helpdesk and customer support ticketing system",
+      "de": "Zammad ist ein kostenloses Open-Source-Helpdesk- und Kundensupport-Ticketing-System",
+      "fr": "Zammad est un système gratuit et open source de gestion des demandes (ticketing) dédié au service client et au support technique",
+      "it": "Zammad è un sistema di helpdesk e di gestione dei ticket di assistenza clienti, gratuito e open source",
+      "es": "Zammad es un sistema de gestión de tickets para mesas de ayuda y atención al cliente, de código abierto y gratuito"
      },
      "about": null,
      "authors": [
@@ -13954,21 +13960,21 @@
      ],
      "versions": [
       {
-       "tag": "1.1.0",
+       "tag": "1.1.1",
        "testing": false
       }
      ],
-     "stable": "1.1.0",
+     "stable": "1.1.1",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "postgres:17.10-alpine",
-       "elasticsearch:9.4.3",
-       "zammad/zammad:7.1.1-0020",
-       "memcached:1.6.44-alpine",
-       "redis:8.8.0-alpine"
+       "postgres:17.11-alpine",
+       "elasticsearch:9.5.5",
+       "zammad/zammad:7.2.2-0029",
+       "memcached:1.6.45-alpine",
+       "redis:8.10.3-alpine"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -13979,20 +13985,20 @@
      },
      "source": "ghcr.io/mrmarkuz/zammad",
      "stars": 0,
-     "pushed_at": "2026-10-29T11:23:59Z",
+     "pushed_at": "2026-10-29T19:40:43Z",
      "archived": false,
      "checks": {
       "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
-      "description": false,
-      "translations": false,
+      "description": true,
+      "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-07-13T19:27:57Z"
+     "released_at": "2026-10-29T19:35:39Z"
     }
    ]
   },
