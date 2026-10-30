@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T23:05:17+00:00",
+ "generated_at": "2026-10-30T06:43:32+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -6711,7 +6711,7 @@
      },
      "source": "ghcr.io/stephdl/lemp",
      "stars": 0,
-     "pushed_at": "2026-10-28T14:05:59Z",
+     "pushed_at": "2026-10-30T06:34:04Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7580,7 +7580,7 @@
      },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
-     "pushed_at": "2026-10-29T22:34:41Z",
+     "pushed_at": "2026-10-30T04:37:28Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -9505,7 +9505,7 @@
      },
      "source": "ghcr.io/platypuschan/organizr-reworked",
      "stars": 0,
-     "pushed_at": "2026-10-26T02:23:01Z",
+     "pushed_at": "2026-10-30T03:42:20Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -12136,8 +12136,11 @@
      "developer": "mrmarkuz",
      "name": "Tailscale",
      "description": {
-      "en": "Tailscale is a zero-config VPN service that simplifies secure network access.",
-      "de": "Tailscale ist ein VPN Dienst mit einfacher Konfiguration für sicheren Netzwerkzugriff."
+      "en": "Tailscale is a zero-config, peer-to-peer mesh VPN built on top of the open-source WireGuard protocol",
+      "de": "Tailscale ist ein Zero-Config Peer-to-Peer Mesh VPN, das auf dem Open-Source-Protokoll WireGuard basiert",
+      "fr": "Tailscale est un VPN maillé pair à pair, ne nécessitant aucune configuration, qui repose sur le protocole open source WireGuard",
+      "it": "Tailscale è una VPN mesh peer-to-peer che non richiede configurazione, basata sul protocollo open source WireGuard",
+      "es": "Tailscale es una VPN mesh peer-to-peer que no requiere configuración y está construida sobre el protocolo de código abierto WireGuard"
      },
      "about": null,
      "authors": [
@@ -12157,17 +12160,17 @@
      ],
      "versions": [
       {
-       "tag": "1.0.0",
+       "tag": "1.0.2",
        "testing": false
       }
      ],
-     "stable": "1.0.0",
+     "stable": "1.0.2",
      "testing": null,
-     "min_core": null,
+     "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "tailscale/tailscale:v1.86.2"
+       "tailscale/tailscale:v1.104.4"
       ],
       "authorizations": [],
       "tcp_ports": 0,
@@ -12176,20 +12179,20 @@
      },
      "source": "ghcr.io/mrmarkuz/tailscale",
      "stars": 0,
-     "pushed_at": "2026-10-28T23:32:07Z",
+     "pushed_at": "2026-10-30T01:42:59Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
-      "min_core": false,
+      "min_core": true,
       "license": true
      },
-     "released_at": "2025-08-18T12:46:15Z"
+     "released_at": "2026-10-30T01:42:59Z"
     }
    ]
   },
