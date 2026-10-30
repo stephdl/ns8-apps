@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T13:47:16+00:00",
+ "generated_at": "2026-10-30T22:46:23+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -970,7 +970,7 @@
      },
      "source": "ghcr.io/danb35/automx",
      "stars": 0,
-     "pushed_at": "2026-10-28T09:34:38Z",
+     "pushed_at": "2026-10-30T19:36:21Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -2570,7 +2570,7 @@
      },
      "source": "ghcr.io/nethserver/dependencytrack",
      "stars": 0,
-     "pushed_at": "2026-10-30T08:45:51Z",
+     "pushed_at": "2026-10-30T16:22:29Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7583,7 +7583,7 @@
      },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
-     "pushed_at": "2026-10-30T08:34:42Z",
+     "pushed_at": "2026-10-30T20:39:08Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -8164,7 +8164,7 @@
      ],
      "versions": [
       {
-       "tag": "2.4.1-dev.2",
+       "tag": "2.4.1-dev.3",
        "testing": true
       },
       {
@@ -8173,7 +8173,7 @@
       }
      ],
      "stable": "2.4.0",
-     "testing": "2.4.1-dev.2",
+     "testing": "2.4.1-dev.3",
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
@@ -8199,7 +8199,7 @@
      },
      "source": "ghcr.io/nethserver/nethsecurity-controller",
      "stars": 1,
-     "pushed_at": "2026-10-30T13:28:23Z",
+     "pushed_at": "2026-10-30T17:03:39Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -8304,7 +8304,7 @@
      },
      "source": "ghcr.io/nethesis/nethvoice",
      "stars": 9,
-     "pushed_at": "2026-10-30T11:10:08Z",
+     "pushed_at": "2026-10-30T16:42:07Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10496,17 +10496,17 @@
      ],
      "versions": [
       {
-       "tag": "1.3.0",
+       "tag": "1.3.2",
        "testing": false
       }
      ],
-     "stable": "1.3.0",
+     "stable": "1.3.2",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "dpage/pgadmin4:9.18",
+       "dpage/pgadmin4:9.19",
        "postgres:14.24-bookworm"
       ],
       "authorizations": [
@@ -10518,7 +10518,7 @@
      },
      "source": "ghcr.io/nethserver/postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-30T08:47:21Z",
+     "pushed_at": "2026-10-30T15:21:13Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10531,7 +10531,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-21T10:20:31Z"
+     "released_at": "2026-10-30T15:20:08Z"
     }
    ]
   },
@@ -11239,7 +11239,7 @@
      },
      "source": "ghcr.io/nethserver/rustfs",
      "stars": 0,
-     "pushed_at": "2026-10-28T00:07:49Z",
+     "pushed_at": "2026-10-30T19:52:24Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12417,7 +12417,7 @@
      },
      "source": "ghcr.io/mrmarkuz/twenty",
      "stars": 0,
-     "pushed_at": "2026-10-29T16:57:33Z",
+     "pushed_at": "2026-10-30T21:44:34Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12631,6 +12631,10 @@
      ],
      "versions": [
       {
+       "tag": "1.2.6",
+       "testing": false
+      },
+      {
        "tag": "1.2.4",
        "testing": false
       },
@@ -12685,19 +12689,15 @@
       {
        "tag": "1.1.0",
        "testing": false
-      },
-      {
-       "tag": "1.0.13",
-       "testing": false
       }
      ],
-     "stable": "1.2.4",
+     "stable": "1.2.6",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "dpage/pgadmin4:9.18",
+       "dpage/pgadmin4:9.19",
        "postgres:16.15-bookworm"
       ],
       "authorizations": [
@@ -12709,7 +12709,7 @@
      },
      "source": "ghcr.io/stephdl/v16postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-28T01:14:18Z",
+     "pushed_at": "2026-10-30T15:21:45Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12722,7 +12722,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-25T09:57:47Z"
+     "released_at": "2026-10-30T15:21:30Z"
     }
    ]
   },
@@ -12764,6 +12764,10 @@
      ],
      "versions": [
       {
+       "tag": "1.1.1",
+       "testing": false
+      },
+      {
        "tag": "1.0.3",
        "testing": false
       },
@@ -12780,13 +12784,13 @@
        "testing": false
       }
      ],
-     "stable": "1.0.3",
+     "stable": "1.1.1",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
       "rootfull": false,
       "images": [
-       "dpage/pgadmin4:9.18",
+       "dpage/pgadmin4:9.19",
        "postgres:18.6-bookworm"
       ],
       "authorizations": [
@@ -12798,7 +12802,7 @@
      },
      "source": "ghcr.io/stephdl/v18postgresql",
      "stars": 0,
-     "pushed_at": "2026-10-28T03:35:40Z",
+     "pushed_at": "2026-10-30T15:21:03Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -12811,7 +12815,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-25T10:04:59Z"
+     "released_at": "2026-10-30T15:20:46Z"
     }
    ]
   },
@@ -13166,6 +13170,10 @@
      ],
      "versions": [
       {
+       "tag": "1.1.6",
+       "testing": false
+      },
+      {
        "tag": "1.1.5",
        "testing": false
       },
@@ -13218,7 +13226,7 @@
        "testing": false
       }
      ],
-     "stable": "1.1.5",
+     "stable": "1.1.6",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -13243,7 +13251,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-30T13:28:00Z",
+     "pushed_at": "2026-10-30T14:05:55Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13256,7 +13264,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-29T07:58:57Z"
+     "released_at": "2026-10-30T14:05:56Z"
     }
    ]
   },
@@ -13564,7 +13572,7 @@
      },
      "source": "ghcr.io/mrmarkuz/wg-easy",
      "stars": 1,
-     "pushed_at": "2026-10-30T13:41:07Z",
+     "pushed_at": "2026-10-30T22:42:55Z",
      "archived": false,
      "checks": {
       "topic": true,
