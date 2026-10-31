@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T22:46:23+00:00",
+ "generated_at": "2026-10-31T06:34:00+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -61,7 +61,7 @@
    "alt_url": "https://raw.githubusercontent.com/mrmarkuz/ns8-mrmarkuz/repomd/ns8/updates/",
    "kind": "community",
    "repo": "mrmarkuz/ns8-mrmarkuz",
-   "app_count": 26
+   "app_count": 25
   },
   {
    "id": "geniusdynamics",
@@ -482,7 +482,7 @@
      },
      "source": "ghcr.io/platypuschan/adguard-home",
      "stars": 0,
-     "pushed_at": "2026-10-26T01:40:10Z",
+     "pushed_at": "2026-10-31T03:49:11Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -3993,10 +3993,10 @@
      },
      "source": "ghcr.io/mrmarkuz/fetchmail",
      "stars": 0,
-     "pushed_at": "2026-07-25T09:07:27Z",
+     "pushed_at": "2026-10-31T06:09:03Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": false,
@@ -4950,7 +4950,7 @@
      },
      "source": "ghcr.io/mrmarkuz/guacamole",
      "stars": 0,
-     "pushed_at": "2026-10-29T22:47:46Z",
+     "pushed_at": "2026-10-31T04:55:37Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -6205,7 +6205,7 @@
      "pushed_at": "2026-10-28T11:09:28Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
@@ -7186,7 +7186,7 @@
      },
      "source": "ghcr.io/nethserver/matrix",
      "stars": 3,
-     "pushed_at": "2026-10-30T08:46:48Z",
+     "pushed_at": "2026-10-31T06:31:36Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -7583,7 +7583,7 @@
      },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
-     "pushed_at": "2026-10-30T20:39:08Z",
+     "pushed_at": "2026-10-31T06:01:42Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -8890,7 +8890,7 @@
      },
      "source": "ghcr.io/platypuschan/obsidian-livesync",
      "stars": 0,
-     "pushed_at": "2026-10-26T01:37:53Z",
+     "pushed_at": "2026-10-30T23:18:01Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -9274,7 +9274,7 @@
      },
      "source": "ghcr.io/mrmarkuz/openssh",
      "stars": 0,
-     "pushed_at": "2026-10-28T07:16:45Z",
+     "pushed_at": "2026-10-31T01:14:11Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -10246,8 +10246,11 @@
      "developer": "mrmarkuz",
      "name": "Planka",
      "description": {
-      "en": "Elegant open source project tracking",
-      "de": "Elegantes Open Source Projektmanagement"
+      "en": "PLANKA is a modern Kanban tool for teams who want their work visible and organised",
+      "de": "PLANKA ist ein modernes Kanban-Tool für Teams, die ihre Arbeit sichtbar und organisiert gestalten möchten",
+      "fr": "PLANKA est un outil Kanban moderne destiné aux équipes qui souhaitent rendre leur travail visible et organisé",
+      "it": "PLANKA è un moderno strumento Kanban pensato per i team che desiderano rendere il proprio lavoro visibile e organizzato",
+      "es": "PLANKA es una herramienta Kanban moderna para equipos que desean que su trabajo sea visible y esté organizado"
      },
      "about": null,
      "authors": [
@@ -10258,8 +10261,8 @@
      ],
      "code_url": "https://github.com/mrmarkuz/ns8-planka",
      "docs": {
-      "documentation_url": "https://docs.planka.cloud/docs/welcome/",
-      "bug_url": "https://community.nethserver.org"
+      "documentation_url": "https://docs.planka.cloud/docs/welcome",
+      "bug_url": "https://github.com/mrmarkuz/ns8-planka"
      },
      "logo": "https://repo.mrmarkuz.com/ns8/updates/planka/logo.png",
      "screenshots": [
@@ -10267,18 +10270,18 @@
      ],
      "versions": [
       {
-       "tag": "1.0.3",
+       "tag": "1.0.4",
        "testing": false
       }
      ],
-     "stable": "1.0.3",
+     "stable": "1.0.4",
      "testing": null,
      "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "plankanban/planka:2.1.1",
-       "postgres:16.14-alpine"
+       "plankanban/planka:2.2.1",
+       "postgres:16.15-alpine"
       ],
       "authorizations": [
        "traefik@node:routeadm"
@@ -10289,20 +10292,20 @@
      },
      "source": "ghcr.io/mrmarkuz/planka",
      "stars": 0,
-     "pushed_at": "2026-10-29T09:16:55Z",
+     "pushed_at": "2026-10-31T00:38:29Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
-      "description": false,
+      "description": true,
       "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-07-18T20:38:34Z"
+     "released_at": "2026-10-31T00:38:29Z"
     }
    ]
   },
@@ -12353,88 +12356,6 @@
    ]
   },
   {
-   "id": "twenty",
-   "categories": [
-    "collaboration"
-   ],
-   "official": false,
-   "stars": 0,
-   "variants": [
-    {
-     "module_id": "twenty",
-     "forges": [
-      "mrmarkuz"
-     ],
-     "kind": "community",
-     "developer": "mrmarkuz",
-     "name": "Twenty",
-     "description": {
-      "en": "Twenty is an open-source CRM",
-      "de": "Twenty ist ein Open Source CRM"
-     },
-     "about": null,
-     "authors": [
-      "Markus Neuberger"
-     ],
-     "categories": [
-      "collaboration"
-     ],
-     "code_url": "https://github.com/mrmarkuz/ns8-twenty",
-     "docs": {
-      "documentation_url": "https://twenty.com/user-guide",
-      "bug_url": "https://community.nethserver.org"
-     },
-     "logo": "https://repo.mrmarkuz.com/ns8/updates/twenty/logo.png",
-     "screenshots": [
-      "https://repo.mrmarkuz.com/ns8/updates/twenty/screenshots/screen1.png"
-     ],
-     "versions": [
-      {
-       "tag": "1.0.1",
-       "testing": false
-      },
-      {
-       "tag": "1.0.0",
-       "testing": false
-      }
-     ],
-     "stable": "1.0.1",
-     "testing": null,
-     "min_core": null,
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "postgres:16.9",
-       "redis:8.0.2",
-       "twentycrm/twenty:v1.2.1"
-      ],
-      "authorizations": [
-       "traefik@node:routeadm"
-      ],
-      "tcp_ports": 1,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/mrmarkuz/twenty",
-     "stars": 0,
-     "pushed_at": "2026-10-30T21:44:34Z",
-     "archived": false,
-     "checks": {
-      "topic": false,
-      "categories": true,
-      "logo": true,
-      "screenshots": true,
-      "description": false,
-      "translations": true,
-      "docs": true,
-      "min_core": false,
-      "license": true
-     },
-     "released_at": "2025-08-23T08:33:31Z"
-    }
-   ]
-  },
-  {
    "id": "umami",
    "categories": [
     "office"
@@ -13528,9 +13449,13 @@
      ],
      "kind": "community",
      "developer": "mrmarkuz",
-     "name": "Wg-easy",
+     "name": "Wireguard Easy",
      "description": {
-      "en": "You have found the easiest way to install & manage WireGuard on any Linux host!"
+      "en": "wg-easy is an open-source, all-in-one web application that bundles the WireGuard VPN protocol with a user-friendly, browser-based administrative interface",
+      "de": "wg-easy ist eine Open-Source-Komplettlösung in Form einer Webanwendung, die das WireGuard-VPN-Protokoll mit einer benutzerfreundlichen, browserbasierten Verwaltungsoberfläche kombiniert",
+      "fr": "wg-easy est une application web tout-en-un et open source qui associe le protocole VPN WireGuard à une interface d'administration conviviale, accessible via un navigateur",
+      "it": "wg-easy è un'applicazione web open source tutto-in-uno che integra il protocollo VPN WireGuard con un'interfaccia di amministrazione intuitiva, accessibile tramite browser",
+      "es": "wg-easy es una aplicación web todo en uno de código abierto que integra el protocolo VPN WireGuard con una interfaz administrativa basada en el navegador, fácil de usar"
      },
      "about": null,
      "authors": [
@@ -13550,17 +13475,17 @@
      ],
      "versions": [
       {
-       "tag": "1.0.2",
+       "tag": "1.1.0",
        "testing": false
       }
      ],
-     "stable": "1.0.2",
+     "stable": "1.1.0",
      "testing": null,
-     "min_core": "3.9.0-0",
+     "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "wg-easy/wg-easy:14"
+       "wg-easy/wg-easy:15.5.0"
       ],
       "authorizations": [
        "node:fwadm",
@@ -13572,7 +13497,7 @@
      },
      "source": "ghcr.io/mrmarkuz/wg-easy",
      "stars": 1,
-     "pushed_at": "2026-10-30T22:42:55Z",
+     "pushed_at": "2026-10-31T00:33:59Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -13580,12 +13505,12 @@
       "logo": true,
       "screenshots": true,
       "description": true,
-      "translations": false,
+      "translations": true,
       "docs": true,
       "min_core": true,
       "license": true
      },
-     "released_at": "2025-04-10T09:52:21Z"
+     "released_at": "2026-10-31T00:33:59Z"
     }
    ]
   },
@@ -13916,7 +13841,7 @@
      },
      "source": "ghcr.io/mrmarkuz/zabbix",
      "stars": 0,
-     "pushed_at": "2026-10-29T22:19:08Z",
+     "pushed_at": "2026-10-31T05:48:57Z",
      "archived": false,
      "checks": {
       "topic": true,
