@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T06:34:00+00:00",
+ "generated_at": "2026-10-31T13:16:01+00:00",
  "forges": [
   {
    "id": "nethserver",
@@ -61,7 +61,7 @@
    "alt_url": "https://raw.githubusercontent.com/mrmarkuz/ns8-mrmarkuz/repomd/ns8/updates/",
    "kind": "community",
    "repo": "mrmarkuz/ns8-mrmarkuz",
-   "app_count": 25
+   "app_count": 24
   },
   {
    "id": "geniusdynamics",
@@ -970,7 +970,7 @@
      },
      "source": "ghcr.io/danb35/automx",
      "stars": 0,
-     "pushed_at": "2026-10-30T19:36:21Z",
+     "pushed_at": "2026-10-31T13:09:39Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -2740,7 +2740,7 @@
      },
      "source": "ghcr.io/danb35/dnshelper",
      "stars": 0,
-     "pushed_at": "2026-10-29T18:39:06Z",
+     "pushed_at": "2026-10-31T13:04:05Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -3933,80 +3933,6 @@
       "license": true
      },
      "released_at": "2026-10-26T02:02:52Z"
-    }
-   ]
-  },
-  {
-   "id": "fetchmail",
-   "categories": [
-    "collaboration"
-   ],
-   "official": false,
-   "stars": 0,
-   "variants": [
-    {
-     "module_id": "fetchmail",
-     "forges": [
-      "mrmarkuz"
-     ],
-     "kind": "community",
-     "developer": "mrmarkuz",
-     "name": "Fetchmail",
-     "description": {
-      "en": "Fetchmail fetches mails and sends them to a mail server",
-      "de": "Fetchmail holt Mails ab und sendet sie an einen Mailserver"
-     },
-     "about": null,
-     "authors": [
-      "Markus Neuberger"
-     ],
-     "categories": [
-      "collaboration"
-     ],
-     "code_url": "https://github.com/mrmarkuz/ns8-fetchmail",
-     "docs": {
-      "documentation_url": "https://www.fetchmail.info",
-      "bug_url": "https://community.nethserver.org"
-     },
-     "logo": "https://repo.mrmarkuz.com/ns8/updates/fetchmail/logo.png",
-     "screenshots": [],
-     "versions": [
-      {
-       "tag": "1.0.3",
-       "testing": false
-      }
-     ],
-     "stable": "1.0.3",
-     "testing": null,
-     "min_core": null,
-     "tech": {
-      "rootfull": false,
-      "images": [
-       "mrmarkuz/fetchmail-binary:1.0.3"
-      ],
-      "authorizations": [
-       "mail@any:mailadm"
-      ],
-      "tcp_ports": 0,
-      "udp_ports": 0,
-      "volumes": []
-     },
-     "source": "ghcr.io/mrmarkuz/fetchmail",
-     "stars": 0,
-     "pushed_at": "2026-10-31T06:09:03Z",
-     "archived": false,
-     "checks": {
-      "topic": true,
-      "categories": true,
-      "logo": true,
-      "screenshots": false,
-      "description": false,
-      "translations": true,
-      "docs": true,
-      "min_core": false,
-      "license": true
-     },
-     "released_at": "2026-03-17T14:22:58Z"
     }
    ]
   },
@@ -7583,7 +7509,7 @@
      },
      "source": "ghcr.io/mrmarkuz/meshcentral",
      "stars": 0,
-     "pushed_at": "2026-10-31T06:01:42Z",
+     "pushed_at": "2026-10-31T09:23:48Z",
      "archived": false,
      "checks": {
       "topic": true,
@@ -7815,7 +7741,7 @@
      },
      "source": "ghcr.io/nethserver/n8n",
      "stars": 0,
-     "pushed_at": "2026-10-28T10:18:45Z",
+     "pushed_at": "2026-10-31T10:34:48Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -9308,8 +9234,11 @@
      "developer": "mrmarkuz",
      "name": "OpenVPN Access Server",
      "description": {
-      "en": "OpenVPN Access Server is a secure remote access solution to your private network, in the cloud or on-prem",
-      "de": "OpenVPN Access Server ermöglicht sicheren Zugriff auf das private Netzwerk, die Cloud oder On-Premise"
+      "en": "OpenVPN Access Server is a secure remote access solution to your private network",
+      "de": "OpenVPN Access Server ist eine sichere Lösung für den Fernzugriff auf Ihr privates Netzwerk",
+      "fr": "OpenVPN Access Server est une solution d’accès à distance sécurisé à votre réseau privé",
+      "it": "OpenVPN Access Server è una soluzione di accesso remoto sicuro alla propria rete privata",
+      "es": "OpenVPN Access Server es una solución de acceso remoto seguro a su red privada"
      },
      "about": null,
      "authors": [
@@ -9329,17 +9258,17 @@
      ],
      "versions": [
       {
-       "tag": "1.0.3",
+       "tag": "1.0.4",
        "testing": false
       }
      ],
-     "stable": "1.0.3",
+     "stable": "1.0.4",
      "testing": null,
-     "min_core": null,
+     "min_core": "3.12.4-0",
      "tech": {
       "rootfull": false,
       "images": [
-       "openvpn/openvpn-as:3.1.0-e22fe316-Ubuntu24"
+       "openvpn/openvpn-as:3.2.3-8444f22d-Ubuntu26"
       ],
       "authorizations": [
        "node:fwadm",
@@ -9352,20 +9281,20 @@
      },
      "source": "ghcr.io/mrmarkuz/openvpn",
      "stars": 0,
-     "pushed_at": "2026-07-25T10:02:03Z",
+     "pushed_at": "2026-10-31T12:58:42Z",
      "archived": false,
      "checks": {
-      "topic": false,
+      "topic": true,
       "categories": true,
       "logo": true,
       "screenshots": true,
       "description": true,
       "translations": true,
       "docs": true,
-      "min_core": false,
+      "min_core": true,
       "license": true
      },
-     "released_at": "2026-03-17T14:53:31Z"
+     "released_at": "2026-10-31T12:20:44Z"
     }
    ]
   },
@@ -13091,6 +13020,14 @@
      ],
      "versions": [
       {
+       "tag": "1.2.0",
+       "testing": false
+      },
+      {
+       "tag": "1.1.7",
+       "testing": false
+      },
+      {
        "tag": "1.1.6",
        "testing": false
       },
@@ -13141,13 +13078,9 @@
       {
        "tag": "1.0.1",
        "testing": false
-      },
-      {
-       "tag": "1.0.0",
-       "testing": false
       }
      ],
-     "stable": "1.1.6",
+     "stable": "1.2.0",
      "testing": null,
      "min_core": "3.20.1",
      "tech": {
@@ -13172,7 +13105,7 @@
      },
      "source": "ghcr.io/stephdl/wazuh",
      "stars": 0,
-     "pushed_at": "2026-10-30T14:05:55Z",
+     "pushed_at": "2026-10-31T11:55:55Z",
      "archived": false,
      "checks": {
       "topic": false,
@@ -13185,7 +13118,7 @@
       "min_core": true,
       "license": true
      },
-     "released_at": "2026-10-30T14:05:56Z"
+     "released_at": "2026-10-31T11:55:56Z"
     }
    ]
   },
@@ -13924,7 +13857,7 @@
      },
      "source": "ghcr.io/mrmarkuz/zammad",
      "stars": 0,
-     "pushed_at": "2026-10-29T19:40:43Z",
+     "pushed_at": "2026-10-31T09:07:36Z",
      "archived": false,
      "checks": {
       "topic": true,
